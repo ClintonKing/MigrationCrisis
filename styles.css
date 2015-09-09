@@ -1,0 +1,48 @@
+body{
+  background: url("img/MapBackground.png");
+  background-size: 100% 120vh;
+}
+
+.white{
+color: white;
+opacity: .8;
+position: relative;
+top: 30%;
+transform: translateY(-50%);
+padding: 50px;
+}
+
+.black{
+color: black;
+opacity: .8;
+position: relative;
+top: 30%;
+transform: translateY(-50%);
+padding: 50px;
+}
+
+h1{
+  font-size: 86px;
+}
+
+
+
+#intro{
+  width: 100vw;
+  height: 120vh;
+  background: transparent;
+  background-size: 100% 100%;
+}
+
+#explainer{
+  width: 100vw;
+  height: 120vh;
+  background: url('img/Mansion.gif');
+  background-size: 100% 100%;
+}
+
+#navGraph{
+  width: 100vw;
+  height: 120vh;
+  background: transparent;
+}
