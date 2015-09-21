@@ -18,6 +18,10 @@ $("#introP").click(function(){
   $("#nextButton").delay(2000).fadeIn();
 });
 
+$("#act2P").click(function(){
+  $("#vid1").delay(600).fadeIn();
+})
+
 
 
 
@@ -30,10 +34,12 @@ $("#nextButton").click(function(){
   $("#act1").hide();
   $("#act2").show();
   $("#act2P").delay(1000).fadeIn();
+  $("#backButton").show();
 });
 
 
 $("#backButton").click(function(){
   $("#act2").hide();
   $("#act1").show();
+  $("#nextButton").show();
 });

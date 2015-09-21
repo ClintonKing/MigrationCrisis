@@ -38,7 +38,7 @@
   z-index: 2000;
   height: 50px;
   width: 50px;
-  background: url("../img/nextArrow.png");
+  background: url("../img/nextArrowWhite.png");
   background-size: 100% 100%;
   cursor: pointer;
   opacity: .7;
@@ -51,7 +51,7 @@
   z-index: 2000;
   height: 50px;
   width: 50px;
-  background: url("../img/backArrow.png");
+  background: url("../img/backArrowWhite.png");
   background-size: 100% 100%;
   cursor: pointer;
   opacity: .7;
@@ -76,6 +76,7 @@
   margin: 0 auto;
   float: none;
   padding: 10px;
+  background: rgba(124, 125, 127, 0.5);
 }
 
 .clickAble{
@@ -92,6 +93,7 @@
   color: white;
   display: none;
   border: 2px solid white;
+  background: rgba(124, 125, 127, 0.5);
 }
 
 #pic1{
@@ -129,4 +131,13 @@
   color: white;
   display: none;
   border: 2px solid white;
+  background: rgba(124, 125, 127, 0.5);
+}
+
+#vid1{
+  float: none;
+  position: relative;
+  margin: 0 auto;
+  top: 40%;
+  display: none;
 }
