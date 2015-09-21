@@ -58,6 +58,17 @@ body{
   display: inline-block;
 }
 
+/*little map is just an example.
+we can delete this in the future*/
+.little-map {
+  background: url("img/MapBackground.png");
+  background-size: 300px 200px;
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+  display: inline-block;
+}
+
 .white{
 color: white;
 opacity: .8;
@@ -134,4 +145,14 @@ h1{
   /*width: 100vw;*/
   height: 120vh;
   background: transparent;
+}
+
+.stories {
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.experiences {
+  padding: 2em;
+  background: #7BAFD4;
 }
