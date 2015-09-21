@@ -1,0 +1,76 @@
+#person1 {
+  background: url("http://behrwatercolorpaintings.com/images/Peace_Valley.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+#person1 h1  {
+  font-size: 100px;
+}
+
+.story-section {
+  background: #7BAFD4;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.story {
+  margin-top: 30vh;
+  height: 40vh;
+  display: inline-block;
+  border: 4px double orange;
+  background: #000;
+  opacity: .8;
+}
+
+#section2 {
+  background: #d8d8d8;
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+}
+
+.icon-group {
+  margin-top: 5vh;
+  height: 20vh;
+  text-align: center;
+}
+
+.icon {
+  background: #D2B48C;
+  display: inline-block;
+  padding: 2em;
+  border: 1px solid #fff;
+  margin: 1em;
+}
+
+.circle {
+    height: 95px;
+    width: 95px;
+    font-size: 15px;
+    border-radius: 50px;
+    background: blue;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    opacity: .4;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.circle:hover {
+  opacity: .8;
+}
+
+#tan {
+  background: #D2B48C;
+}
+
+#blue-border {
+    border: 4px double #7BAFD4;
+}
