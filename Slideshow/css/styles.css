@@ -6,7 +6,7 @@
 
 .middleText{
   position: relative;
-  top: 10%;
+  top: 5%;
   float: none;
   margin: 0 auto;
   max-width: 400px;
@@ -27,6 +27,15 @@
   width: 100%;
   position: relative;
   background: url("../img/back2.jpg");
+  background-size: cover;
+  display: none;
+}
+
+#act3{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url("../img/back3.jpg");
   background-size: cover;
   display: none;
 }
@@ -138,6 +147,20 @@
   float: none;
   position: relative;
   margin: 0 auto;
-  top: 40%;
+  top: 20%;
   display: none;
+  z-index: 1500;
+}
+
+#act3P{
+  width: 300px;
+  position: relative;
+  top: 65%;
+  left: 30%;
+  /*margin: 0 auto;*/
+  float: none;
+  color: white;
+  display: none;
+  border: 2px solid white;
+  background: rgba(124, 125, 127, 0.5);
 }
