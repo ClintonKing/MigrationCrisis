@@ -37,14 +37,14 @@ body{
 .logo {
   height: 95px;
   width: 95px;
+  background: url('img/watercolor-boat-logov3.png');
+  background-size: 95px 95px;
   font-size: 15px;
-  border-radius: 50px;
-  background: #000;
   text-align: center;
   display: inline-block;
   float: left;
   color: #fff;
-  border: 1px solid #fff;
+  opacity: .4;
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;

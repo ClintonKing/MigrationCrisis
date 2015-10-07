@@ -6,7 +6,7 @@ $(window).scroll(function() {
       $(".menu-links").css({"margin-top": "15px"});
       $(".logo-title").css({"margin-top": "15px"});
       $("a:link, a:active").css({"color": "blue"});
-      $(".logo").css({"background": "blue", "height": "70px", "width": "70px", "border": "1px solid #000"})
+      $(".logo").css({"background": "url('img/watercolor-boat-logov3.png')", "background-size": "70px 70px", "height": "70px", "width": "70px", "opacity": "1"})
     }
 
     if (height < 50) {
@@ -14,6 +14,6 @@ $(window).scroll(function() {
       $(".menu-links").css({"margin-top": "25px"});
       $(".logo-title").css({"margin-top": "25px"});
       $("a:link, a:active").css({"color": "black"});
-      $(".logo").css({"background": "#000", "height": "95px", "width": "95px", "border": "1px solid #000"})
+      $(".logo").css({"background": "url('img/watercolor-boat-logov3.png')", "background-size": "95px 95px", "height": "95px", "width": "95px", "opacity": ".4"})
     }
 });
