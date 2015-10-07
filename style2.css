@@ -1,8 +1,13 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
 #person1 {
-  background: url("http://behrwatercolorpaintings.com/images/Peace_Valley.jpg");
-  background-size: 100% 100%;
+  background: url("img/PatinoContreras_Final-12.jpg");
+  background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 
 #person1 h1  {
@@ -10,25 +15,30 @@
 }
 
 .story-section {
-  background: #7BAFD4;
+  background: #C18C79;
+  background-image: url("img/story-section1-watercolor-bg.png");
+  background-size: 100% 100vh;
   width: 100%;
   height: 100vh;
   text-align: center;
 }
 
 .story {
-  margin-top: 30vh;
-  height: 40vh;
+  margin-top: 25vh;
+  height: 50vh;
   display: inline-block;
-  border: 4px double orange;
+  border: 4px double #fff;
   background: #000;
   opacity: .8;
+  color: #fff;
+  text-align: justify;
+  font-size: 1.4em;
+  overflow: auto;
 }
 
 #section2 {
-  background: #d8d8d8;
+  background: #C2C7C9;
   width: 100%;
-  height: 60vh;
   text-align: center;
 }
 
@@ -67,10 +77,19 @@
   opacity: .8;
 }
 
-#tan {
-  background: #D2B48C;
+.watercolor-map {
+  background-image: url("img/map-watercolor-nobg.png");
+  background-size: cover;
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-#blue-border {
-    border: 4px double #7BAFD4;
+#picture2 {
+  background-image: url("img/PatinoContreras_Final-1.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
