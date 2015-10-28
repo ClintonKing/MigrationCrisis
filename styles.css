@@ -1,12 +1,15 @@
 html, body {
   width: 100%;
   height: 100%;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 300;
 }
 
 body{
   background: url("img/MapBackground.png");
   background-size: 100% 120vh;
   background-repeat: no-repeat;
+  /*font-family: 'Open Sans', sans-serif;*/
   margin: 0;
 }
 
@@ -21,11 +24,10 @@ body{
   min-height: 60px;
   max-height: 136px;
   font-size: 25px;
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  background: none;
+  background: white;
+  top: 100%;
+  position: absolute;
+  z-index: 99;
 }
 
 .menu-links {
@@ -89,6 +91,7 @@ padding: 50px;
 
 h1{
   font-size: 86px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #intro{
