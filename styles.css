@@ -6,7 +6,7 @@ html, body {
 }
 
 body{
-  background: url("img/MapBackground.png");
+  /*background: url("img/MapBackground.png");*/
   background-size: 100% 120vh;
   background-repeat: no-repeat;
   /*font-family: 'Open Sans', sans-serif;*/
@@ -25,6 +25,9 @@ body{
   max-height: 136px;
   font-size: 25px;
   background: white;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0px 1px 1px #888888;
+  opacity: .95;
   top: 100%;
   position: absolute;
   z-index: 99;
@@ -46,7 +49,6 @@ body{
   display: inline-block;
   float: left;
   color: #fff;
-  opacity: .4;
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
@@ -59,6 +61,48 @@ body{
   margin-left: 15px;
   display: inline-block;
 }
+
+.arrow-bounce {
+  margin-top: -20%;
+  color: #fff;
+  -webkit-animation-name: bounce; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bounce {
+    0%   { transform:translateY(-10%); }
+    25%  { transform:translateY(0%); }
+    50%  { transform:translateY(-23%); }
+    75%  { transform:translateY(0%); }
+    100% { transform:translateY(-10%); }
+}
+
+/* Standard syntax */
+@keyframes bounce {
+  0%   { transform:translateY(-10%); }
+  25%  { transform:translateY(0%); }
+  50%  { transform:translateY(-23%); }
+  75%  { transform:translateY(0%); }
+  100% { transform:translateY(-10%); }
+}
+
+.grid {
+  background: #F0DDC2;
+  margin-top: -25px
+
+}
+
+.peopleGrid {
+  margin-left: -15px;
+  margin-right: 15px;
+}
+
 
 /*little map is just an example.
 we can delete this in the future*/
@@ -85,8 +129,7 @@ color: black;
 opacity: .8;
 position: relative;
 top: 30%;
-transform: translateY(-50%);
-padding: 50px;
+/*transform: translateY(-50%);*/
 }
 
 h1{
@@ -94,9 +137,9 @@ h1{
   font-family: 'Open Sans', sans-serif;
 }
 
-#intro{
+/*#intro{
   /*width: 100vw; -- commenting out these widths because it causes horizontal overflow
-  bootstraps default is width 100% right? so i don't think it's needed*/
+  bootstraps default is width 100% right? so i don't think it's needed
   height: 120vh;
   background: transparent;
   background-size: 100% 100%;
@@ -106,7 +149,7 @@ h1{
 
 #explainer{
   /*width: 100%;*/
-  height: 100%;
+  /*height: 100%;
   background: url('img/Mansion.gif');
   background-size: 100% 100%;
   margin: 0;
@@ -114,21 +157,44 @@ h1{
 
 #navGraph{
   /*width: 100vw;*/
-  height: 120vh;
+  /*height: 120vh;
   background: url("img/MapBackground.png");
-}
+}*/
 
 .person {
-  min-height: 300px;
-  border: 1px solid #000;
+  min-height: 360px;
+  /*border: 1px solid #000;*/
   text-align: center;
+  background: #fff;
+
 }
 
+/*
+#person1 {
+  background: #FCF3EB;
+}
+
+#person3 {
+  background: #EFCEBF;
+}
+
+#person2 {
+  background: #7C8B97;
+}
+
+*/
 .menu {
   text-align: right;
   /*padding: 20px;*/
 }
 
+#waves {
+  /*background: #3A3D4B;*/
+  width: 110%;
+  margin-top: -140px;
+  height: 158px;
+  margin-left: -15px;
+}
 
 #intro{
   /*width: 100vw;*/
@@ -147,7 +213,7 @@ h1{
 
 #navGraph{
   /*width: 100vw;*/
-  height: 120vh;
+  /*height: 120vh;*/
   background: transparent;
 }
 
@@ -157,6 +223,5 @@ h1{
 }
 
 .experiences {
-  padding: 2em;
-  background: #7BAFD4;
+  background: #3A3D4B;
 }
