@@ -7,103 +7,161 @@ h1 {
   font-weight: 300;
 }
 
-#person1 {
+/*TODO - make this more responsive / more of image displayed*/
+
+/***********************************header image and title************************************************/
+
+#story1 {
   background: url("img/PatinoContreras_Final-12.jpg");
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 
-#person1 h1  {
-  font-size: 100px;
+#story1 .title {
+  float: right;
+  margin-top: 3em;
+  margin-right: 3em;
 }
+
+#story1 h1  {
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+#story1 .sub-header {
+  text-align: right;
+  font-family: Times;
+  font-size: 3em;
+  font-style: italic;
+  margin-top: -.5em;
+  margin-right: .5em;
+}
+
+/************************story sections*************************************/
 
 .story-section {
-  background: #C18C79;
-  background-image: url("img/story-section1-watercolor-bg.png");
+  background: #fff;
   background-size: 100% 100vh;
   width: 100%;
-  height: 100vh;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+#story-section1 {
+  margin-top: 10vh; /*20vh if menu is visible*/
 }
 
 .story {
-  margin-top: 25vh;
-  min-height: 50vh;
-  margin-bottom: 25vh;
-  display: inline-block;
-  /*border: 4px double #fff;
-  background: #000;*/
-  opacity: .8;
-  color: #fff;
-  text-align: justify;
-  font-size: 1.4em;
-  overflow: auto;
+    min-height: 50vh;
+    margin-bottom: 1em;
+    display: inline-block;
+    color: #000;
+    text-align: justify;
+    font-size: 1.9em;
+    font-family: Times;
+    overflow: auto;
+}
+
+#italy {
+  background: url("img/italy.png");
+  background-size: 600px 550px;
+  height: 600px;
+  width: 550px;
 }
 
 #section2 {
-  background: #C2C7C9;
-  width: 100%;
-  text-align: center;
-}
-
-.icon-group {
-  margin-top: 5vh;
-  height: 20vh;
-  text-align: center;
-}
-
-.icon {
-  background: #D2B48C;
-  display: inline-block;
-  padding: 2em;
-  border: 1px solid #fff;
-  margin: 1em;
-}
-
-.circle {
-    height: 95px;
-    width: 95px;
-    font-size: 15px;
-    border-radius: 50px;
-    background: blue;
-    text-align: center;
-    display: inline-block;
-    color: #fff;
-    border: 1px solid #fff;
-    opacity: .4;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.circle:hover {
-  opacity: .8;
-}
-
-.watercolor-map {
-  background-image: url("img/map-watercolor-nobg.png");
+  background: url("img/overview/captain.jpg");
   background-size: cover;
-  display: inline-block;
   width: 100%;
-  height: 400px;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+
+.quote {
   margin-top: 2em;
   margin-bottom: 2em;
+  font-family: Times;
+  font-size: 2em;
+  font-style: italic;
 }
 
-#picture2 {
-  background-image: url("img/PatinoContreras_Final-1.jpg");
-  background-size: cover;
-  height: 100vh;
+.blue {
+  background: #7C8B97;
+  min-height: 70vh;
+}
+
+#people-arrived {
+  background: url("http://www.clker.com/cliparts/6/4/7/7/1197106712447482105johnny_automatic_walking.svg.hi.png");
+  background-repeat: repeat-x;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  min-height: 40vh;
+}
+
+#map2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.img-section {
+  background-size: 100% 100vh;
   width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-.section5 {
-  background: navy;
-  min-height: 400px;
+.overview-grid {
+  min-height: 60vh;
 }
 
-.section6 {
-  background: gray;
+#overview-img1 {
+  background: url("img/overview/line-of-men.jpg");
+  background-size: cover;
+}
+
+#overview-img2 {
+  background: url("img/overview/center-man.jpg");
+  background-size: cover;
+}
+
+#overview-img3 {
+  background: url("img/overview/hurt-leg.jpg");
+  background-size: cover;
+}
+
+#overview-img4 {
+  background: url("img/overview/throat-doctor.jpg");
+  background-size: cover;
+}
+
+#section7 {
+  margin-top: 3.2em;
+  margin-bottom: 0;
+}
+
+#section8 {
+  background: url("img/overview/captain.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+
+#section9 {
+  margin-top: 1em;
+}
+
+#refugees {
+  margin-top: 2em;
+  background: url("http://publicdomainvectors.org/tn_img/ossidiana-granny-with-children.png");
+  width: 300px;
+  height: 247px;
+  margin-left: 16em;
 }
