@@ -117,7 +117,19 @@ h1 {
 }
 
 .overview-grid {
-  min-height: 60vh;
+  height: 60vh;
+}
+
+.caption {
+  background: black;
+  opacity: .9;
+  color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  display: none;
 }
 
 #overview-img1 {
