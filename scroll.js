@@ -13,8 +13,6 @@ $(document).ready(function(){
 	});
 });
 
-$('a[href^="#stories"]').offset({top:-300}) //need to write code that slightly offsets top so menu isn't over the grid
-
 $(window).scroll(function() {
 
   var height = $(window).scrollTop(); //where the top is currently (returns position of top where the user is)
