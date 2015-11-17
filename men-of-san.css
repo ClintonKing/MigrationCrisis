@@ -50,27 +50,29 @@ h1 {
 }
 
 .story {
-  min-height: 50vh;
   margin-top: 1em;
+  margin-bottom: 1em;
   display: inline-block;
   color: #000;
   text-align: justify;
   font-size: 1.9em;
   font-family: Times;
+  height: auto;
   overflow: auto;
 }
 
 #story1, #story1-2 {
   margin-top: 2em;
-  margin-bottom: -1em;
+  margin-bottom: 1em;
 }
 
 #audio-section {
-  margin-top: -5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .picture-slideshow {
-  margin-top: -4em;
+  margin-top: 1em;
   height: 100vh;
   width: 100%;
   margin: 0;
@@ -88,7 +90,7 @@ h1 {
 #books {
   background: url("img/men/books.jpg");
   background-size: cover;
-  border-left: 20px solid #fff;
+  border-left: 0px;
 }
 
 #shoes {
@@ -99,7 +101,7 @@ h1 {
 #hat  {
   background: url("img/men/hat.jpg");
   background-size: cover;
-  border-right: 20px solid #fff;
+  border-right: 0px;
 }
 
 .quote {
@@ -118,9 +120,21 @@ h1 {
   background-size: cover;
 }
 
-#map2 {
+.section-headliner {
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+}
+
+.map2 {
   margin-top: 1em;
   margin-bottom: 1em;
+  background: url("img/map-watercolor-purpley.png");
+  background-size: 500px 286px;
+  height: 286px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stairs {
@@ -129,4 +143,21 @@ h1 {
   margin: 0;
   background: url("img/men/stairs.jpg");
   background-size: cover;
+}
+
+.men-standing {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("img/men/men-standing.jpg");
+  background-size: cover;
+}
+
+.blue {
+  background: #7C8B97;
+  min-height: 70vh;
+}
+
+#section-10 {
+  padding-top: 1em;
 }
