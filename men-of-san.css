@@ -51,7 +51,7 @@ h1 {
 
 .story {
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.3em;
   display: inline-block;
   color: #000;
   text-align: justify;
@@ -63,7 +63,7 @@ h1 {
 
 #story1, #story1-2 {
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 #audio-section {
@@ -153,11 +153,29 @@ h1 {
   background-size: cover;
 }
 
+#section-10 {
+  padding-top: 1em;
+}
+
 .blue {
   background: #7C8B97;
   min-height: 70vh;
 }
 
-#section-10 {
-  padding-top: 1em;
+#passport {
+  background: url("img/men/passport.png");
+  background-size: 300px 314px;
+  height: 314px;
+  width: 300px;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+#header2 {
+  margin-top: .5em;
+  font-family: Times;
+  font-size: 4em;
+  color: #fff;
 }
