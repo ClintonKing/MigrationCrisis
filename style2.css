@@ -1,6 +1,9 @@
-body {
+html, body {
   font-family: 'Signika Negative', sans-serif;
   font-weight: 300;
+  margin: 0;
+  width: 100%;
+  background-size: 100% 120vh;
 }
 
 h1 {
@@ -118,6 +121,8 @@ h1 {
 
 .overview-grid {
   height: 60vh;
+  border: 10px solid #fff;
+  position: relative;
 }
 
 .caption {
@@ -128,28 +133,42 @@ h1 {
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 1em;
   display: none;
+  font-size: 2em;
+}
+
+
+.caption-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #overview-img1 {
   background: url("img/overview/line-of-men.jpg");
   background-size: cover;
+  border-left: 20px solid #fff;
 }
 
 #overview-img2 {
   background: url("img/overview/center-man.jpg");
   background-size: cover;
+  border-right: 20px solid #fff;
 }
 
 #overview-img3 {
   background: url("img/overview/hurt-leg.jpg");
   background-size: cover;
+  border-left: 20px solid #fff;
 }
 
 #overview-img4 {
   background: url("img/overview/throat-doctor.jpg");
   background-size: cover;
+  border-right: 20px solid #fff;
 }
 
 #section7 {
@@ -181,4 +200,13 @@ h1 {
 .video-section {
   width: 100%;
   height: 95%;
+  margin: 0;
+}
+
+.video-section:hover {
+  cursor: pointer;
+}
+
+#bus-video {
+  margin: 0;
 }

@@ -10,21 +10,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="scroll2.js"></script>
-  <script src="play-vid.js"></script>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
 </head>
 <body>
-
-<!--**************************************menu*********************************************-->
-<!--  <div class="col-md-12 navbar-fixed-top menu">
-    <div class="logo"><br>logo</div>
-    <div class="logo-title">Divided by the Sea</div>
-    <div class="menu-links">
-    <a href="#home">home</a> - <a href="#about">about</a> -
-    <a href="#people">people</a> - <a href="#experience">experience</a>
-    </div>
-  </div>-->
 
 <!--****************************Background and title****************************************-->
 <div class="row">
@@ -175,11 +164,31 @@
 <div class="row">
   <div class="col-md-12 img-section text-center">
     <div class="col-md-6 overview-grid" id="overview-img1">
-      <div class="caption">CAPTION TESTING</div>
+      <div class="caption">
+        <div class="caption-center">Image 1
+          <br>Description</div>
+      </div>
     </div>
-    <div class="col-md-6 overview-grid" id="overview-img2">image2</div>
-    <div class="col-md-6 overview-grid" id="overview-img3">image3</div>
-    <div class="col-md-6 overview-grid" id="overview-img4">image4</div>
+    <div class="col-md-6 overview-grid" id="overview-img2">
+      <div class="caption">
+        <div class="caption-center">Image 2
+        <br>Description</div>
+      </div>
+    </div>
+    <div class="col-md-6 overview-grid" id="overview-img3">
+      <div class="caption">
+        <div class="caption-center">Image 2
+        <br>Description
+        <br>stuff stuff stuff
+        <br>stuff</div>
+      </div>
+    </div>
+    <div class="col-md-6 overview-grid" id="overview-img4">
+      <div class="caption">
+        <div class="caption-center">Image 2
+        <br>Description</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -204,13 +213,12 @@
 
 
 <!--*************************************************************section8 - bus video*****************************************************-->
-<div class="row">
-  <div class="col-md-12 text-center video-section" id="overview-video">
-      <video controls loop id="Bus" width="100%" height="100%">
+  <div class="row text-center video-section" id="overview-video">
+      <video controls loop id="bus-video" width="100%" height="100%">
         <source src="video/BusSequence.mp4" type="video/mp4">
       </video>
   </div>
-</div>
+
 
 
 <!--******************************************section9 - as foreign journalists content*******************************************-->
@@ -243,7 +251,7 @@
     <div class="col-md-3"></div>
     <div class="col-md-6 quote">
       "They had something in common: all were fleeing
-      war-torn nations, poverty or political oppression–
+      war-torn nations, poverty or political oppression-
       factors that have driven almost 60 million people
       away from their homes all over the world."
     </div>
@@ -266,6 +274,21 @@ $('.overview-grid').hover(
     $(this).find('.caption').fadeOut(250);
   }
 );
+</script>
+<script>
+
+  var myVideo = document.getElementById("bus-video");
+
+  document.getElementById("bus-video").onclick = function() {playPause()};
+
+  function playPause() {
+      if (myVideo.paused) {
+          myVideo.play();
+        }
+      else {
+          myVideo.pause();
+       }
+  }
 </script>
 
 </body>
