@@ -78,7 +78,7 @@ h1 {
   height: 100vh;
   width: 100%;
   margin: 0;
-  background: url("img/men/apartment1.jpg");
+  /*background: url("img/men/apartment1.jpg");*/
   background-size: cover;
 }
 
