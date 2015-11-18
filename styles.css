@@ -145,6 +145,9 @@ html, body {
 make people responsive so images don't get all weird in different sizes;
 see how http://www.rgm.lv/ does it */
 
+/*original css*/
+
+
 #person1, #person2, #person3 {
   border-top: solid 20px #fff;
 }
@@ -153,6 +156,23 @@ see how http://www.rgm.lv/ does it */
   border-bottom: solid 20px #fff;
 }
 
+#person1 {
+    border-left: 20px solid #fff;
+}
+
+#person3 {
+    border-right: 20px solid #fff;
+}
+
+#person4 {
+    border-left: 20px solid #fff;
+}
+
+#person6 {
+    border-right: 20px solid #fff;
+}
+
+/*
 #person1 {
   background: url("img/grid/Squared-1.jpg");
   background-size: cover;
@@ -215,7 +235,7 @@ see how http://www.rgm.lv/ does it */
 #person6:hover {
   background: url("img/grid/Squared-6.jpg");
   background-size: cover;
-}
+}*/
 
 .stories {
   height: auto;

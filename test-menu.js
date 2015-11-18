@@ -92,24 +92,29 @@ $(window).scroll(function() {
             $('nav').removeClass('invisible');
         }
       }
-    } else {
+    }
+		else {
       // only remove “detached” class if user is at the top of document (menu jump fix)
       if (currentScroll <= 0){
         $('nav').removeClass();
       }
     }
 
-    // if user is at the bottom of document show menu
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      $('nav').removeClass('invisible');
-    }
-
-    // if user is at top of 100% or below??? if where the user is is less than or equal too the height of the screen + the height of the menu, it's visible
+    // if user is above height of 100%, the menu should be visible
     if ((window.scrollY) <= window.outerHeight) {
       $('nav').removeClass('invisible');
     }
 
+
+		// if user is near bottom of screen, show menu ;; needed to do -50 because weird glitch where it doesn't detect if it's at bototm when it's at bottom;
+		//maybe it's a bootstrap thing?
+		if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+			 $('nav').removeClass('invisible');
+	  }
+
     // replace previous scroll position with new one
     previousScroll = currentScroll;
   }
-})
+
+
+});

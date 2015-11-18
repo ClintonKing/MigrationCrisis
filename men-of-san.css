@@ -8,7 +8,9 @@ h1 {
 }
 
 /*TODO - make this more responsive / more of image displayed*/
-
+.row {
+  margin: 0;
+}
 .faces {
   width: 100%;
 }
@@ -178,4 +180,20 @@ h1 {
   font-family: Times;
   font-size: 4em;
   color: #fff;
+}
+
+/********************************menu grid thing*********************/
+.peopleGrid {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.person {
+  min-height: 250px;
+  border: 10px solid #fff;
+}
+
+#person2, #person3, #person4, #person5, #person6 {
+  border-left: 0;
 }
