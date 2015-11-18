@@ -13,28 +13,25 @@
   color: white;
 }
 
-#act1{
+.act {
   height: 100%;
   width: 100%;
   position: relative;
+}
+
+#act1{
   background: url("../img/back1.jpg");
-  background-size: cover;
   display: none;
+  background-size: cover;
 }
 
 #act2{
-  height: 100%;
-  width: 100%;
-  position: relative;
   background: url("../img/back2.jpg");
   background-size: cover;
   display: none;
 }
 
 #act3{
-  height: 100%;
-  width: 100%;
-  position: relative;
   background: url("../img/back3.jpg");
   background-size: cover;
   display: none;
