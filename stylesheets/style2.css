@@ -19,7 +19,7 @@ h1 {
 /***********************************header image and title************************************************/
 
 #story1 {
-  background: url("img/PatinoContreras_Final-12.jpg");
+  background: url("../img/PatinoContreras_Final-12.jpg");
   background-size: cover;
   width: 100%;
   height: 120vh;
@@ -73,14 +73,14 @@ h1 {
 }
 
 #italy {
-  background: url("img/italy.png");
+  background: url("../img/italy.png");
   background-size: 600px 550px;
   height: 600px;
   width: 550px;
 }
 
 #section2 {
-  background: url("img/overview/captain.jpg");
+  background: url("../img/overview/captain.jpg");
   background-size: cover;
   width: 100%;
   height: 90vh;
@@ -151,31 +151,31 @@ h1 {
 }
 
 #overview-img1 {
-  background: url("img/overview/line-of-men.jpg");
+  background: url("../img/overview/line-of-men.jpg");
   background-size: cover;
   border-left: 20px solid #fff;
 }
 
 #overview-img2 {
-  background: url("img/overview/center-man.jpg");
+  background: url("../img/overview/center-man.jpg");
   background-size: cover;
   border-right: 20px solid #fff;
 }
 
 #overview-img3 {
-  background: url("img/overview/hurt-leg.jpg");
+  background: url("../img/overview/hurt-leg.jpg");
   background-size: cover;
   border-left: 20px solid #fff;
 }
 
 #overview-img4 {
-  background: url("img/overview/throat-doctor.jpg");
+  background: url("../img/overview/throat-doctor.jpg");
   background-size: cover;
   border-right: 20px solid #fff;
 }
 
 #section8 {
-  background: url("img/overview/captain.jpg");
+  background: url("../img/overview/captain.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -251,7 +251,7 @@ h1 {
 .logo {
   height: 95px;
   width: 95px;
-  background: url('img/dark-watercolor-logo.png');
+  background: url('../img/dark-watercolor-logo.png');
   background-size: 95px 95px;
   font-size: 15px;
   text-align: center;

@@ -25,49 +25,49 @@ body {
 }
 
 #act1{
-  background: url("img/men/apartment1.jpg");
+  background: url("../img/men/apartment1.jpg");
   display: none;
   background-size: cover;
 }
 
 #act2{
-  background: url("img/men/Gallery/1-dishes.jpg");
+  background: url("../img/men/Gallery/1-dishes.jpg");
   background-size: cover;
   display: none;
 }
 
 #act3{
-  background: url("img/men/Gallery/2-outside.jpg");
+  background: url("../img/men/Gallery/2-outside.jpg");
   background-size: cover;
   display: none;
 }
 
 #act4{
-  background: url("img/men/Gallery/3a-mattress.jpg");
+  background: url("../img/men/Gallery/3a-mattress.jpg");
   background-size: cover;
   display: none;
 }
 
 #act5{
-  background: url("img/men/Gallery/3b-man.jpg");
+  background: url("../img/men/Gallery/3b-man.jpg");
   background-size: cover;
   display: none;
 }
 
 #act6{
-  background: url("img/men/Gallery/4-shadow.jpg");
+  background: url("../img/men/Gallery/4-shadow.jpg");
   background-size: cover;
   display: none;
 }
 
 #act7{
-  background: url("img/men/Gallery/5-clothesline.jpg");
+  background: url("../img/men/Gallery/5-clothesline.jpg");
   background-size: cover;
   display: none;
 }
 
 #act8{
-  background: url("img/men/Gallery/6-computer.jpg");
+  background: url("../img/men/Gallery/6-computer.jpg");
   background-size: cover;
   display: none;
 }
@@ -79,7 +79,7 @@ body {
   z-index: 2000;
   height: 50px;
   width: 50px;
-  background: url("Slideshow/img/nextArrowWhite.png");
+  background: url("../Slideshow/img/nextArrowWhite.png");
   background-size: 100% 100%;
   cursor: pointer;
   opacity: .7;
@@ -92,7 +92,7 @@ body {
   z-index: 2000;
   height: 50px;
   width: 50px;
-  background: url("Slideshow/img/backArrowWhite.png");
+  background: url("../Slideshow/img/backArrowWhite.png");
   background-size: 100% 100%;
   cursor: pointer;
   opacity: .7;

@@ -47,7 +47,7 @@ h1 {
 .logo {
   height: 95px;
   width: 95px;
-  background: url('img/dark-watercolor-logo.png');
+  background: url('../img/dark-watercolor-logo.png');
   background-size: 95px 95px;
   font-size: 15px;
   text-align: center;

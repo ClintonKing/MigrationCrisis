@@ -39,61 +39,61 @@ make people responsive so images don't get all weird in different sizes;
 see how http://www.rgm.lv/ does it */
 
 #person1 {
-  background: url("img/front-panel/bw1.jpg");
+  background: url("../img/front-panel/bw1.jpg");
   background-size: cover;
 }
 
 #person2 {
-  background: url("img/front-panel/bw2.jpg");
+  background: url("../img/front-panel/bw2.jpg");
   background-size: cover;
 }
 
 #person3{
-  background: url("img/front-panel/bw3.jpg");
+  background: url("../img/front-panel/bw3.jpg");
   background-size: cover;
 }
 
 #person1:hover {
-  background: url("img/front-panel/color1.jpg");
+  background: url("../img/front-panel/color1.jpg");
   background-size: cover;
 }
 
 #person2:hover {
-  background: url("img/front-panel/color2.jpg");
+  background: url("../img/front-panel/color2.jpg");
   background-size: cover;
 }
 
 #person3:hover {
-  background: url("img/front-panel/color3.jpg");
+  background: url("../img/front-panel/color3.jpg");
   background-size: cover;
 }
 
 #person4 {
-  background: url("img/front-panel/bw4.jpg");
+  background: url("../img/front-panel/bw4.jpg");
   background-size: cover;
 }
 
 #person4:hover {
-  background: url("img/front-panel/color4.jpg");
+  background: url("../img/front-panel/color4.jpg");
   background-size: cover;
 }
 
 #person5 {
-  background: url("img/front-panel/bw5.jpg");
+  background: url("../img/front-panel/bw5.jpg");
   background-size: cover;
 }
 
 #person5:hover {
-  background: url("img/front-panel/color5.jpg");
+  background: url("../img/front-panel/color5.jpg");
   background-size: cover;
 }
 
 #person6 {
-  background: url("img/front-panel/bw6.jpg");
+  background: url("../img/front-panel/bw6.jpg");
   background-size: cover;
 }
 
 #person6:hover {
-  background: url("img/front-panel/color6.jpg");
+  background: url("../img/front-panel/color6.jpg");
   background-size: cover;
 }
