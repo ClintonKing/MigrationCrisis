@@ -1,4 +1,4 @@
-.peopleGrid {
+/*.peopleGrid {
   margin: 0;
   margin-top: 20px;
   padding: 0;
@@ -10,29 +10,7 @@
   text-align: center;
   background: #fff;
   border: 10px solid #fff;
-}
-
-.caption {
-  background: #000;
-  opacity: .9;
-  color: #fff;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  font-size: 2em;
-  display: none;
-}
-
-
-.caption-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-left: auto;
-  margin-right: auto
-}
+}*/
 
 /* TODO - if we keep pics,
 make people responsive so images don't get all weird in different sizes;

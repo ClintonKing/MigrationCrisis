@@ -100,6 +100,11 @@ $(window).scroll(function() {
       }
     }
 
+		//need to get height of the video, set that to a variable, then change window.outerHeight to the thing
+		//jk just get height of video-bac
+		//		var video-height = document.getElementById("video-background").offsetHeight;
+
+
     // if user is above height of 100%, the menu should be visible
     if ((window.scrollY) <= window.outerHeight) {
       $('nav').removeClass('invisible');

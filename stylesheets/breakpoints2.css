@@ -1,0 +1,211 @@
+@media screen and (max-width: 3100px) {
+  .person {
+    min-height: 420px;
+  }
+
+@media screen and (max-width: 2900px) {
+  .person {
+    min-height: 390px;
+  }
+
+@media screen and (max-width: 2600px) {
+  .person {
+    min-height: 360px;
+  }
+
+@media screen and (max-width: 2300px) {
+  .person {
+    min-height: 320px;
+}
+
+@media screen and (max-width: 1900px) {
+  .person {
+    min-height: 280px;
+  }
+
+@media screen and (max-width: 1500px) {
+  .person {
+    min-height: 250px;
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+
+  /*   men of san giovanni story      */
+  .face {
+    min-height: 500px;
+  }
+
+  #title {
+    font-size: 5em;
+  }
+
+  /*re-size pics in man of san too*/
+
+  /*grid on bottom of secondary pages*/
+  .person {
+    min-height: 215px;
+  }
+}
+
+@media screen and (max-width: 1138px) {
+  .face {
+    min-height: 400px;
+  }
+
+  .story {
+    font-size: 1.5em;
+  }
+
+  #italy {
+    background-size: 500px 458px;
+    height: 500px;
+    width: 458px;
+  }
+
+  .person {
+    min-height: 175px;
+  }
+
+  #people-arrived {
+    background-size: 2000px 1098px;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+
+
+  #italy {
+    background-size: 500px 458px;
+    height: 500px;
+    width: 458px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #overview-img1, #overview-img2, #overview-img3, #overview-img4{
+    border: 7px solid #fff;
+  }
+
+  #title {
+    font-size: 3.5em;
+  }
+
+  .subheader {
+    margin-top: -.2em;
+    font-size: 3em;
+  }
+
+  .person {
+    min-height: 290px;
+  }
+
+  #person1, #person2, #person3, #person4, #person5, #person6 {
+    border: 7px solid #fff;
+  }
+
+  #people-arrived {
+    background-size: 1000px 550px;
+    height: 550px;
+    background-color: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .face {
+    min-height: 300px;
+  }
+
+  #title {
+    font-size: 3.2em;
+  }
+
+  .subheader {
+    margin-top: -.06em;
+    font-size: 2.6em;
+  }
+
+  .story {
+    font-size: 1.5em;
+  }
+
+  #overview-img1, #overview-img2, #overview-img3, #overview-img4{
+    border: 7px solid #fff;
+  }
+
+  .person {
+    min-height: 200px;
+  }
+
+  #person1, #person2, #person3, #person4, #person5, #person6 {
+    border: 8px solid #fff;
+  }
+
+  #people-arrived {
+    background-size: 800px 439px;
+    height: 440px;
+    background-color: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .face {
+    min-height: 200px;
+  }
+
+  #title {
+    font-size: 3em;
+  }
+
+  .subheader {
+    margin-top: 0;
+    font-size: 2.4em;
+  }
+
+  .quote {
+    font-size: 2em;
+  }
+
+  .person {
+    min-height: 150px;
+  }
+
+  #person1, #person2, #person3, #person4, #person5, #person6 {
+    border: 5px solid #fff;
+  }
+
+  #people-arrived {
+    background-size: 550px 302px;
+    height: 302px;
+    background-color: none;
+  }
+
+}
+
+@media screen and (max-width: 410px) {
+
+  .face {
+    min-height: 160px;
+  }
+
+  .person {
+    min-height: 125px;
+  }
+
+  #person1, #person2, #person3, #person4, #person5, #person6 {
+    border: 5px solid #fff;
+  }
+
+  .story {
+    font-size: 1.2em;
+  }
+
+  .quote {
+    font-size: 2em;
+  }
+
+}
