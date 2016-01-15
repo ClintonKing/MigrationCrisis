@@ -1,0 +1,223 @@
+body {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+/*TODO - make this more responsive / more of image displayed*/
+.row {
+  margin: 0;
+}
+.faces {
+  width: 100%;
+}
+
+.face {
+  border: 10px solid #fff;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid #fff;
+  min-height: 650px;
+}
+
+#face-right {
+  background: url("../img/men/face-right.jpg");
+  background-size: cover;
+  border-left: 10px solid #fff;
+}
+
+#face-center {
+  background: url("../img/men/face-center.jpg");
+  background-size: cover;
+}
+
+#face-left  {
+  background: url("../img/men/face-left.jpg");
+  background-size: cover;
+  border-right: 10px solid #fff;
+}
+
+#title {
+  font-size: 6em;
+  text-transform: uppercase;
+}
+
+.subheader {
+  margin-top: -.5em;
+  font-family: Times;
+  font-size: 4em;
+  font-style: italic;
+}
+
+.story {
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+  display: inline-block;
+  color: #000;
+  text-align: justify;
+  font-size: 1.9em;
+  font-family: Times;
+  height: auto;
+  overflow: auto;
+}
+
+#story1, #story1-2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#audio-section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.picture-slideshow {
+  margin-top: 1em;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  /*background: url("img/men/apartment1.jpg");*/
+  background-size: cover;
+}
+
+.apt-item {
+  min-height: 300px;
+  border: 10px solid #fff;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid #fff;
+}
+
+#books {
+  background: url("../img/men/books.jpg");
+  background-size: cover;
+  border-left: 0px;
+}
+
+#shoes {
+  background: url("../img/men/yellow-shoes.jpg");
+  background-size: cover;
+}
+
+#hat  {
+  background: url("../img/men/hat.jpg");
+  background-size: cover;
+  border-right: 0px;
+}
+
+.quote {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: Times;
+  font-size: 3em;
+  font-style: italic;
+}
+
+.watching-tv {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("../img/men/watching-tv.jpg");
+  background-size: cover;
+}
+
+.section-headliner {
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+}
+
+.map2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: url("../img/map-watercolor-purpley.png");
+  background-size: 500px 286px;
+  height: 286px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stairs {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("../img/men/stairs.jpg");
+  background-size: cover;
+}
+
+.men-standing {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("../img/men/men-standing.jpg");
+  background-size: cover;
+}
+
+#section-10 {
+  padding-top: 1em;
+}
+
+.blue {
+  background: #7C8B97;
+  min-height: 70vh;
+}
+
+#passport {
+  background: url("../img/men/passport.png");
+  background-size: 300px 314px;
+  height: 314px;
+  width: 300px;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+#header2 {
+  margin-top: .5em;
+  font-family: Times;
+  font-size: 4em;
+  color: #fff;
+}
+
+.caption {
+  background: black;
+  opacity: .8;
+  color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  font-size: 1.2em;
+}
+
+
+.caption-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/********************************menu grid thing*********************/
+.peopleGrid {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.person {
+  min-height: 250px;
+  border: 10px solid #fff;
+}
+
+#person2, #person3, #person4, #person5, #person6 {
+  border-left: 0;
+}

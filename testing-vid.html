@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+<div style="text-align:center">
+  <br><br>
+  <video controls id="bus-video" width="420">
+    <source src="video/BusSequence.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <br>
+</div>
+
+<style>
+#bus-video:hover {
+  cursor: pointer;
+}
+</style>
+
+<script>
+var myVideo = document.getElementById("bus-video");
+
+document.getElementById("bus-video").onclick = function() {playPause()};
+document.getElementById("play-button").onclick = function() {
+  playPause()
+};
+document.getElementById("pause-button").onclick = function() {
+  playPause()
+};
+
+function playPause() {
+    if (myVideo.paused) {
+        myVideo.play();
+      }
+    else {
+        myVideo.pause();
+     }
+}
+
+function playId(){
+  $('.fa-play-circle').css({"display": "none"});
+  $('.fa-pause').css({"display": "inline"});
+  alert("u played it 1")
+}
+
+/*
+function makeBig() {
+    myVideo.width = 560;
+}
+
+function makeSmall() {
+    myVideo.width = 320;
+}
+
+function makeNormal() {
+    myVideo.width = 420;
+}*/
+</script>
+</body>
+</html>

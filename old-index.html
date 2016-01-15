@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Divided by the Sea</title>
+  <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+  <!--favicon generator by http://www.favicon-generator.org/-->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="stylesheets/styles.css" rel="stylesheet" />
+  <link href="stylesheets/grid.css" rel="stylesheet" />
+  <link href="stylesheets/breakpoints.css" rel="stylesheet" />
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="scripts/test-menu.js"></script>
+
+
+</head>
+<body>
+    <!--******************************************logo and menu***************************************-->
+  <nav>
+    <div class="col-md-12 navbar-fixed-top menu">
+      <div class="logo"></div>
+      <div class="logo-title">Divided by the Sea</div>
+      <div class="menu-links">
+      <a href="#home">home</a> - <a href="/overview.html">about</a> -
+      <a href="#people">people</a> - <a href="#experience">experience</a>
+      </div>
+    </div>
+  </nav>
+  <!--***************************************video bg and bouncing arrow******************************************-->
+    <div class="row video-background text-center">
+      <video muted autoplay loop width="100%" height="100%">
+        <source src="video/WATER.mp4" type="video/mp4">
+      </video>
+        <a href="#welcome">
+          <!--maybe hide this in mobile?-->
+          <div class="col-md-12 hidden-xs arrow-bounce">
+            <i class="arrow-hover fa fa-chevron-down fa-4x"></i>
+          </div>
+        </a>
+    </div>
+
+    <div class="row text-center" id="welcome">
+      hello welcoem this is about bacon or something lorem ipsum
+      <br>honestly, i'd use lorem ipsum but it takes 2 seconds to type nonsense
+      <br>and 5 seconds to google search and copy and paste lorem ipsum
+    </div>
+
+    <!--**********************************grid of people stories*************************************************-->
+    <div class="row grid" id="stories">
+      <!--h2 class="text-center">the stories</h2>-->
+      <div class="col-md-12 peopleGrid">
+        <a href="/overview.html">
+        <div class="col-md-4 col-sm-4 col-xs-12 person" id="person1">
+          <div class="caption">
+           The Crossing
+          </div>
+        </div>
+        </a>
+        <a href="/men-of-san-giovanni.html">
+        <div class="col-md-4 col-sm-4 col-xs-12 person" id="person2">
+          <div class="caption">
+            The Men of San Giovanni
+          </div>
+        </div>
+        </a>
+          <div class="col-md-4 col-sm-4 col-xs-12 person" id="person3">
+            <div class="caption">
+              Trafficker Turned Humanitarian
+            </div>
+          </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 person" id="person4">
+          <div class="caption">
+            A Lifelong Mission
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 person" id="person5">
+          <div class="caption">
+            Exchange of Cultures
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 person" id="person6">
+          <div class="caption">
+            Bonds across Borders
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--*****************************map stuff**********************-->
+    <!--* this will disappear in mobile because it's ugly *-->
+
+    <div class="row experiences hidden-xs">
+      <div class="col-md-12" id="navGraph">
+        <div class="black">
+          <h1 class="text-center">Preview of map stuff</h1>
+          <center><img src="img/map-watercolor-purpley.png" height="70%" width="70%"></center>
+        </div>
+      </div>
+    </div>
+    <script>
+    $('.person').hover(
+      function(){
+        $(this).find('.caption').fadeIn(250);
+      },
+      function(){
+        $(this).find('.caption').fadeOut(250);
+      }
+    );
+    </script>
+    <!--
+
+    <div id="content">
+      <h1>remember to credit demo from <a href="http://alexcican.com/post/teehan-lax-navigation/" target="_blank">this blog post</a>.</h1> -->
+</body>
+</html>
