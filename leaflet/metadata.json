@@ -1,0 +1,12 @@
+{
+  "name": "Tilinate",
+  "version": "1.0.0",
+  "description": "",
+  "type": "overlay",
+  "format": "png",
+  "minzoom": "0",
+  "maxzoom": "4",
+  "bounds": "-179.99999650,-75.90140237,179.92749115,79.51167976",
+  "scale": "1",
+  "profile": "mercator"
+}

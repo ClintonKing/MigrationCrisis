@@ -1,0 +1,42 @@
+/*LEAFLET TEST CSS*/
+
+body{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#map{
+  height: 400px;
+}
+
+p{
+  margin: 30px 0 30px 0;
+}
+
+.mapImg{
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px){
+  #map{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #mobileMap{
+    display: none;
+  }
+}
+
+#pathimate{
+  border: 2px solid grey;
+  border-radius: 4px;
+  z-index: 2000;
+  color: #000;
+  background: #fff;
+  padding: 5px;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+}

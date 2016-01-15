@@ -1,0 +1,123 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "thing"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 18.562947442888312,
+        "longitude": 0.5712890625,
+        "time:": 1,
+        "id": "route1",
+        "name": "Damascus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.27685546875, 33.500178528242294]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 18.562947442888312,
+        "longitude": 0.5712890625,
+        "time:": 1,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.03515625, 30.06909396443887]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 16.29905101458183,
+        "longitude": 6.6796875,
+        "time:": 2,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.146484374999996, 29.916852233070173]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 18.89589255941504,
+        "longitude": 8.525390625,
+        "time:": 3,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.796875, 32.13840869677251]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 21.453068633086783,
+        "longitude": 9.755859375,
+        "time:": 4,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.423828125, 29.76437737516313]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 24.607069137709708,
+        "longitude": 11.42578125,
+        "time:": 5,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.1279296875, 30.334953881988564]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 27.449790329784214,
+        "longitude": 12.480468749999998,
+        "time:": 6,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.271484375, 31.16580958786196]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time:": 8,
+        "id": "route1",
+        "name": "Tripoli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.886718749999998, 32.10118973232094]
+      }
+    }
+
+
+  ]
+}

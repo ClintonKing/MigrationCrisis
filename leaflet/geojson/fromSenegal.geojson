@@ -1,0 +1,123 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "thing"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 18.562947442888312,
+        "longitude": 0.5712890625,
+        "time:": 1,
+        "id": "route1",
+        "name": "Tambacounda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-13.656005859375, 13.784736549340208]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 18.562947442888312,
+        "longitude": 0.5712890625,
+        "time:": 1,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-8.1298828125, 13.539200668930816]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 16.29905101458183,
+        "longitude": 6.6796875,
+        "time:": 2,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.9335937499999998, 11.953349393643416]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 18.89589255941504,
+        "longitude": 8.525390625,
+        "time:": 3,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.669921875, 16.720385051693988]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 21.453068633086783,
+        "longitude": 9.755859375,
+        "time:": 4,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.615234375, 22.187404991398775]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 24.607069137709708,
+        "longitude": 11.42578125,
+        "time:": 5,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6.064453125, 23.966175871265044]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 24.607069137709708,
+        "longitude": 11.42578125,
+        "time:": 5,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6.6796875, 30.826780904779774]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time:": 8,
+        "id": "route1",
+        "name": "Tripoli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.886718749999998, 32.10118973232094]
+      }
+    }
+
+
+  ]
+}
