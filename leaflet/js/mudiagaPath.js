@@ -1,6 +1,6 @@
-function maliPath(){
+function mudiagaPath(){
     // FIRST LINE STARTS HERE!!!!!!
-    d3.json("geojson/fromMali.geojson", function(collection){
+    d3.json("geojson/fromNigeria.geojson", function(collection){
 
       var featuresdata = collection.features.filter(function(d){
         return d.properties.id == "route1"
@@ -125,8 +125,10 @@ function maliPath(){
         .duration(4800)
         .attrTween("stroke-dasharray", tweenDash)
         // .each("end", function(){
-        //   d3.select(this).call(transition); //infinite loop
-        //   ptFeatures.style("opacity", 0)
+        //   setTimeout(function(){
+        //     d3.select(this).call(transition); //infinite loop
+        //     ptFeatures.style("opacity", 0)
+        //   }, 2000);
         // });
     }
 

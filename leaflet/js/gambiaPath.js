@@ -1,6 +1,6 @@
-function maliPath(){
+function gambiaPath(){
     // FIRST LINE STARTS HERE!!!!!!
-    d3.json("geojson/fromMali.geojson", function(collection){
+    d3.json("geojson/fromGambia.geojson", function(collection){
 
       var featuresdata = collection.features.filter(function(d){
         return d.properties.id == "route1"
@@ -46,7 +46,7 @@ function maliPath(){
         .style("opacity", 0);
 
       //Beginning and End Points
-      var originANDdestination = [featuresdata[0], featuresdata[7], featuresdata[10]]
+      var originANDdestination = [featuresdata[0], featuresdata[1], featuresdata[2], featuresdata[4], featuresdata[6], featuresdata[9]]
 
       var begend = g.selectAll(".drinks")
         .data(originANDdestination)

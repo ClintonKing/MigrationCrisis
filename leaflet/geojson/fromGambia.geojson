@@ -14,11 +14,11 @@
         "longitude": 0.5712890625,
         "time:": 1,
         "id": "route1",
-        "name": "Muqdisho"
+        "name": "The Gambia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [45.3515625, 2.064982495867104]
+        "coordinates": [-15.8697509765625, 13.445723447606877]
       }
     },
     {
@@ -28,11 +28,11 @@
         "longitude": 0.5712890625,
         "time:": 1,
         "id": "route1",
-        "name": "Along route"
+        "name": "Bamako"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [36.8701171875, -1.318243056862001]
+        "coordinates": [-7.976074218749999, 12.61353677254297]
       }
     },
     {
@@ -42,11 +42,11 @@
         "longitude": 6.6796875,
         "time:": 2,
         "id": "route1",
-        "name": "Along route"
+        "name": "Ouagadougou"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [32.4755859375, 4.915832801313178]
+        "coordinates": [-1.54083251953125, 12.364148860163022]
       }
     },
     {
@@ -60,7 +60,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [32.87109375, 15.623036831528264]
+        "coordinates": [7.932128906249999, 16.951724234434437]
       }
     },
     {
@@ -70,11 +70,11 @@
         "longitude": 9.755859375,
         "time:": 4,
         "id": "route1",
-        "name": "Along route"
+        "name": "Dirkou"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [23.37890625, 22.187404991398775]
+        "coordinates": [12.886962890625, 19.01019029439606]
       }
     },
     {
@@ -88,21 +88,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.193359375, 28.459033019728043]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "latitude": 27.449790329784214,
-        "longitude": 12.480468749999998,
-        "time:": 6,
-        "id": "route1",
-        "name": "Along route"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [13.7109375, 30.06909396443887]
+        "coordinates": [14.436035156250002, 27.01998400798257]
       }
     },
     {

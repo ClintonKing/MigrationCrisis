@@ -116,6 +116,51 @@
         "type": "Point",
         "coordinates": [13.886718749999998, 32.10118973232094]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 18.562947442888312,
+        "longitude": 0.5712890625,
+        "time:": 1,
+        "id": "route1",
+        "name": "Along route"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5791015625,
+            34.82282272723702]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 16.29905101458183,
+        "longitude": 6.6796875,
+        "time:": 2,
+        "id": "route1",
+        "name": "Malta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.436035156250002,
+            35.88905007936091]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 16.29905101458183,
+        "longitude": 6.6796875,
+        "time:": 2,
+        "id": "route1",
+        "name": "Italy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.738159179687502,
+            36.89719446989036]
+      }
     }
 
 

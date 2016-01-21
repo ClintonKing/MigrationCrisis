@@ -1,6 +1,6 @@
-function maliPath(){
+function libyaPath(){
     // FIRST LINE STARTS HERE!!!!!!
-    d3.json("geojson/fromMali.geojson", function(collection){
+    d3.json("geojson/fromLibya.geojson", function(collection){
 
       var featuresdata = collection.features.filter(function(d){
         return d.properties.id == "route1"
@@ -46,7 +46,7 @@ function maliPath(){
         .style("opacity", 0);
 
       //Beginning and End Points
-      var originANDdestination = [featuresdata[0], featuresdata[7], featuresdata[10]]
+      var originANDdestination = [featuresdata[0], featuresdata[3]]
 
       var begend = g.selectAll(".drinks")
         .data(originANDdestination)
@@ -54,7 +54,8 @@ function maliPath(){
         .append("circle", ".drinks")
         .attr("r", 5)
         .style("fill", "#54575c")
-        .style("opacity", "1");
+        .style("opacity", "1")
+        .style("z-index", "5000");
 
       //names
       var text = g.selectAll("text")

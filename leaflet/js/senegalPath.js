@@ -46,7 +46,7 @@ function senegalPath(){
         .style("opacity", 0);
 
       //Beginning and End Points
-      var originANDdestination = [featuresdata[0], featuresdata[7]]
+      var originANDdestination = [featuresdata[0], featuresdata[2], featuresdata[5], featuresdata[7], featuresdata[10]]
 
       var begend = g.selectAll(".drinks")
         .data(originANDdestination)
@@ -122,7 +122,7 @@ function senegalPath(){
 
     function transition(){
       linePath.transition()
-        .duration(7500)
+        .duration(4800)
         .attrTween("stroke-dasharray", tweenDash)
         // .each("end", function(){
         //   d3.select(this).call(transition); //infinite loop

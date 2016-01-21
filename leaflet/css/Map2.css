@@ -1,0 +1,126 @@
+/*CSS FOR MOBILE MAPS*/
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #map{
+  height: 100%
+}
+
+.leaflet-popup-content-wrapper{
+  border-radius: 0;
+  text-align: center;
+}
+
+.leaflet-clickable{
+  cursor: -webkit-grab;
+}
+
+/*CUSTOM SUBJECT CONTROLS*/
+
+.control-container{
+  width: 100%;
+  height: 50px;
+  padding: 0 50px;
+  background-color: #F0F0F0;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+  box-shadow: 2px 0px 5px #505050;
+  text-align: center;
+}
+
+.subject{
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.subject:active{
+  position: relative;
+  top: 1px;
+  left: -1px;
+}
+
+.control-container h4{
+  margin-top: 16px;
+}
+
+#pathimate{
+  border: 2px solid grey;
+  border-radius: 4px;
+  z-index: 2000;
+  color: #000;
+  background: #fff;
+  padding: 5px;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+.lineConnect {
+    fill: none;
+    stroke: #7c8b97;
+    opacity: 1;
+    stroke-width: 5px;
+    z-index: 1500;
+}
+.travelMarker {
+    fill: #7c8b97;
+    opacity: 1;
+    z-index: 1500;
+}
+.lineConnect2 {
+    fill: none;
+    stroke: #f0ddc2;
+    opacity: 1;
+    stroke-width: 5px;
+    z-index: 1500;
+}
+.travelMarker2 {
+    fill: #f0ddc2;
+    opacity: 1;
+    z-index: 1500;
+}
+.lineConnect3 {
+    fill: none;
+    stroke: #242735;
+    opacity: 1;
+    stroke-width: 5px;
+    z-index: 1500;
+}
+.travelMarker3 {
+    fill: #242735;
+    opacity: 1;
+    z-index: 1500;
+}
+.locnames {
+    fill: black;
+    text-shadow: 1px 1px 1px #FFF, 3px 3px 5px #000;
+    font-weight: bold;
+    font-size: 13px;
+    z-index: 3000;
+}
+.info {
+    padding: 8px 10px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+.info p {
+  max-width: 300px;
+  margin-top: 5px;
+}
+.leaflet-control-zoom{
+  display: none;
+}
+.info h2{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}

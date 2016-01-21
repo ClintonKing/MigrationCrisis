@@ -1,6 +1,6 @@
-function maliPath(){
+function seykouPath(){
     // FIRST LINE STARTS HERE!!!!!!
-    d3.json("geojson/fromMali.geojson", function(collection){
+    d3.json("geojson/fromGambia.geojson", function(collection){
 
       var featuresdata = collection.features.filter(function(d){
         return d.properties.id == "route1"
@@ -22,17 +22,17 @@ function maliPath(){
 
 
       //Makes the line
-      var linePath = g.selectAll(".lineConnect")
+      var linePath = g.selectAll(".lineConnect2")
         .data([featuresdata])
         .enter()
         .append("path")
-        .attr("class", "lineConnect");
+        .attr("class", "lineConnect2");
 
       //Makes the travelling circle
       var marker = g.append("circle")
         .attr("r", 10)
         .attr("id", "marker")
-        .attr("class", "travelMarker");
+        .attr("class", "travelMarker2");
 
       //Points on the line
       var ptFeatures = g.selectAll("circle")
@@ -46,7 +46,7 @@ function maliPath(){
         .style("opacity", 0);
 
       //Beginning and End Points
-      var originANDdestination = [featuresdata[0], featuresdata[7], featuresdata[10]]
+      var originANDdestination = [featuresdata[0], featuresdata[1], featuresdata[2], featuresdata[4], featuresdata[6], featuresdata[9]]
 
       var begend = g.selectAll(".drinks")
         .data(originANDdestination)
@@ -125,8 +125,10 @@ function maliPath(){
         .duration(4800)
         .attrTween("stroke-dasharray", tweenDash)
         // .each("end", function(){
-        //   d3.select(this).call(transition); //infinite loop
-        //   ptFeatures.style("opacity", 0)
+        //   setTimeout(function(){
+        //     d3.select(this).call(transition); //infinite loop
+        //     ptFeatures.style("opacity", 0)
+        //   }, 2000);
         // });
     }
 
