@@ -17,8 +17,8 @@ html, body {
 
 .menu {
   color: #000;
-  padding: 10px;
-  height: 126px;
+  padding: 5px 10px;
+  height: 80px;
   font-size: 25px;
   background: white;
   border-bottom: 1px solid #eee;
@@ -29,16 +29,24 @@ html, body {
 }
 
 .menu-links {
-  margin-top: 25px;
+  margin-top: 15px;
   text-align: right;
   display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.menu-links > a{
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .logo {
-  height: 95px;
-  width: 95px;
+  height: 70px;
+  width: 70px;
   background: url('../img/dark-watercolor-logo.png');
-  background-size: 95px 95px;
+  background-size: 70px 70px;
   font-size: 15px;
   text-align: center;
   display: inline-block;
@@ -48,13 +56,33 @@ html, body {
   -moz-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  margin-top: 0;
 }
 
 .logo-title {
   float: left;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-left: 15px;
   display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 767px){
+  .logo-title{
+    display: none;
+  }
+
+  .menu{
+    text-align:center;
+  }
+
+}
+
+@media (max-width: 450px){
+  .logo{
+    display: none;
+  }
 }
 
 .row {
@@ -271,7 +299,7 @@ nav {
   position: fixed;
   top: 100%;
   width: 100%;
-  height: 126px; /* smaller height because font is smaller */
+  height: 80px; /* smaller height because font is smaller */
   padding-top: 8px;
   right: 0;
   z-index: 1000;

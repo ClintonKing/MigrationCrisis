@@ -46,7 +46,7 @@ function seykouPath(){
         .style("opacity", 0);
 
       //Beginning and End Points
-      var originANDdestination = [featuresdata[0], featuresdata[1], featuresdata[2], featuresdata[4], featuresdata[6], featuresdata[9]]
+      var originANDdestination = [featuresdata[0], featuresdata[6], featuresdata[9]]
 
       var begend = g.selectAll(".drinks")
         .data(originANDdestination)

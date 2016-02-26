@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bonds Beyond Borders</title>
+  <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300' rel='stylesheet' type='text/css'>
+  <link href="stylesheets/test-menu.css" rel="stylesheet" />
+  <link href="stylesheets/grid.css" rel="stylesheet" />
+  <link href="stylesheets/bonds.css" rel="stylesheet" />
+  <link href="stylesheets/breakpoints2.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="scripts/scroll2.js"></script>
+  <script src="scripts/altMenu.js"></script>
+  <script src="scripts/responsiveslides.min.js"></script>
+  <script src="scripts/audio.js"></script>
+
+  <!--favicon generator by http://www.favicon-generator.org/-->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script>
+    audiojs.events.ready(function(){
+      var audios = document.getElementsByTagName('audio');
+
+      var al =  audiojs.create(audios[0],{
+        css: false,
+        createPlayer: {
+          markup: false,
+            playPauseClass: 'play-pause',
+            scrubberClass: 'scrubber',
+            progressClass: 'progress',
+            loaderClass: 'loaded',
+            timeClass: 'time',
+            durationClass: 'duration',
+            playedClass: 'played',
+            errorMessageClass: 'error-message',
+            playingClass: 'playing',
+            loadingClass: 'loading',
+            errorClass: 'error'
+        }
+      });
+
+      var al =  audiojs.create(audios[1],{
+        css: false,
+        createPlayer: {
+          markup: false,
+            playPauseClass: 'play-pause',
+            scrubberClass: 'scrubber',
+            progressClass: 'progress',
+            loaderClass: 'loaded',
+            timeClass: 'time',
+            durationClass: 'duration',
+            playedClass: 'played',
+            errorMessageClass: 'error-message',
+            playingClass: 'playing',
+            loadingClass: 'loading',
+            errorClass: 'error'
+        }
+      });
+    });
+  </script>
+  <script>
+    function mapReplace(){
+      if ($(window).width() < 767){
+          $("#theMap").replaceWith('<div id="mobileMap" class="col-md-12"><a href="leaflet/Map2mob.html"><img src="img/Map2.png" class="mapLink" /></a></div>');
+      } else if ($(window).width() > 766){
+          $("#mobileMap").replaceWith('<div class="text-center" id="theMap"><iframe src="leaflet/Map2.html" id="mapTwo" scrolling="no"></iframe></div>');
+      }
+    };
+
+    $(document).ready(function(){
+      mapReplace();
+    });
+
+    $(window).resize(function(){
+      mapReplace();
+    });
+  </script>
+
+</head>
+<body>
+  <nav>
+    <div class="col-md-12 navbar-fixed-top menu">
+      <a href="index.html" class="logo"></a>
+      <a href="index.html" class="logo-title">DIVIDED BY THE SEA</a>
+      <div class="menu-links">
+        <a href="about.html">ABOUT</a><a href="index.html#stories">STORIES</a><a href="index.html#mapOne">MAP</a>
+      </div>
+    </div>
+  </nav>
+
+  <!--*************************pics and title****************************-->
+  <div class="row">
+    <div class="col-md-12 menuShelf">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 faces">
+      <img class="img-responsive" src="img/bonds/SG-6.png" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 id="title">BONDS BEYOND BORDERS</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+      <div class="subheader col-md-8">Long-lost neighbors reunite after years of migration</div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <!--*********************story-section 1********************************-->
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <p class="story">
+        A large crowd from seven nearby villages gathered around a dusty field in Gambia in the summer of 2012. The sun shone bright as the soccer stadium buzzed with the roars of fans rooting for their favorite hometown players. Two friends from neighboring villages, Janco, 14,  and Kanjura, 15, faced each other on the field.
+      </p>
+      <p class="story">
+        “I will never forget that day ... Everyone was cheering. Everybody was happy,” Janco said.
+      </p>
+      <p class="story">
+        The two weaved up and down the field, matching each other’s movements in the pursuit of victory.
+      </p>
+      <p class="story">
+        In the second half, Kanjura fell behind, and Janco seized the opportunity, darting down the field. The crowd’s nervous silence was broken as he wound his leg back and kicked the winning goal.
+      </p>
+      <p class="story">
+        The crowd erupted. Janco was overwhelmed with pride and excitement.
+      </p>
+      <p class="story">
+        “Everybody supported me,” he said.
+      </p>
+      <p class="story">
+        This was the last soccer game Janco would play in his home country. Soon after, he packed his bags and fled to Senegal with intentions to move toward Tripoli. He had arranged for his older sister to live with extended family a few communities away from where they had grown up.
+      </p>
+      <p class="story">
+        “One day, I remember thinking this cannot end like this … so that’s why I leave my sister and run away and enter Senegal,” Janco said.
+      </p>
+      <p class="story">
+        This was not the first time Janco was left on his own. At the age of three, Janco lost his father, and at 11, his mother left him and his sister.
+      </p>
+      <p class="story">
+        “We don’t have freedom in our family because we don’t have anyone to support us, to advise us good things, to take us to school,” he said. “We don’t have anyone that will do that for us.”
+      </p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div><br />
+
+
+  <div class="row">
+    <div class="col-md-2 hidden-xs"></div>
+    <div class="col-md-4 col-xs-12 bondPort">
+      <img class="img-responsive" src="img/bonds/bond-janco-2.jpg" />
+      <div class="col-md-12 photoCaption">
+        <p>Janco, 17,  poses for a portrait outside of Unitas Catolica.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-xs-12 quoteAndAudio">
+      <div class="portQuote text-center">
+        “The time I hear of Libya from Gambia, I hear it is a calm country. No police can disturb you. Bad people cannot attack you. But since I came to Libya, I see all those things...”
+      </div>
+      <div class="audiojs">
+        <audio src="audio/janco_2.mp4" preload="auto"></audio>
+        <div class="play-pause">
+          <p class="play"></p>
+          <p class="pause"></p>
+          <p class="loading"></p>
+          <p class="error"></p>
+        </div>
+        <div class="scrubber">
+          <div class="progress"></div>
+          <div class="loaded"></div>
+        </div>
+        <div class="time">
+          <em class="played">00:00</em>/<strong class="duration">00:00</strong>
+        </div>
+        <div class="error-message"></div>
+      </div>
+    </div>
+    <div class="col-md-2 hidden-xs"></div>
+  </div>
+  <br>
+
+
+  <!--******************end of story section 1***********************************-->
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <p class="story">
+        After a year of traveling alone northeast across Africa, Janco arrived in Libya in 2013. He found temporary residence in a home with 30 other men from countries including Senegal, Mali, Nigeria and Gambia. He also found sporadic construction work by word-of-mouth from other African laborers.
+      </p>
+      <p class="story">
+        Janco said there was one spot in particular where migrants gathered each day to bid for work. He said that Libyans in search of cheap labor would go there, grab a few men, pay them and drop them back off when the job was complete.
+      </p>
+      <p class="story">
+        One day, he saw a familiar young man in the distance walking toward the location. It was Kanjura, his friend from the neighboring village in Gambia.
+      </p>
+      <p class="story">
+        “The time I see Janco I feel happy, because the day I see him, I miss him some years,” Kanjura said.
+      </p>
+      <p class="story">
+        Janco invited Kanjura to live in the house. The two quickly reconnected, sharing stories about home and their journeys to Libya. They cared for each other like family.
+      </p>
+      <p class="story">
+        “When I don’t find work, [Janco] will go to the shop to buy everything,” Kanjura said. “We eat together, so tomorrow if I have and he don’t have, we do it like that. We help each other to pay the house we are living. We help together to pay.”
+      </p>
+      <p class="story">
+        But as Libya continued to destabilize, the environment became increasingly hostile for both Janco and Kanjura.
+      </p>
+      <p class="story">
+        “[In Tripoli], you can go on walk and a small boy can attack you to take your money. They beat you and leave you,” Janco said. “Sometimes, the house we are paying, they come and take your telephone and your money.”
+      </p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div><br />
+
+
+  <div class="row">
+    <div class="col-sm-2 hidden-xs"></div>
+    <div class="col-sm-4 col-xs-12 quoteAndAudio">
+      <div class="portQuote text-center">
+        “The day I see Janco, I was happy to see him because on that day when I see him. He was the one that helped me get a place. So when I see him I feel happy.”
+      </div>
+      <div class="audiojs">
+        <audio src="audio/kanjura_2.mp4" preload="auto"></audio>
+        <div class="play-pause">
+          <p class="play"></p>
+          <p class="pause"></p>
+          <p class="loading"></p>
+          <p class="error"></p>
+        </div>
+        <div class="scrubber">
+          <div class="progress"></div>
+          <div class="loaded"></div>
+        </div>
+        <div class="time">
+          <em class="played">00:00</em>/<strong class="duration">00:00</strong>
+        </div>
+        <div class="error-message"></div>
+      </div><br>
+    </div>
+    <div class="col-sm-4 col-xs-12 bondPort">
+      <img class="img-responsive" src="img/bonds/bond-kanjura-3.jpg" />
+      <div class="col-sm-12 photoCaption">
+        <p>Kanjura, 18,  poses for a portrait outside of Unitas Catolica.</p>
+      </div>
+    </div>
+    <div class="col-sm-2 hidden-xs"></div>
+  </div>
+  <br>
+
+
+
+  <!--*********************************************BUILDING PHOTO**********************************-->
+
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <p class="story">
+        After being approached by a smuggler in Libya who offered to pay for a portion of their boat rides, both Janco and Kanjura decided to make the trip across the Mediterranean to Italy. When they arrived at the port of Reggio Calabria in 2015, Janco was 16, and Kanjura was 17.
+      </p>
+      <p class="story">
+        In 2015, 4,118 unaccompanied minors arrived in Italy. Eritreans made up the largest group of children traveling alone, while others came from countries like Gambia, Afghanistan and Egypt. According to <a href="http://www.irinnews.org/analysis/2015/07/27" target="_blank">IRIN News</a>, more than 25 percent of asylum applications in the European Union in 2014 came from children. Eighty-six percent of those children were boys.
+      </p>
+      <p class="story">
+        “My family did not know I was leaving,” Kanjura said. “I told [my mother] after that I was going to Italy. I did not tell her because if I told her, she would tell me to stay home. If I stayed there, I would cause more trouble.”
+      </p>
+      <p class="story">
+        Kanjura ultimately left The Gambia because of a conflict over land in his family.
+      </p>
+      <p class="story">
+        Janco and Kanjura, now 17 and 18 respectively, live with a group of underage minors at Unitas Catholica, a local reception center sponsored by the Catholic Church.
+      </p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12 faces">
+      <img class="img-responsive" src="img/bonds/bond--4.jpg" />
+    </div>
+    <div class="col-md-12 photoCaption">
+      <p>Janco and Kanjura now stay live in Reggio Calabria at Unitas Catolica, a housing structure with services funded by the Catholic Church and the Italian government.</p>
+    </div>
+  </div>
+  <br />
+
+  <!--*********************************************watching tv image**********************************-->
+
+
+  <!--******************************libya situation***********************************-->
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <p class="story">At the center, two or three boys live together in each room. They do daily chores, eat meals together and attend language classes. They often hang out in and around the building.</p>
+      <p class="story">“We drink coffee. We sit there, play music, joking each other. We do stories there, look at photo blog,” Janco said.</p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <br />
+
+  <div class="row">
+    <div class="col-md-12 faces">
+      <img class="img-responsive" src="img/bonds/bond--6-2.jpg" />
+    </div>
+    <div class="col-md-12 photoCaption">
+      <p>Teammates from the maroon team pose for a portrait before the match begins.</p>
+    </div>
+  </div>
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <p class="story">Italian authorities are responsible for looking after unaccompanied migrant children. In Reggio Calabria, underage minors are taken directly from the port where their boats arrive to dedicated government and religious centers like Unitas Catholica.</p>
+      <p class="story">While many children immediately leave the centers to avoid fingerprinting, the ones that stay face considerable challenges.</p>
+      <p class="story">There is a shortage of interpreting, mental health counseling and legal aid for minors making asylum requests. Due to a growing administrative backlog, children often wait months before starting classes at school. There is also little cultural sensitivity training or supervision for the boys at the centers, contributing to conflict among young residents.</p>
+      <p class="story">Janco said he fought with some of the boys at the center.</p>
+      <p class="story">“We talk with the Malians and Senegalese. And with the Egyptians, we talk with them sometime. When we have a problem with them, we don’t talk with them,” Janco said. “It’s hard to live with them because they don’t have understanding. Our lives and their life is different.”</p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+
+  <!--*********************************************3 men standing image**********************************-->
+  <div class="row">
+    <div class="col-md-12 img-section text-center">
+      <div class="col-md-6 overview-grid" id="bond-img1">
+        <div class="caption">
+          <div class="caption-center">
+            <p>
+              A sign at the game reads “Let’s take a shot against indifference.”
+            </p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-6 overview-grid" id="bond-img2">
+        <div class="caption">
+          <div class="caption-center">
+            <p>
+              Kanjura rests on the bench before the soccer match begins.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 overview-grid" id="bond-img3">
+        <div class="caption">
+          <div class="caption-center">
+            <p>
+              Janco practices penalty kicks with his teammates during the warm-up.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 overview-grid" id="bond-img4">
+        <div class="caption">
+          <div class="caption-center">
+            <p>
+              The boys stretch together before the game.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <p class="story">But there is one activity that has alleviated some of the conflict – soccer.</p>
+        <p class="story">The boys from Unitas are on a local soccer team sponsored by the System for the Protection of Asylum Seekers and Refugees.</p>
+        <p class="story">The team travels to games and tournaments all over Calabria. At the tournaments, the boys have a chance to meet other young refugees who have made similar journeys to Italy.</p>
+        <p class="story">Janco said playing soccer brings back happy memories from his time in Gambia. And this time, he and Kanjura get to be on the same team.</p>
+        <p class="story">“The football match was very fantastic … Everybody played good, we had support … How I was moving the ball, how I was moving,” he said about one of their games. “Me, I scored three goals, Kanjura two goals. We won 12-0.” </p>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+
+   <!--**********************************************menu grid thing*******************************-->
+
+   <div class="row grid">
+     <div class="col-md-12 peopleGrid">
+       <a href="/overview.html">
+       <div class="col-md-2 col-sm-4 col-xs-4 person" id="person1">
+         <div class="caption">
+           <div class="caption-center subNav">THE CROSSING</div>
+         </div>
+       </div>
+       </a>
+
+       <a href="/men-of-san-giovanni.html">
+       <div class="col-md-2 col-sm-4 col-xs-4 person" id="person2">
+         <div class="caption">
+           <div class="caption-center subNav">THE MEN OF SAN GIOVANNI</div>
+         </div>
+       </div>
+       </a>
+
+       <a href="/humanitarian.html">
+         <div class="col-md-2 col-sm-4 col-xs-4 person" id="person3">
+           <div class="caption">
+             <div class="caption-center subNav">NEW BEGINNINGS</div>
+           </div>
+         </div>
+       </a>
+
+       <a href="/lifelong-mission.html">
+       <div class="col-md-2 col-sm-4 col-xs-4 person" id="person4">
+         <div class="caption">
+           <div class="caption-center subNav">THE PRAYER</div>
+         </div>
+       </div>
+       </a>
+
+       <a href="/exchange.html">
+       <div class="col-md-2 col-sm-4 col-xs-4 person" id="person5">
+         <div class="caption">
+           <div class="caption-center subNav">EXCHANGE OF CULTURES
+         </div>
+        </div>
+      </div>
+      </a>
+
+       <a href="/bonds.html">
+       <div class="col-md-2 col-sm-4 col-xs-4 person" id="person6">
+         <div class="caption">
+           <div class="caption-center subNav">BONDS BEYOND BORDERS</div>
+         </div>
+       </div>
+       </a>
+
+     </div>
+   </div>
+   <script>
+   $('.person').hover(
+     function(){
+       $(this).find('.caption').fadeIn(250);
+     },
+     function(){
+       $(this).find('.caption').fadeOut(250);
+     }
+   );
+
+   $('.overview-grid').hover(
+     function(){
+       $(this).find('.caption').fadeIn(250);
+     },
+     function(){
+       $(this).find('.caption').fadeOut(250);
+     }
+   );
+
+   $(".play").click(function(){
+     $(".play").hide();
+     $(".pause").show();
+   });
+
+   $(".pause").click(function(){
+     $(".pause").hide();
+     $(".play").show();
+   });
+   </script>
+
+</body>
+
+</html>

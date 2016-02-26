@@ -124,12 +124,12 @@ function nigeriaPath(){
       linePath.transition()
         .duration(4800)
         .attrTween("stroke-dasharray", tweenDash)
-        .each("end", function(){
-          setTimeout(function(){
-            d3.select(this).call(transition); //infinite loop
-            ptFeatures.style("opacity", 0)
-          }, 2000);
-        });
+        // .each("end", function(){
+        //   setTimeout(function(){
+        //     d3.select(this).call(transition); //infinite loop
+        //     ptFeatures.style("opacity", 0)
+        //   }, 2000);
+        // });
     }
 
     function tweenDash(){

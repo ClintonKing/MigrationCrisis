@@ -17,3 +17,93 @@ html, body, #map{
 .leaflet-zoom-hide{
   z-index: 3000;
 }
+
+.info{
+  font: Times;
+}
+
+.info > p,
+.info > b{
+  font-family: Times;
+}
+
+.info > h4,
+.info > h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.locnames {
+    fill: black;
+    font-weight: 400;
+    font-size: 18px;
+    z-index: 3000;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    /*border: 1px solid #606a76;*/
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #f0ddc2;
+    /*border: 1px solid #606a76;*/
+}
+
+.leaflet-control-attribution{
+  display: none;
+}
+
+
+#closeX,
+#closeX:active{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  margin: 10px;
+}
+
+.labelIcon{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  /*color: #606a76;*/
+  pointer-events: none;
+}
+
+.labelIconSmall{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  /*color: #606a76;*/
+  font-size: 9px;
+  pointer-events: none;
+}
+
+@media (max-width: 767px){
+  .labelIcon{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    /*color: #606a76;*/
+    pointer-events: none;
+    font-size: 8px;
+  }
+
+  .labelIconSmall{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    /*color: #606a76;*/
+    font-size: 6px;
+    pointer-events: none;
+  }
+}

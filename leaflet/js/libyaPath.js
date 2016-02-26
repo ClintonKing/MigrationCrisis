@@ -46,7 +46,7 @@ function libyaPath(){
         .style("opacity", 0);
 
       //Beginning and End Points
-      var originANDdestination = [featuresdata[0], featuresdata[3]]
+      var originANDdestination = [featuresdata[0], featuresdata[0], featuresdata[3]]
 
       var begend = g.selectAll(".drinks")
         .data(originANDdestination)

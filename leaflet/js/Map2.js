@@ -274,17 +274,17 @@ function onItaly(feature, layer) {
 
 // FUNCTIONS FOR INFOBOX CONTROLS
 
-var info = L.control();
-
-info.onAdd = function (map){
-  this._div = L.DomUtil.create('div', 'info');
-  this.update();
-  return this._div;
-};
-
-info.update = function (props){
-  this._div.innerHTML = '<h4>Migration Info</h4>' + (props ? '<h2>' + props.name + '</h2>' + '<p>' + props.countryInfo + '</p>' + 'Click for Migration Path' : '<b>Hover over a country</b>');
-};
+// var info = L.control();
+//
+// info.onAdd = function (map){
+//   this._div = L.DomUtil.create('div', 'info');
+//   this.update();
+//   return this._div;
+// };
+//
+// info.update = function (props){
+//   this._div.innerHTML = '<h4>Migration Info</h4>' + (props ? '<h2>' + props.name + '</h2>' + '<p>' + props.countryInfo + '</p>' + 'Click for Migration Path' : '<b>Hover over a country</b>');
+// };
 
 // CREATE COUNTRIES ON MAP INDIVIDUALLY
 
@@ -352,8 +352,8 @@ function startCountries(){
   makeSenegal();
   makeIvoryCoast();
   makeNigeria();
-  makeEthiopia();
-  makeSomalia();
+  // makeEthiopia();
+  // makeSomalia();
   makeEritrea();
   makeLibya();
   makeSyria();

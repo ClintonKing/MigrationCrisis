@@ -1,0 +1,652 @@
+@font-face{
+  font-family: centuryGothic;
+  src: url(../fonts/centuryGothic.ttf)
+}
+
+body {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+#title{
+  font-size: 6em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-top: 100px;
+}
+
+.logo-title {
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo-title:hover,
+.logo-title:active{
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.description{
+  font-family: Times;
+  font-size: 1.9em;
+}
+
+.menuShelf{
+  height: 80px;
+}
+
+@media (max-width: 767px){
+  .logo-title{
+    display: none;
+  }
+
+  .menu{
+    text-align:center;
+  }
+
+}
+
+@media (max-width: 450px){
+  .logo{
+    display: none;
+  }
+  .menu{
+    height: 60px;
+  }
+  .menu-links{
+    margin-top: 10px;
+  }
+  #superNav{
+    height: 60px;
+  }
+
+  .menuShelf{
+    height: 60px;
+  }
+}
+
+/*TODO - make this more responsive / more of image displayed*/
+.row {
+  margin: 0;
+}
+.faces {
+  width: 100%;
+  padding: 0;
+}
+
+.img-responsive{
+  width: 100%;
+}
+
+.face {
+  border: 10px solid #fff;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid #fff;
+  min-height: 650px;
+}
+
+#face-right {
+  background: url("../img/men/face-right.jpg");
+  background-size: cover;
+  border-left: 10px solid #fff;
+}
+
+#face-center {
+  background: url("../img/men/face-center.jpg");
+  background-size: cover;
+}
+
+#face-left  {
+  background: url("../img/men/face-left.jpg");
+  background-size: cover;
+  border-right: 10px solid #fff;
+}
+
+#title {
+  font-size: 6em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.subheader{
+  font-family: Times;
+  font-size: 3em;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.quoteAndAudio{
+
+}
+
+@media (max-width: 2000px){
+  .quoteAndAudio{
+    padding-top: 180px;
+  }
+}
+
+@media (max-width: 1716px){
+  .quoteAndAudio{
+    padding-top: 140px;
+  }
+}
+
+@media (max-width: 1416px){
+  .quoteAndAudio{
+    padding-top: 65px;
+  }
+}
+
+@media (max-width: 1299px){
+  .quoteAndAudio{
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 1138px){
+  .quoteAndAudio{
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 991px){
+  .quoteAndAudio{
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 767px){
+  .quoteAndAudio{
+    padding-top: 50px;
+  }
+}
+
+
+.story {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  display: inline-block;
+  color: #000;
+  font-size: 1.9em;
+  font-family: Times;
+  height: auto;
+  overflow: auto;
+}
+
+#story1, #story1-2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#audio-section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.picture-slideshow {
+  margin-top: 1em;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  /*background: url("img/men/apartment1.jpg");*/
+  background-size: cover;
+}
+
+.apt-item {
+  min-height: 300px;
+  border: 10px solid #fff;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid #fff;
+}
+
+#books {
+  background: url("../img/men/books.jpg");
+  background-size: cover;
+  border-left: 0px;
+}
+
+#shoes {
+  background: url("../img/men/yellow-shoes.jpg");
+  background-size: cover;
+}
+
+#hat  {
+  background: url("../img/men/hat.jpg");
+  background-size: cover;
+  border-right: 0px;
+}
+
+.quote {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: Times;
+  font-size: 3em;
+  font-style: italic;
+}
+
+.portQuote {
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-family: Times;
+  font-size: 2.5em;
+  font-style: italic;
+  padding: 0 20px;
+}
+
+.watching-tv {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("../img/men/watching-tv.jpg");
+  background-size: cover;
+}
+
+.section-headliner {
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+}
+
+.map2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: url("../img/map-watercolor-purpley.png");
+  background-size: 500px 286px;
+  height: 286px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stairs {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("../img/men/stairs.jpg");
+  background-size: cover;
+}
+
+.prayerPortrait{
+  margin-top: 26px;
+  width: auto;
+}
+
+@media (max-width: 767px){
+  .prayerPortrait{
+    margin: 0 auto;
+  }
+}
+
+.men-standing {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("../img/men/men-standing.jpg");
+  background-size: cover;
+}
+
+#section-10 {
+  padding-top: 1em;
+}
+
+.blue {
+  background: #7C8B97;
+  min-height: 70vh;
+}
+
+#passport {
+  background: url("../img/men/passport.png");
+  background-size: 300px 314px;
+  height: 314px;
+  width: 300px;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+#header2 {
+  margin-top: .5em;
+  font-family: Times;
+  font-size: 4em;
+  color: #fff;
+}
+
+.caption {
+  background: black;
+  opacity: .8;
+  color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  font-size: 1.2em;
+}
+
+
+/*PICTURE GRID*/
+
+.img-section {
+  background-size: 100% 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.overview-grid {
+  height: 60vh;
+  border: 10px solid #fff;
+  position: relative;
+}
+
+.caption {
+  background: black;
+  opacity: .8;
+  color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  font-size: 1.2em;
+}
+
+
+.caption-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Times,serif;
+}
+
+.subNav{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+#bond-img1 {
+  background: url("../img/bonds/bond--6-5.jpg");
+  background-size: cover;
+  border-left: 20px solid #fff;
+}
+
+#bond-img2 {
+  background: url("../img/bonds/bond--6.jpg");
+  background-size: cover;
+  border-right: 20px solid #fff;
+}
+
+#bond-img3 {
+  background: url("../img/bonds/bond--6-3.jpg");
+  background-size: cover;
+  border-left: 20px solid #fff;
+}
+
+#bond-img4 {
+  background: url("../img/bonds/bond--6-4.jpg");
+  background-size: cover;
+  border-right: 20px solid #fff;
+}
+
+@media (max-width: 767px){
+  #bond-img1 {
+    background: url("../img/bonds/bond--6-5mob.png");
+    background-size: cover;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  #bond-img2 {
+    background: url("../img/bonds/bond--6mob.png");
+    background-size: cover;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  #bond-img3 {
+    background: url("../img/bonds/bond--6-3mob.png");
+    background-size: cover;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  #bond-img4 {
+    background: url("../img/bonds/bond--6-4mob.png");
+    background-size: cover;
+    border: none;
+    margin-bottom: 10px;
+  }
+}
+
+/********************************menu grid thing*********************/
+.peopleGrid {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.person {
+  min-height: 250px;
+  border: 10px solid #fff;
+}
+
+#person2, #person3, #person4, #person5, #person6 {
+  border-left: 0;
+}
+
+
+.outerDiv{
+  margin-top: 100px;
+}
+
+.video-player{
+  width: 100vw;
+  height: 1px;
+  padding: 0;
+}
+
+.headlineVid{
+  width: 100vw;
+  height: 1px;
+}
+
+.bondPort{
+  padding: 0;
+}
+
+/*AUDIO PLAYER CSS*/
+
+.audiojs {
+    width: 100%;
+    height: 36px;
+    background: #404040;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 12px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0, #555), color-stop(0, #444), color-stop(0, #444));
+    background-image: -moz-linear-gradient(center top, #444 0%, #555 0%, #444 0%, #444 0%);
+    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.audiojs audio {
+    position: absolute;
+    left: -1px;
+}
+.audiojs .time{
+  float: left;
+height: 36px;
+line-height: 36px;
+margin: 0px 0px 0px 6px;
+padding: 0px 6px 0px 12px;
+border-left: 1px solid #000;
+color: #ddd;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.audiojs .play-pause {
+    width: 38px;
+    height: 48px;
+    padding: 4px 6px;
+    margin: 0px;
+    float: left;
+    overflow: hidden;
+    border-right: 1px solid #000;
+}
+.audiojs .play {
+    background: url("../scripts/player-graphics.gif") -2px -1px no-repeat;
+
+}
+.audiojs .play {
+    display: block;
+}
+.audiojs p {
+    display: none;
+    width: 25px;
+    height: 40px;
+    margin: 0px;
+    cursor: pointer;
+}
+.audiojs .pause {
+    background: url("../scripts/player-graphics.gif") -2px -91px no-repeat;
+}
+.audiojs .loading {
+    background: url("../scripts/player-graphics.gif") -2px -31px no-repeat;
+}
+.audiojs .error {
+    background: url("../scripts/player-graphics.gif") -2px -61px no-repeat;
+}
+.audiojs .scrubber {
+    position: relative;
+    float: left;
+    width: 230px;
+    background: #5a5a5a;
+    height: 14px;
+    margin: 10px;
+    border-top: 1px solid #3f3f3f;
+    border-left: 0px;
+    border-bottom: 0px;
+    overflow: hidden;
+}
+.audiojs .progress {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 14px;
+    width: 0px;
+    background: #ccc;
+    z-index: 1;
+    border-radius: 0px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ccc), color-stop(0, #ddd), color-stop(0, #ccc), color-stop(0, #ccc));
+    background-image: -moz-linear-gradient(center top, #ccc 0%, #ddd 0%, #ccc 0%, #ccc 0%);
+}
+.audiojs .loaded {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 14px;
+    width: 0px;
+    background: #000;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0, #333), color-stop(0, #222), color-stop(0, #222));
+    background-image: -moz-linear-gradient(center top, #222 0%, #333 0%, #222 0%, #222 0%);
+}
+.audiojs .time {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin: 0px 0px 0px 6px;
+    padding: 0px 6px 0px 12px;
+    border-left: 1px solid #000;
+    color: #ddd;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.audiojs .time em {
+    padding: 0px 2px 0px 0px;
+    color: #f9f9f9;
+    font-style: normal;
+}
+.audiojs .time strong {
+    padding: 0px 0px 0px 2px;
+    font-weight: normal;
+}
+.audiojs .error-message {
+    float: left;
+    display: none;
+    margin: 0px 10px;
+    height: 36px;
+    width: 400px;
+    overflow: hidden;
+    line-height: 36px;
+    white-space: nowrap;
+    color: #fff;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -icab-text-overflow: ellipsis;
+    -khtml-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+@media (max-width: 767px){
+  .audiojs {
+      width: 100%;
+      height: 36px;
+      background: #404040;
+      overflow: hidden;
+      font-family: monospace;
+      font-size: 12px;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0, #555), color-stop(0, #444), color-stop(0, #444));
+      background-image: -moz-linear-gradient(center top, #444 0%, #555 0%, #444 0%, #444 0%);
+      -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+      -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+      margin: 0 auto;
+  }
+}
+
+.photoCaption{
+  margin: 0;
+  width: 100%;
+  background: #eee;
+  text-align: center;
+  padding: 5px 20px;
+  opacity: 1;
+
+}
+
+.photoCaption > p{
+  font-size: 1em;
+  font-family: Times;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}

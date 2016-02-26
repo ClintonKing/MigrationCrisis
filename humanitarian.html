@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>New Beginnings</title>
   <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A Lifelong Mission</title>
   <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300' rel='stylesheet' type='text/css'>
-  <!--link href="styles.css" rel="stylesheet" /-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300' rel='stylesheet' type='text/css' />
+  <link href="stylesheets/menu-css.css" rel="stylesheet" />
+  <link href="stylesheets/menu-css.css" rel="stylesheet" />
   <link href="stylesheets/grid.css" rel="stylesheet" />
-  <link href="stylesheets/style2.css" rel="stylesheet" />
-  <link href="stylesheets/breakpoints2.css" rel="stylesheet" />
+  <!--link href="stylesheets/style2.css" rel="stylesheet" /-->
   <link href="stylesheets/video-styles.css" rel="stylesheet" />
+  <link href="stylesheets/humanitarian.css" rel="stylesheet" />
+  <link href="stylesheets/breakpoints2.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!--script src="scripts/scroll2.js"></script-->
-  <!--script src="scripts/test-menu.js"></script-->
+  <script src="scripts/altMenu.js"></script>
   <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="scripts/vimeo-js.js"></script>
 
@@ -39,36 +42,74 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <script>
+  $(document).ready(function(){
+    $(".video-player").css({'height':($(window).height() - 100 + 'px' )});
+    $(".headlineVid").css({'height':($(window).height() - 100 + 'px')});
+  });
+
+  $(window).resize(function(){
+    $(".video-player").css({'height':($(window).height() - 100 + 'px' )});
+    $(".headlineVid").css({'height':($(window).height() - 100 + 'px')});
+  });
+  </script>
+
+
 </head>
 <body>
   <!--******************************************logo and menu***************************************-->
-<nav>
+<nav id="superNav">
   <div class="col-md-12 navbar-fixed-top menu">
-    <div class="logo"></div>
-    <div class="logo-title">Divided by the Sea</div>
+    <a href="index.html" class="logo"></a>
+    <a href="index.html" class="logo-title">DIVIDED BY THE SEA</a>
     <div class="menu-links">
-    <a href="old-index.html">home</a> - <a href="/overview.html">about</a> -
-    <a href="#people">people</a> - <a href="/maps.html">experience</a>
+      <a href="about.html">ABOUT</a><a href="index.html#stories">STORIES</a><a href="index.html#mapOne">MAP</a>
     </div>
   </div>
 </nav>
 
 <!--****************************Background and title****************************************-->
 
+
+    <div class="row">
+      <div class="col-md-12 menuShelf">
+
+      </div>
+    </div>
+    <div class="row outerDiv">
+
+        <div class="col-md-12 text-center video-player">
+            <iframe id="player1" class="headlineVid" src="https://player.vimeo.com/video/146867437?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    <h1 class="col-md-12 text-center" id="title">NEW BEGINNINGS</h1>
+    <div class="row">
+      <div class="col-md-2"></div>
+        <div class="col-md-8 text-center subheader">A Moroccan man discovers an unforeseen future in aiding refugees</div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p class="story">
+        On an excruciatingly hot day in the summer of 2015, Abramo showed up at the port to volunteer during yet another landing of refugees. It was Ramadan, the holy month when practicing Muslims fast from dawn to sunset.
+      </p>
+      <p class="story">
+        Volunteering at the port requires a lot of energy. Depending on the size of the boat, processing hundreds of refugees may take up to five hours. Under direct sunlight, the task can be exhausting.
+      </p>
+      <p class="story">
+        Despite not eating anything or drinking any water the entire day, Abramo was just as joyful as ever. Perhaps it was being there, what made him feel that way.
+      </p>
+      <p class="story">
+        As he said, “volunteering is something that I love. It runs in my blood.”
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+</div>
 <div class="row">
-  <div class="col-md-12 text-center vid-title">Trafficker Turned Humanitarian</div>
-
-    <div class="col-md-12 text-center video-player">
-        <iframe id="player1" src="https://player.vimeo.com/video/76979871?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    <div class="col-md-12 text-center">
-            <div class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </div>
-    </div>
-
-
+  <div class="col-md-12 mosqueCol">
+    <img class="img responsive" id="mosque" src="img/humanitarian/mosque-stars.gif" />
+  </div>
 </div>
 
 
@@ -80,7 +121,7 @@
     <a href="/overview.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person1">
       <div class="caption">
-        <div class="caption-center">The Crossing</div>
+        <div class="caption-center subNav">THE CROSSING</div>
       </div>
     </div>
     </a>
@@ -88,7 +129,7 @@
     <a href="/men-of-san-giovanni.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person2">
       <div class="caption">
-        <div class="caption-center">The Men of San Giovanni</div>
+        <div class="caption-center subNav">THE MEN OF SAN GIOVANNI</div>
       </div>
     </div>
     </a>
@@ -96,7 +137,7 @@
     <a href="/humanitarian.html">
       <div class="col-md-2 col-sm-4 col-xs-4 person" id="person3">
         <div class="caption">
-          <div class="caption-center">Trafficker Turned Humanitarian</div>
+          <div class="caption-center subNav">NEW BEGINNINGS</div>
         </div>
       </div>
     </a>
@@ -104,22 +145,28 @@
     <a href="/lifelong-mission.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person4">
       <div class="caption">
-        <div class="caption-center">A Lifelong Mission</div>
+        <div class="caption-center subNav">THE PRAYER</div>
       </div>
     </div>
     </a>
 
+    <a href="/exchange.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person5">
       <div class="caption">
-        <div class="caption-center">Exchange of Cultures
+        <div class="caption-center subNav">EXCHANGE OF CULTURES
       </div>
-    </div>
-  </div>
+     </div>
+   </div>
+   </a>
+
+    <a href="/bonds.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person6">
       <div class="caption">
-        <div class="caption-center">Bonds Across Borders</div>
+        <div class="caption-center subNav">BONDS BEYOND BORDERS</div>
       </div>
     </div>
+    </a>
+
   </div>
 </div>
 <style>

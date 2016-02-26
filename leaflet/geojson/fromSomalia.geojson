@@ -14,7 +14,7 @@
         "longitude": 0.5712890625,
         "time:": 1,
         "id": "route1",
-        "name": "Muqdisho"
+        "name": ""
       },
       "geometry": {
         "type": "Point",
@@ -110,7 +110,7 @@
       "properties": {
         "time:": 8,
         "id": "route1",
-        "name": "Tripoli"
+        "name": "TRIPOLI"
       },
       "geometry": {
         "type": "Point",
@@ -154,7 +154,7 @@
         "longitude": 6.6796875,
         "time:": 2,
         "id": "route1",
-        "name": "Italy"
+        "name": "ITALY"
       },
       "geometry": {
         "type": "Point",

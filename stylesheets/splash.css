@@ -4,6 +4,7 @@ html, body {
   font-family: 'Signika Negative', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -84,12 +85,30 @@ h1 {
    transition: 2s ease-in;
    -webkit-transition: 2s ease-in;
    -webkit-animation-name: appear;
-   -webkit-animation-delay: 4s;
-   -webkit-animation-duration: 20s;
+   -webkit-animation-delay: 0s;
+   -webkit-animation-duration: 10s;
    animation-name: appear;
-   animation-duration: 20s;
-   animation-delay: 5s;
+   animation-duration: 10s;
+   animation-delay: 2s;
    animation-iteration-count: infinite;
+   position: absolute;
+   top: 80%;
+}
+
+.coming-soon > p{
+  margin-bottom: 5px;
+}
+
+.coming-soon > .divided{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size:64px;
+  line-height: .6;
+}
+
+.coming-soon > .byTheSea{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
 }
 
 @-webkit-keyframes appear {
@@ -147,4 +166,36 @@ h1 {
   50%  { transform:translateY(-23%); }
   75%  { transform:translateY(0%); }
   100% { transform:translateY(-10%); }
+}
+
+#screenshot{
+  display: none;
+}
+
+@media (max-width: 414px){
+  #screenshot{
+    display: inline-block;
+  }
+  #soon{
+    position: relative;
+    top: 30%;
+  }
+}
+
+#explainer{
+  width: 100vw;
+  height: auto;
+}
+
+.video-player{
+  width: 100vw;
+  height: 1px;
+  padding: 0;
+  z-index: 2000;
+}
+
+.headlineVid{
+  width: 100vw;
+  height: 1px;
+
 }

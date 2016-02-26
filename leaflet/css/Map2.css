@@ -22,8 +22,8 @@ html, body, #map{
 
 .control-container{
   width: 100%;
-  height: 50px;
-  padding: 0 50px;
+  height: 85px;
+  /*padding: 0 20px;*/
   background-color: #F0F0F0;
   position: fixed;
   top: 0;
@@ -32,9 +32,24 @@ html, body, #map{
   text-align: center;
 }
 
+.direction-container{
+  width: 100%;
+  height: 35px;
+  /*padding: 0 50px;*/
+  background-color: #F0F0F0;
+  /*position: fixed;
+  top: 0;*/
+  z-index: 2000;
+  /*box-shadow: 2px 0px 5px #505050;*/
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
 .subject{
   margin-top: 12px;
   cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
 }
 
 .subject:active{
@@ -43,9 +58,50 @@ html, body, #map{
   left: -1px;
 }
 
-.control-container h4{
+.control-container h3{
   margin-top: 16px;
 }
+
+.direction-container p{
+  padding: 7px 0;
+  margin-bottom: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 767px){
+  .direction-container p{
+    padding: 7px 0;
+    margin-bottom: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+  }
+  .control-container{
+    width: 100%;
+    height: 50px;
+    /*padding: 0 20px;*/
+    background-color: #F0F0F0;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    box-shadow: 2px 0px 5px #505050;
+    text-align: center;
+  }
+  .direction-container{
+    width: 100%;
+    height: 50px;
+    /*padding: 0 50px;*/
+    background-color: #F0F0F0;
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    box-shadow: 2px 0px 5px #505050;
+    text-align: center;
+    /*border-bottom: 1px solid black;*/
+  }
+  
+}
+
 
 #pathimate{
   border: 2px solid grey;
@@ -97,9 +153,10 @@ html, body, #map{
 .locnames {
     fill: black;
     text-shadow: 1px 1px 1px #FFF, 3px 3px 5px #000;
-    font-weight: bold;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 14px;
     z-index: 3000;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .info {
     padding: 8px 10px;
@@ -123,4 +180,49 @@ html, body, #map{
 .info h2{
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.bordRight{
+  border-right: 1px solid black;
+}
+
+.bordLeft{
+  border-left: 1px solid black;
+}
+
+.leaflet-control-attribution{
+  display: none;
+}
+
+.labelIcon{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  /*color: #606a76;*/
+  pointer-events: none;
+}
+
+.labelIconSmall{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  /*color: #606a76;*/
+  font-size: 9px;
+  pointer-events: none;
+}
+
+@media (max-width: 767px){
+  .labelIcon{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    /*color: #606a76;*/
+    pointer-events: none;
+    font-size: 8px;
+  }
+
+  .labelIconSmall{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    /*color: #606a76;*/
+    font-size: 6px;
+    pointer-events: none;
+  }
 }

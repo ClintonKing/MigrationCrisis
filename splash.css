@@ -1,0 +1,150 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+body {
+  /*background: url("img/MapBackground.png");*/
+  background-size: 100% 120vh;
+  background-repeat: no-repeat;
+  /*font-family: 'Open Sans', sans-serif;*/
+  margin: 0;
+}
+
+h1 {
+  font-size: 86px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*to kill the annoying overflow that happens otherwise*/
+.row {
+  margin: 0;
+}
+
+.menu {
+  color: #000;
+  padding: 10px;
+  height: 136px;
+  font-size: 25px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0px 1px 1px #888888;
+  top: 100%;
+  position: absolute;
+  z-index: 99;
+  text-align: right;
+}
+
+.menu-links {
+  margin-top: 25px;
+  text-align: right;
+  display: inline-block;
+}
+
+.logo {
+  height: 95px;
+  width: 95px;
+  background: url('img/dark-watercolor-logo.png');
+  background-size: 95px 95px;
+  font-size: 15px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  color: #fff;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.logo-title {
+  float: left;
+  margin-top: 25px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.video-background {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.coming-soon {
+   opacity: 0;
+   color: #fff;
+   font-size: 3em;
+   font-family: georgia;
+   margin-top: -8em;
+   transition: 2s ease-in;
+   -webkit-transition: 2s ease-in;
+   -webkit-animation-name: appear;
+   -webkit-animation-delay: 4s;
+   -webkit-animation-duration: 20s;
+   animation-name: appear;
+   animation-duration: 20s;
+   animation-delay: 5s;
+   animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes appear {
+    0%   { opacity: .7; }
+    100%  { opacity: .9; }
+}
+
+/* Standard syntax */
+@keyframes appear {
+  0%   { opacity: .7; }
+  100%  { opacity: .9; }
+}
+
+.arrow-bounce {
+  margin-top: -20%;
+  color: #fff;
+  -webkit-animation-name: bounce; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.arrow-hover {
+  -webkit-transition: .4s ease-in-out; /* Safari */
+  transition: .4s ease-in-out;
+  border-radius: 60px;
+}
+
+.arrow-hover:hover {
+  -moz-box-shadow: 0 0 8px #fff;
+  -webkit-box-shadow: 0 0 8px #fff;
+  box-shadow: 0px 0px 8px #fff;
+  padding: 5px;
+  background: #3A3D4B;
+  opacity: .9;
+  margin-top: -5px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bounce {
+    0%   { transform:translateY(-10%); }
+    25%  { transform:translateY(0%); }
+    50%  { transform:translateY(-23%); }
+    75%  { transform:translateY(0%); }
+    100% { transform:translateY(-10%); }
+}
+
+/* Standard syntax */
+@keyframes bounce {
+  0%   { transform:translateY(-10%); }
+  25%  { transform:translateY(0%); }
+  50%  { transform:translateY(-23%); }
+  75%  { transform:translateY(0%); }
+  100% { transform:translateY(-10%); }
+}

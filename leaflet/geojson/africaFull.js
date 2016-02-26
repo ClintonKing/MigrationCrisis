@@ -1,7 +1,7 @@
 var outlineStyle = {
   weight: 1,
   color: "#606a76",
-  fillColor: "#78E880",
+  fillColor: "#606a76",
   opacity: 0.8,
   fillOpacity: 0.0
 };
@@ -46,7 +46,7 @@ var Senegal = {
   "type": "Feature",
   "properties": {
     "popupContent": "Senegal",
-    "name": "Senegal",
+    "name": "SENEGAL",
     "countryInfo": "Stuff"
   },
   "geometry": {
@@ -201,7 +201,7 @@ var Eritrea = {
   "type": "Feature",
   "properties": {
     "popupContent": "Eritrea",
-    "name": "Eritrea",
+    "name": "ERITREA",
     "countryInfo": "Stuff"
   },
   "geometry": {
@@ -214,7 +214,7 @@ var Libya = {
   "type": "Feature",
   "properties": {
     "popupContent": "Libya",
-    "name": "Libya",
+    "name": "LIBYA",
     "countryInfo": "Thousands of Libyans are fleeing by boat across the mediterranean to escape poverty and hunger. Libya is also a major pass-through for refugees fleeing other African nations, as most boats crossing to Italy leave from the Libyan capital of Tripoli."
   },
   "geometry": {
@@ -227,7 +227,7 @@ var Syria = {
   "type": "Feature",
   "properties": {
     "popupContent": "Syria",
-    "name": "Syria",
+    "name": "SYRIA",
     "countryInfo": "A country divided by civil-war, Syria is the largest source of migrants towards Europe currently with multiple millions of Syrians having fled terror, oppression, hunger, and poverty for the hope of a better life."
   },
   "geometry": {
@@ -358,7 +358,7 @@ var Swaziland = {"type":"FeatureCollection","features":[
 
 var africaFull = {
   "type": "FeatureCollection",
-  "features": [Morocco, Algeria, Tunisia, westernSahara, Mauritania, guineaBissau, Guinea, sierraLeone, Liberia, burkinaFaso, Ghana, Togo, Benin, Niger, Chad, Cameroon, centralAfricanRepublic, Sudan, Egypt, Djibouti, southSudan, democraticRepublicOfCongo, Uganda, Kenya, Tanzania, Rwanda, Burundi, equatorialGuinea, Gabon, Angola, Zambia, Malawi, republicOfCongo, Mozambique, Zimbabwe, Botswana, Namibia, southAfrica, Swaziland]
+  "features": [Morocco, Mali, IvoryCoast, Algeria, Tunisia, westernSahara, Mauritania, guineaBissau, Guinea, sierraLeone, Liberia, burkinaFaso, Ghana, Togo, Benin, Niger, Chad, Cameroon, centralAfricanRepublic, Sudan, Egypt, Djibouti, southSudan, democraticRepublicOfCongo, Uganda, Kenya, Tanzania, Rwanda, Burundi, equatorialGuinea, Gabon, Angola, Zambia, Malawi, republicOfCongo, Mozambique, Zimbabwe, Botswana, Namibia, southAfrica, Swaziland, Ethiopia, Somalia]
 };
 
 // SPECIAL COUNTRY VARIABLES
@@ -395,8 +395,8 @@ var Senegal = {
   "type": "Feature",
   "properties": {
     "popupContent": "Senegal",
-    "name": "Senegal",
-    "countryInfo": "The reasons for large-scale migration from Senegal are perhaps less readily apparent than in cases like war-torn Syria or dictatorial Eritrea. Senegal was, in fact, a destination for migrants from other parts of Africa and even received considerable Lebanese migration over the course of the 20th Century when Senegal was a French colony. The country’s relative stability is not, however, discouraging many thousands of Senegalese from taking a chance on the world’s most dangerous migrant route in the hopes of reaching Europe."
+    "name": "SENEGAL",
+    "countryInfo": "Senegal was a destination for migrants from other parts of Africa and even received a considerable Lebanese community in the 20th century when Lebanon was a French colony. But the country’s relative stability is not discouraging thousands of Senegalese from taking the world’s deadliest migration route.<br/>Lack of employment is particularly acute among young people, where more than 60 percent of the population is 24 or younger. Senegalese who migrated to Europe in the past experienced success, which drove others to save their money in hopes of reaching Europe. Remissions from relatives living in Europe are often modest but sufficient to substantially improve the lives of their families.<br/>However, strict immigration policies make it extraordinarily difficult for the majority of Senegalese to reach Europe legally. In 2015, nearly 6,000 Senegalese refugees —largely young men —used the Central route. "
   },
   "geometry": {
     "type": "Polygon",
@@ -423,8 +423,8 @@ var Nigeria = {
   "type": "Feature",
   "properties": {
     "popupContent": "Nigeria",
-    "name": "Nigeria",
-    "countryInfo": "Stuff"
+    "name": "NIGERIA",
+    "countryInfo": "Nigerians are currently among the largest refugee groups to arrive to Europe via the Central Mediterranean route and their numbers have grown sharply in the past three years. In 2013, under 3,000 Nigerians came to Europe by sea but the number arriving to Italy alone increased to 9,000 in 2014 and then to over 22,000 in 2015. This large increase made them the second largest refugee group to arrive to Italy following Eritreans. The factors driving migration from Nigeria are in some respects similar to other West African countries, such as poverty and lack of economic opportunities. However, Nigerian migration is also driven in part by the armed conflict with the Islamist extremist group Boko Haram that has gripped the country over the last six years. In that period of time, it is estimated that over 20,000 have been killed and over two million displaced from their homes, further fueling the Nigerian diaspora towards Europe."
   },
   "geometry": {
     "type": "Polygon",
@@ -437,7 +437,7 @@ var Ethiopia = {
   "type": "Feature",
   "properties": {
     "popupContent": "Ethiopia",
-    "name": "Ethiopia",
+    "name": "ETHIOPIA",
     "countryInfo": "Stuff"
   },
   "geometry": {
@@ -451,7 +451,7 @@ var Somalia = {
   "type": "Feature",
   "properties": {
     "popupContent": "Somalia",
-    "name": "Somalia",
+    "name": "SOMALIA",
     "countryInfo": "Stuff"
   },
   "geometry": {
@@ -555,8 +555,8 @@ var Eritrea = {
   "type": "Feature",
   "properties": {
     "popupContent": "Eritrea",
-    "name": "Eritrea",
-    "countryInfo": "This small former Italian colony in the Horn of Africa was the source of more refugees in 2014 than any other country besides Syria. Media, United Nations, and Amnesty International reports on Eritrea all make clear the culpability of the country’s repressive government in the exodus to Europe. That tens of thousands of Eritreans risk the terrible uncertainties of crossing deserts and seas and of suffering at the hands of predatory human-traffickers speaks to the severity of the problems they face in their home country."
+    "name": "ERITREA",
+    "countryInfo": "This small, former Italian colony in the Horn of Africa was the source of more 25 percent of the refugees that arrived to Italy in 2015. A report released by the UN the same year thoroughly documented the abuses of the Eritrean government. Chief among these is conscription into the country’s armed forces. Although national service is supposedly limited to 18 months, conscripts may find themselves serving for an indefinite period of time and are reportedly subjected to harsh conditions and forced labor tantamount to slavery. Female conscripts are extremely vulnerable to sexual violence while in the national service. The practice of forced labor is a fundamental part of Eritrea’s economy.<br/>The government suppresses all opposition to such abuses through arbitrary arrests, torture, forced disappearances and the maintenance of an enormous surveillance apparatus that forces ordinary Eritreans to live in a state of constant fear and mistrust. The government maintains a network of over 800 prisons throughout the country, some of which reportedly take the form of storage containers in the desert.<br/>In its Press Freedom Index, Reporters Without Borders named Eritrea as the country with the most unfree press in the world, topping North Korea for the past eight years.<br/>In addition to extreme repression by the Eritrean government, the country faces poverty, lack of economic opportunity and food insecurity."
   },
   "geometry": {
     "type": "Polygon",
@@ -569,8 +569,8 @@ var Libya = {
   "type": "Feature",
   "properties": {
     "popupContent": "Libya",
-    "name": "Libya",
-    "countryInfo": "Libya plays an integral role in the ongoing migration crisis although Libyans themselves are not among the nationalities leaving for Europe in the greatest numbers. The North African country is, instead, the launching point for an enormous proportion of the refugees braving the Mediterranean in the hopes of reaching Europe. In 2014, over 170,000 refugees, crossed to Europe via the Central Mediterranean Route primarily from Libya to Italy and Malta, accounting for 60% of all refugees arriving to Europe that year. This year has also seen a massive migration along this route, with over 106,000 refugees counted from January to August."
+    "name": "LIBYA",
+    "countryInfo": "Although Libyans are not among those leaving for Europe in the greatest numbers, Libya is the launching point for many of the refugees braving the Mediterranean.<br/>In 2015, over 150,000 refugees came to Europe via the Central Mediterranean Route, primarily from Libya to Italy and Malta.<br/>A legacy of increasing instability made Libya one of the primary gateways to Europe via the Mediterranean. Since early 2011, Libya has experienced popular uprisings tied to the Arab Spring, a civil war that involved a large-scale NATO military intervention which toppled the government of Muammar Gaddafi. The subsequent power vacuum led to political fragmentation. Armed conflict is ongoing between rival governments, numerous militia and tribal groups. This fragmentation of power has encouraged a proliferation of a complex network of human smugglers who help refugees escape from places like Eritrea, Syria, Gambia, Nigeria, and Senegal."
   },
   "geometry": {
     "type": "Polygon",
@@ -583,8 +583,8 @@ var Syria = {
   "type": "Feature",
   "properties": {
     "popupContent": "Syria",
-    "name": "Syria",
-    "countryInfo": "A country divided by civil-war, Syria is the largest source of migrants towards Europe currently with multiple millions of Syrians having fled terror, oppression, hunger, and poverty for the hope of a better life."
+    "name": "SYRIA",
+    "countryInfo": "In the spring of 2011, large anti-government protests arose as part of the Arab Spring and were violently repressed by the the forces of President Bashar al-Assad, president of Syria. Armed resistance mounted quickly and the country soon found itself in a civil war. The highly varied ethno-religious makeup of Syria facilitated the rise of numerous factions, each with their own foreign assistance. The human toll of the conflict is extensive with no shortage of atrocities, including the use of chemical weapons in 2013, which was widely attributed to government forces.<br/>As many as 250,000 people have lost their lives, including more than 100,000 civilians. According to UN figures reported in February 2016, the number of people displaced by violence is around 12 million, an astounding figure that includes roughly 7.6 million internally displaced people and over 4.7 million who have fled the country altogether. The vast majority of these refugees have taken shelter in neighboring countries with 2.6 million in Turkey, more than 1 million in Lebanon, 635,000 in Jordan and 245,000 in Iraq. Many reside in makeshift camps.<br/>In 2015 only 4.8 percent of the refugees arriving to Italy were Syrians. Starting in 2015, most Syrian refugees have taken the Eastern route, arriving to Greece in massive numbers."
   },
   "geometry": {
     "type": "Polygon",
@@ -611,8 +611,8 @@ var Gambia = {
   "type": "Feature",
   "properties": {
     "popupContent": "Gambia",
-    "name": "The Gambia",
-    "countryInfo": "Nearly 9,000 Gambians arrived to Europe by sea to Europe in 2014, roughly triple the number arriving in 2013 and making The Gambia the fifth largest source refugees. The scale of this migration is particularly remarkable given the country’s small size both in terms of territorial extension and population; it is continental Africa’s smallest nation and has less than two million inhabitants. About 4% of Gambians now live abroad and the fact that remittances make up around 20% of the country’s economy, according to the World Bank, demonstrates the importance of migration for The Gambia."
+    "name": "GAMBIA",
+    "countryInfo": "Nearly 9,000 Gambians arrived in Italy by sea in 2015 making Gambia the fifth largest source of refugees. The scale of this migration is particularly remarkable given the country’s small size: it is continental Africa’s smallest nation and has less than two million inhabitants. About four percent of Gambians now live abroad. According to the World Bank, remittances make up around 20 percent of The Gambia’s economy, which demonstrates the importance of migration to the country.<br/>Gambians leave their home country for many reasons, but lack of opportunity is chief among them. Demographically, it is a very young country with 60 percent of its population under 24 years old.<br/>Despite the costs and dangers of taking the route to North Africa through the Mediterranean with Libya in disarray, the chance of reaching Europe has perhaps never been greater. The fact that many have died en route has not seemed to decrease the flow."
   },
   "geometry": {
     "type": "Polygon",
@@ -624,4 +624,107 @@ var Gambia = {
 
 // GROUP OF ALL COUNTRIES
 
-var allCountries = [Mali, Senegal, IvoryCoast, Nigeria, Ethiopia, Somalia, Eritrea, Libya, Syria]
+var allCountries = [Senegal, Nigeria, Eritrea, Libya, Syria]
+
+
+// LABELS
+
+var libyaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'LIBYA'
+});
+var maliLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'MALI'
+});
+var algeriaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'ALGERIA'
+});
+var senegalLabel = L.divIcon({
+  className: 'labelIconSmall',
+  html: 'SENEGAL'
+});
+var gambiaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'GAMBIA'
+});
+var burkinaFasoLabel = L.divIcon({
+  className: 'labelIconSmall',
+  html: 'BURKINA FASO'
+});
+var nigerLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'NIGER'
+});
+var chadLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'CHAD'
+});
+var syriaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'SYRIA'
+});
+var egyptLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'EGYPT'
+});
+var ethiopiaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'ETHIOPIA'
+});
+var eritreaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: '- ERITREA'
+});
+var somaliaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'SOMALIA'
+});
+var sudanLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'SUDAN'
+});
+var southSudanLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'SOUTH SUDAN'
+});
+var kenyaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'KENYA'
+});
+var nigeriaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'NIGERIA'
+});
+var mauritaniaLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'MAURITANIA'
+});
+var italyLabel = L.divIcon({
+  className: 'labelIcon',
+  html: 'ITALY'
+});
+
+
+function addLabels(){
+  L.marker([27.916766641249065,16.787109375], {icon: libyaLabel}).addTo(map);
+  L.marker([17.978733095556183,-2.245703125], {icon: maliLabel}).addTo(map);
+  L.marker([27.761329874505233,0.900390625], {icon: algeriaLabel}).addTo(map);
+  L.marker([14.902321826141808,-16.1171875], {icon: senegalLabel}).addTo(map);
+  L.marker([13.432366575813761,-21.73095703125], {icon: gambiaLabel}).addTo(map);
+  L.marker([12.74730485070126,-2.5380859375], {icon: burkinaFasoLabel}).addTo(map);
+  L.marker([17.560246503294913,7.8876953125], {icon: nigerLabel}).addTo(map);
+  L.marker([15.368949896534705,17.5888671875], {icon: chadLabel}).addTo(map);
+  L.marker([34.92197103616377,37.5400390625], {icon: syriaLabel}).addTo(map);
+  L.marker([26.03704188651584,28.53125], {icon: egyptLabel}).addTo(map);
+  L.marker([9.102096738726456,37.84765625], {icon: ethiopiaLabel}).addTo(map);
+  L.marker([17.813395760460585,41.16650390625], {icon: eritreaLabel}).addTo(map);
+  L.marker([9.64407696490791,45.65419921875], {icon: somaliaLabel}).addTo(map);
+  L.marker([16.29905101458183,29.619140624999996], {icon: sudanLabel}).addTo(map);
+  L.marker([8.297087564172005,28.50927734375], {icon: southSudanLabel}).addTo(map);
+  L.marker([0.5273363048115169,36.6611328125], {icon: kenyaLabel}).addTo(map);
+  L.marker([9.928487062665504,6.55859375], {icon: nigeriaLabel}).addTo(map);
+  L.marker([19.80805412808859,-13.216796875], {icon: mauritaniaLabel}).addTo(map);
+  L.marker([44.96479793033104,9.25048828125], {icon: italyLabel}).addTo(map);
+};

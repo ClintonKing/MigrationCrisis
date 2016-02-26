@@ -8,27 +8,106 @@
   <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300' rel='stylesheet' type='text/css'>
   <link href="stylesheets/test-menu.css" rel="stylesheet" />
   <link href="stylesheets/grid.css" rel="stylesheet" />
+  <!-- <link href="stylesheets/responsiveslides.css" rel="stylesheet" /> -->
   <link href="stylesheets/men-of-san.css" rel="stylesheet" />
   <link href="stylesheets/breakpoints2.css" rel="stylesheet" />
+
+  <!--favicon generator by http://www.favicon-generator.org/-->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="scripts/scroll2.js"></script>
-  <script src="scripts/second-menu.js"></script>
+  <script src="scripts/altMenu.js"></script>
+  <script src="scripts/responsiveslides.min.js"></script>
+  <script src="scripts/audio.js"></script>
+
+  <script>
+    function mapReplace(){
+      if ($(window).width() < 767){
+          $("#theMap").replaceWith('<div id="mobileMap" class="col-md-12"><a href="leaflet/Map2mob.html"><img src="img/Map2.png" class="mapLink" /></a></div>');
+      } else if ($(window).width() > 766){
+          $("#mobileMap").replaceWith('<div class="text-center" id="theMap"><iframe src="leaflet/Map2.html" id="mapTwo" scrolling="no"></iframe></div>');
+      }
+    };
+
+
+
+  </script>
+  <script>
+    audiojs.events.ready(function(){
+      var audios = document.getElementsByTagName('audio');
+
+      var al =  audiojs.create(audios[0],{
+        css: false,
+        createPlayer: {
+          markup: false,
+            playPauseClass: 'play-pause',
+            scrubberClass: 'scrubber',
+            progressClass: 'progress',
+            loaderClass: 'loaded',
+            timeClass: 'time',
+            durationClass: 'duration',
+            playedClass: 'played',
+            errorMessageClass: 'error-message',
+            playingClass: 'playing',
+            loadingClass: 'loading',
+            errorClass: 'error'
+        }
+      });
+    });
+  </script>
+  <script>
+  $(document).ready(function(){
+    setTimeout(function(){
+    $("#mapTwo").css({'max-height':($(window).height() - $("#superNav").height() - 10 + 'px')});
+    // $("#slideShow").css({'max-height':($(window).height() + 'px')});
+  }, 2000);
+  mapReplace();
+  });
+
+  $(window).resize(function(){
+
+    $("#mapTwo").css({'height':($(window).height() - $("#superNav").height() - 10 + 'px')});
+    // $("#slideShow").css({'height':($(window).height() + 'px')});
+    mapReplace();
+  });
+  </script>
+
 </head>
 <body>
-  <nav>
+  <nav id="superNav">
     <div class="col-md-12 navbar-fixed-top menu">
-      <div class="logo"></div>
-      <div class="logo-title">Divided by the Sea</div>
+      <a href="index.html" class="logo"></a>
+      <a href="index.html" class="logo-title">DIVIDED BY THE SEA</a>
       <div class="menu-links">
-      <a href="#home">home</a> - <a href="/overview.html">about</a> -
-      <a href="#people">people</a> - <a href="#experience">experience</a>
+        <a href="about.html">ABOUT</a><a href="index.html#stories">STORIES</a><a href="index.html#mapOne">MAP</a>
       </div>
     </div>
   </nav>
 
   <!--*************************pics and title****************************-->
+  <div class="row">
+    <div class="col-md-12 menuShelf"></div>
+  </div>
   <div class="row">
     <div class="col-md-12 faces">
       <div class="col-xs-4 face" id="face-right"></div>
@@ -39,56 +118,109 @@
 
   <div class="row">
     <div class="col-md-12 text-center">
-      <div id="title">The Men of San Giovanni</div>
-      <div class="subheader">This is a subtitle</div>
+      <h1 id="title">The Men of San Giovanni</h1>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+      <div class="subheader col-md-8">Civil war in Libya forces three refugees to cross the Mediterranean</div>
+    <div class="col-md-2"></div>
   </div>
 
   <!--*********************story-section 1********************************-->
   <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10 story" id="story1">
-      Located on the coast of Italy's Strait of Messina, Villa San Giovanni is a small unassuming town in the
-      southernmost Italian province of Reggio Calabria. Once known for its mulberry crop and silkworm breeding, the
-      area is now known for the colorful festival of the Saints Cosma and Damiano. It has also become a temporary
-      home for a group of three refugees fleeing from Libya.
-      Mudiaga, 29, Seykou, 20, and Lamin, 18, made the dangerous journey across the Mediterranean Sea to Italy after
-      mounting chaos and violence in Libya they said forced them to flee.
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <p class="story">
+        Located on the coast of Italy’s Strait of Messina, Villa San Giovanni is a small, unassuming town in the southernmost Italian province of Reggio Calabria.
+      </p>
+      <p class="story">
+        Once known for its mulberry crop and silkworm breeding, the area is now known for the colorful festival of Saints Cosmas and Damian. It has also become a temporary home for a group of three refugees fleeing from Libya.
+      </p>
+      <p class="story">
+        Mudiaga, 29, Seykou, 20, and Lamin, 18, made the dangerous journey across the Mediterranean Sea to Italy after mounting chaos and violence in Libya forced them to flee.
+      </p>
     </div>
-    <div class="col-sm-1"></div>
+    <div class="col-sm-2"></div>
   </div>
 
 
   <!--******************audio*************-->
   <div class="row" id="audio-section">
     <div class="col-sm-12 text-center">
-        <audio controls>
-          <source src="audio/sangiovanni-audio.mp4" type="audio/mpeg">
-        Your browser does not support the audio element.
-        s</audio>
+        <div class="audiojs">
+          <audio src="audio/sangiovanni-audio.mp4" preload="auto"></audio>
+          <div class="play-pause">
+            <p class="play"></p>
+            <p class="pause"></p>
+            <p class="loading"></p>
+            <p class="error"></p>
+          </div>
+          <div class="scrubber">
+            <div class="progress"></div>
+            <div class="loaded"></div>
+          </div>
+          <div class="time">
+            <em class="played">00:00</em>/<strong class="duration">00:00</strong>
+          </div>
+          <div class="error-message"></div>
+        </div>
     </div>
   </div>
 
   <!--******************end of story section 1***********************************-->
   <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10 story" id="story1-2">
-      The three now live in a four story concrete building in Villa San Giovanni provided by an Italian resettlement
-      organization called SPRAR. The apartment is sparsely decorated with secondhand mattresses, suitcases and neatly
-      stacked piles of sparse personal possessions - a New York yankees hat, a 2003 Bob Marley calendar, a hardcover
-      Bible, a pair of brightly colored soccer cleats.
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" id="story1-2">
+      <p class="story">
+        The three now live in a four-story concrete building in Villa San Giovanni that was provided by an Italian resettlement organization called <a href="http://www.sprar.it/" target="_blank">System for the Protection of Asylum Seekers and Refugees</a>. The apartment is sparsely furnished with secondhand mattresses, suitcases and neatly stacked piles of personal possessions — a New York Yankees hat, a 2003 Bob Marley calendar, a hardcover Bible and a pair of bright soccer cleats.
+      </p>
     </div>
-    <div class="col-sm-1"></div>
+    <div class="col-sm-2"></div>
   </div>
 
   <!--*********************************************apartment images**********************************-->
   <div class="row">
-    <div class="col-sm-12 picture-slideshow">
-      <iframe src="test-index.html" style="width:100%; height:100%; margin:0; padding:0; border:0; background: cover;"></iframe>
+    <div class="col-sm-12 callbacks_container picture-slideshow" id="slideShow">
+      <ul class="rslides callbacks">
+        <li><img src="img/men/Gallery/apartment1.jpg" class="slideImg" alt="" /></li>
+        <li><img src="img/men/Gallery/1-dishes.jpg" class="slideImg" alt="" /></li>
+        <li><img src="img/men/Gallery/2-outside.jpg" class="slideImg" alt="" /></li>
+        <li><img src="img/men/Gallery/3a-mattress.jpg" class="slideImg" alt="" /></li>
+        <li><img src="img/men/Gallery/3b-man.jpg" class="slideImg" alt="" /></li>
+        <li><img src="img/men/Gallery/4-shadow.jpg" class="slideImg" alt="" /></li>
+        <li><img src="img/men/Gallery/5-clothesline.jpg" class="slideImg" alt="" /></li>
+        <li><img src="img/men/Gallery/6-computer.jpg" class="slideImg" alt="" /></li>
+      </ul>
+      <div class="col-md-12 photoCaption">
+        <p>
+          Inside the temporary housing provided to Mudiaga, Lamin and Seykou through a resettlement agency called the System for the Protection of Asylum Seekers and Refugees (SPRAR).
+        </p>
+      </div>
     </div>
-    <div class="col-sm-4 apt-item" id="books"></div>
-    <div class="col-sm-4 apt-item" id="shoes"></div>
-    <div class="col-sm-4 apt-item" id="hat"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 overview-grid" id="books">
+      <div class="caption">
+        <div class="caption-center">
+          <p>Mudiaga spends his nights in his room reading the Bible and an English language dictionary.</p></div>
+      </div>
+    </div>
+    <div class="col-md-4 overview-grid" id="shoes">
+      <div class="caption">
+        <div class="caption-center">
+          <p>Seykou holds a pair of yellow soccer cleats he wears to soccer games hosted by refugee agencies in Calabria.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 overview-grid" id="hat">
+      <div class="caption">
+        <div class="caption-center">
+          <p>A New York Yankees hat sits on a pile of books in a shared living space in the house.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -98,11 +230,7 @@
     <div class="col-sm-12 text-center">
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-8 col-sm-10 quote">
-          "Before, there was no war in Libya. Everybody was
-          equal. By the time war started, black people had no
-          chance. I was in prison in for three months. I decided
-          to come to Italy to save my life whether I survive or
-          died. And God help me, I survived. " - Seykou
+          "Before, there was no war in Libya. Everybody was equal. By the time war started, black people had no chance. I was in prison in for three months. I decided to come to Italy to save my life whether I survive or died. And God help me, I survived. " - Seykou
         </div>
         <div class="col-md-2 col-sm-1"></div>
     </div>
@@ -110,181 +238,158 @@
 
 
   <!--*********************************************watching tv image**********************************-->
-  <div class="row">
-    <div class="col-sm-12 watching-tv">
+  <div class="row spanPic moreMargin">
+    <img class="img-responsive spanPic" src="img/men/watching-tv.jpg" />
+    <div class="col-md-12 photoCaption">
+      <p>
+        Seykou watches the Argentina v. Paraguay game on the television set  in their home.
+      </p>
     </div>
+  </div>
+  <br />
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" id="story1">
+      <p class="story">
+        When we visit them, a rerun of the 2015 Copa America soccer game between Argentina and Paraguay is playing on an old television set in the kitchen corner. Some of the men staying in the apartment are hanging clothes for laundry day.
+      </p>
+      <p class="story">
+        Italian soccer jerseys, worn undershirts and patterned bedsheets hang from colorful plastic clothespins on the west side of the apartment. A young man checks his Facebook on the narrow balcony on the other side, with a stunning view of the sea wrapping around Sicily as his backdrop.
+      </p>
+      <p class="story">
+        We sit around a table in the kitchen with a blue-checkered tablecloth like those you’d see in  quaint, street-side Italian cafes. The three men, eager to share their stories, offer us cups of soda and biscuits before we begin the interview.
+      </p>
+      <p class="story">
+        They asked us to only use their first names to hide their identity, concerned that sharing too much information may jeopardize their pending asylum cases.
+      </p>
+    </div>
+    <div class="col-sm-2"></div>
   </div>
 
   <!--******************************libya situation***********************************-->
   <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10 story">
-      <div class="section-headliner">The Situation in Libya</div>
-      <p>They have all had incredible journeys. Seykou, ambitious and well-spoken, left his home in Gambia and traveled
-      through Senegal, Mali, Burkina Faso and Niger before arriving in Libya in 2011. Mudiaga made a similar journey
-      to Libya from Nigeria in 2007 and Lamin from Gambia in 2012.</p>
-      <br>
-      <p>Before the war started, many people from neighboring African countries were moving to Libya in search of work.
-      They found jobs as mechanics, bricklayers, plumbers, and construction workers, jobs that middle and upper class
-      Libyans were gladly handing off to undocumented laborers. The 2011 uprising, overthrow, and subsequent murder
-      of Muammar Gaddafi initially spurred promises of democracy and further economic opportunity for the country;
-      however, those promises were quickly replaced with a brutal civil war and political chaos. </p>
-
-      <div class="text-center map2">
-        <!--img src="img/map-watercolor-purpley.png" height="70%" width="70%">-->
-        <br>routes of 3 men to Libya
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="section-headliner">THE SITUATION IN LIBYA</div>
+      <p class="story">They have all had incredible journeys.</p>
+      <p class="story">Seykou, ambitious and well-spoken, left his home in Gambia and traveled through Senegal, Mali, Burkina Faso and Niger before arriving in Libya in 2011. Mudiaga made a similar journey to Libya from Nigeria in 2007 and Lamin from Gambia in 2012.</p>
+      <p class="story">Before the war started, many people from neighboring African countries moved to Libya in search of work. They found jobs as mechanics, bricklayers, plumbers and construction workers — jobs that middle and upper-class Libyans were gladly handing to undocumented laborers.</p>
+    </div>
+    <div class="col-sm-2"></div>
+      <div class="col-md-12" id="theMap">
+        <iframe src="leaflet/Map2.html" id="mapTwo" scrolling="no"></iframe>
       </div>
 
-      <p>Mudiaga moved to Libya in February of 2007. He quickly found work at a small company in the capital of Tripoli
-      doing welding and fabrication work. He says he found great satisfaction in his work and was also able able to put
-      some money aside, something he had not been able to do at home in Nigeria. However, after the collapse of the
-      government, the company where Mudiaga worked abruptly shut down along with the availability of economic opportunity.
-      "When the war started, everything just finished. It is a big war with machine guns and bullets flying,"
-      said Mudiaga.</p>
-      <br>
-      <p>
-      Lamin was in Libya for one year and four months and like Mudiaga found steady employment that allowed him to
-      send money to his family in Gambia. "I decided to leave Gambia to have something for my family. First, I was in
-      Senegal working, but there money is not powerful. So that's why I went to Libya because the money is like
-      Europe." He said when he first arrived there was a break in fighting, but about a year into his stay, the fighting between
-      the divided factions started up again, making it unsafe for him to leave his home.</p>
-      <br>
-      <p>
-      Seykou moved to Libya in 2011 to join his family who had started working in the country. He said that in the beginning,
-      life in Libya was nice. He enjoyed being there and being close to his family. However, one day on his
-      way to work, Seykou was kidnapped and thrown into prison. "I was in prison for three months. I decided to come
-      here (to Italy) to save my life. Before, there was no war there. Everybody was equal in Libya. By the time war
-      started, black people had no chance...So from there, I decided to sacrifice my life. If I survive or dead. And God
-      help me, I survived," said Seykou.</p>
-      <br>
-      <p>
-      As the fighting worsened, all three men made the same choice that thousands of others in search of a better life
-      make each year - to leave Libya and take the dangerous journey across the Mediterranean into Europe. The political
-      climate in Libya provided a perfect opportunity for smugglers to move people freely across the Mediterranean
-      into Italy. </p>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <p class="story">The 2011 uprising, overthrow and subsequent murder of Muammar Gaddafi initially spurred promises of democracy and further economic opportunity for the country.</p>
+      <p class="story">Those promises were quickly replaced with a brutal civil war and political chaos. </p>
+      <p class="story">Mudiaga moved to Libya in February 2007. He quickly found work as a welder and fabricator at a small company in the capital of Tripoli. He said he found great satisfaction in his work and was able to set aside savings, which he was not able to do at home in Nigeria. </p>
+      <p class="story">But after the collapse of the government, the company where Mudiaga worked shut down.</p>
+      <p class="story">“When the war started, everything just finished,” Mudiaga said. “It is a big war with machine guns and bullets flying.”</p>
+      <p class="story">Lamin was in Libya for 16 months, and like Mudiaga, found steady employment, which allowed him to send money to his family in Gambia. </p>
+      <p class="story">“I decided to leave Gambia to have something for my family,” Lamin said. “First, I was in Senegal working, but there, money is not powerful. So that’s why I went to Libya because the money is like Europe.” </p>
+      <p class="story">He said when he first arrived there was a break in fighting, but about a year into his stay, the conflicts between the divided factions started up again, making it unsafe for him to walk out of his front door. </p>
+      <p class="story">Seykou moved to Libya in 2011 to join his family who had started working in the country. In the beginning, life in Libya was serene, he said. He was grateful to be close to family.</p>
+      <p class="story">But one day on his way to work, Seykou was kidnapped and put in prison where he would spend the next three months.</p>
+      <p class="story">“I decided to come [to Italy] to save my life,” he said. “Before, there was no war there. Everybody was equal in Libya. By the time war started, black people had no chance … So from there, I decided to sacrifice my life...and God help me, I survived.”</p>
+      <p class="story">As the fighting worsened, all three men made the same choice that thousands of others in search of a better life make each year — to leave Libya and risk a dangerous journey across the Mediterranean. The political climate in Libya provided an ideal opportunity for smugglers to freely move individuals like Mudiaga, Seykou and Lamin into Italy. </p>
       <br><br>
     </div>
-    <div class="col-sm-1"></div>
+    <div class="col-sm-2"></div>
   </div>
 
 
   <!--*********************************************stairs image**********************************-->
-  <div class="row">
-    <div class="col-md-12 stairs">
+  <div class="row spanPic moreMargin">
+    <img class="img-responsive spanPic" src="img/men/stairs.jpg" />
+    <div class="col-md-12 photoCaption">
+      <p>
+        Two of the men walk up the stairs to a second living space for asylum seekers.
+      </p>
     </div>
   </div>
+  <br />
 
 
   <!--************************************************the crossing*****************************-->
   <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10 story">
-      <div class="section-headliner">The Crossing</div>
-      <p>While the three men made their journeys at different times, they all suffered on their trips across the Mediterranean.
-      Mudiaga said that he had brought biscuits and bottles of water to the port, but the smugglers ordered that he
-      leave everything behind. For three days, he did not eat any food or drink a drop of water. He said he thanked God
-      when an Italian boat rescued him and brought him to the tiny island of Lampedusa. He stayed in Lampedusa for 9
-      days, Toroto? for 14 days, and then was re-located to San Giovanni.</p>
-      <br>
-      <p>
-      Like Mudiaga, Seykou said he also didn't eat or drink for three days on the small fishing boat crowded with over
-      300 people. On the third day, he fell unconscious. "I was there [on the boat] for three days. I was flat. Our water
-      was finished. So by the time the Italy people came and rescued us, I didn't know how I ended up on the boat..So
-      from there, I thank God because I don't die in the sea. Thank God nobody died in the sea."
-      </p>
-
-      <div class="text-center map2">
-        <!--img src="img/map-watercolor-purpley.png" height="70%" width="70%">-->
-        <br>Map of the routes from Libya to Italy. The boats would be animated
-      </div>
-
-      <p>
-        Though the trips for both Mudiaga and Seykou were grueling, they both thanked God that nobody had died in
-        their journeys to reach Italian soil. Sadly, Lamin's boat was not so lucky. "Our boat. We were 110 people in the
-        boat. We were on the boat almost 7 hours. Our boat had problem and many people died. 55 people died in our
-        boat. And 55 people survived...It's the God you know.. it was their time. The time that God opened their books
-        and said this day you will die. So it's the God," said Lamin.
-      </p>
-      <br>
-      <p>
-        According to the IOM 2,600 refugees have drowned in the Mediterranean this year attempting to cross to Italy or
-        Greece.
-      </p>
-
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="section-headliner">A PERILOUS JOURNEY</div>
+      <p class="story">Though the three men made their journeys at different times, the common thread of hardship ran throughout their trips across the Mediterranean.</p>
+      <p class="story">Mudiaga said he had brought biscuits and bottles of water to the port, but the smugglers ordered him to leave everything behind. For three days, he did not have a drop of water.</p>
+      <p class="story">Disoriented and dehydrated, he was deeply relieved when the Italian boat rescued him, bringing him to the tiny island of Lampedusa. After being held there for nine days, he was moved to Torino for two weeks and then finally to his current temporary home of San Giovanni.</p>
+      <p class="story">Like Mudiaga, Seykou also didn’t eat or drink for three days on a small fishing boat crowded with over 300 people. On the third day, he fell unconscious.</p>
+      <p class="story">“I was [on the boat] for three days. I was flat. Our water was finished,” he said. “So by the time the Italy people came and rescued us, I didn’t know how I ended up on the boat ... I thank God because I don't die in the sea. Thank God nobody died in the sea.”</p>
+      <p class="story">The boats transporting Mudiaga and Seykou made it safely to shore, but that was not the case for the boat carrying Lamin.</p>
+      <p class="story">“Our boat — we were 110 people in the boat,” he said. “We were on the boat almost seven hours. Our boat had problem, and many people died.”</p>
+      <p class="story">“Fifty-five people died in our boat. And 55 people survived … It's the God, you know... it was their time. The time that God opened their books and said this day, you will die.”</p>
+      <p class="story">According to the International Organization for Migration, more than 3,700 refugees drowned in the Mediterranean in 2015 attempting to reach Europe.</p>
     </div>
-    <div class="col-sm-1"></div>
+    <div class="col-sm-2"></div>
   </div>
 
   <!--*********************************************3 men standing image**********************************-->
-  <div class="row">
-    <div class="col-md-12 men-standing">
+  <div class="row spanPic moreMargin">
+    <img class="img-responsive spanPic" src="img/men/men-standing.jpg" />
+    <div class="col-md-12 photoCaption">
+      <p>
+        The three men pose for a portrait inside their temporary home in San Giovanni.
+      </p>
     </div>
   </div>
+  <br />
 
 
  <!--*********************************************though the 3 men made it safely...*********************************-->
   <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10 story" id="section-10">
-      <p>Though the three men made it safely to Italy, Mudiaga, Seykou and Lamin still have a long journey ahead.</p>
-      <br>
-      <p>In Europe, there is a common set of rules for asylum seekers that apply to most of the EU member states."If you
-      don't have documents, there is nothing you can do. Nothing. It's a big problem," said Mudiaga.
-    </p>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" id="section-10">
+      <div class="section-headliner">SEEKING ASYLUM: THE COMMISSION</div>
+      <p class="story">Though the three men made it safely to Italy, their journey is not yet complete.</p>
+      <p class="story">In Europe, there is a common set of rules that fall under the <a href="http://www.ecre.org/topics/areas-of-work/protection-in-europe/10-dublin-regulation.html" target="_blank">Dublin Regulation</a>, a law that decides which European Union member state is responsible for examining applications for asylum seekers looking for international protection. The main goal of this EU law is to prevent people from applying for asylum to multiple member states.</p>
+      <p class="story">When Mudiaga, Seykou and Lamin arrived in Italy, they had eight days to present themselves to either the border police or the provincial police station, where fingerprinting and photographing take place. The three men were fingerprinted and registered in Italy.</p>
+      <p class="story">Now, according to the Dublin Regulation, they must process their request with a local Italian Territorial Commissions or Sub-commissions for International Protection. These commissions, which fall under the Department of Civil Liberties and Immigration of the Italian Ministry of Interior, are wholly responsible for granting individual decisions on asylum cases in Italy.</p>
+      <p class="story">According the the Council for Refugees, in 2015, 55.2 percent of asylum seekers were denied any type of protection. While they can appeal the decision, asylum seekers are often rejected a second time and given 14 days to return to their home country. Many remain in the country undocumented.</p>
+      <p class="story">“If you don’t have documents, there is nothing you can do,” Mudiaga said. “Nothing. It’s a big problem,”</p>
+      <p class="story">Without paperwork, refugees in Italy cannot apply for employment or find long-term housing, and they risk deportation if caught by local police.</p>
     </div>
-    <div class="col-sm-1"></div>
+    <div class="col-sm-2"></div>
   </div>
 
   <!--*****************************************the commission / passport********************************************-->
-  <div class="row">
-    <div class="col-md-12 col-xs-12 text-center story blue">
-      <div class="text-center" id="header2">The Commission</div>
-      <div id="passport">*to be animated</div>
+  <div class="row moreMargin commissRow">
+    <div class="col-md-12 spanPic">
+      <img class="img-responsive commission" src="img/men/commission-big.png" />
     </div>
   </div>
 
   <!--************************************************their future*****************************-->
   <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10 story">
-      <div class="section-headliner">The Future</div>
-      <p>
-        "The future is hard. Not for everybody. But right now, it is not good for us," said Mudiaga. Under the current
-        asylum procedures, life for people entering Europe is very uncertain. Those who do gain asylum through the Italian
-        system are left to find jobs and housing in a country with a low employment rate and discrimination against
-        refugees. Those who do not obtain documents either have to return to their home country or live in Europe without
-        documents, making it almost impossible to find jobs and assistance from agencies.
-      </p>
-      <br>
-      <p>
-        In XXX month, Seykou found out that he was denied documents from the commission. "For me, from the Commission,
-        I have negative. I don't have documents. It is very difficult for me because now I face difficult things. It
-        was difficult in Libya, but thank God I escaped from there. But in Europe, if you don't have documents, still now
-        your life isn't back. So you cannot survive. I cannot stay here. I have to focus and do something or go to another
-        country to get documents." In September we checked in with his housemate on Facebook and found out that he
-        had left San Giovanni and was trying to find work in other parts of Italy.
-      </p>
-      <br>
-      <p>
-        After years of waiting for a Commission date, Mudiaga had his commission hearing in July. While he waited to
-        hear about the results, they gave him a small piece of paper that allowed him to walk on the streets without being
-        arrested by the police. "For now, I don't know about my documents or if they will give to me. I don't know for
-        now. It depends on your story, whether it is good enough. Why did you leave your country...that is the biggest
-        question for you." We checked back in with him in September and he said that he had been approved for a 2-year
-        document. When we asked if he had started looking for work, he said "The truth is in Italy it is hard to look for
-        work especially with black skin. Luckily, I can stay in the project [SPRAR] for three months until I have to leave."
-        He will stay in the apartment in San Giovanni through the SPRAR program until late December.
-      </p>
-      <br>
-      <p>
-        Lamin's commission date is in October. He hopes to stay in Italy, pursue his education, and continue playing
-        soccer with a group of young refugees he has met through the progam. When asked him what he thinks his future
-        in Europe may look like, he said "You know life is full of changes. I'm 18 years old. I want my future to be good.
-        But right now, I cannot tell you I want to be this or that. Right now, I want to go back to school to educate. Because
-        I'm 18 years old. I'm young...In Gambia, I wanted to be a journalist just like you."
-      </p>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="section-headliner">LOOKING AHEAD</div>
+      <p class="story">“The future is hard,” Mudiaga said. “ Not for everybody. But right now, it is not good for us.”</p>
+      <p class="story">Under the current asylum procedures, life for those entering Europe is uncertain. Those applying for asylum need to prove persecution in their home country from war.  who do gain asylum through the Italian system are left to find jobs and housing in a country with a low employment rate and steep discrimination against refugees.</p>
+      <p class="story">Those who do not obtain documents either have to return to their home country or live undocumented in Europe, making it nearly impossible to find jobs and assistance from agencies.</p>
+      <p class="story">Last June, Seykou found out that he was denied documents from the Commission.</p>
+      <p class="story">“For me, from the Commission, I have negative,” he said. “I don't have documents. It is very difficult for me because now I face difficult things. It was difficult in Libya, but thank God I escaped from there. But in Europe, if you don't have documents, still, now your life isn't back. So you cannot survive. I cannot stay here. I have to focus and do something or go to another country to get documents.” </p>
+      <p class="story">In September, he left San Giovanni to try and find work in other parts of the country. His housemates have not heard from him since.</p>
+      <p class="story">After two years of waiting for a Commission date, Mudiaga had his commission hearing in July.</p>
+      <p class="story">While he was waiting to hear about the decision, he said, “For now, I don't know about my documents or if they will give to me. I don't know for now. It depends on your story, whether it is good enough. Why did you leave your country… that is the biggest question for you.”</p>
+      <div class="col-md-12 text-center">
+        <p class="story divide">--</p>
+      </div>
+
+      <p class="story">We checked back with him at the end of 2015, and he said that he had been approved for two years of asylum but was still struggling to find a job.</p>
+      <p class="story">“The truth is, in Italy, it is hard to look for work, especially with black skin,” he said. “Luckily, I can stay in the [SPRAR] project for three months until I have to leave.” </p>
+      <p class="story">Lamin still waits for a Commission date. He hopes to stay in Italy, pursue his education and continue playing soccer with a group of young refugees he has met through the program.</p>
+      <p class="story">“You know, life is full of changes. I'm 18 years old. I want my future to be good. But right now, I cannot tell you I want to be this or that,” Lamin said. “Right now, I want to go back to school to educate, because I'm 18 years old… In Gambia, I wanted to be a journalist just like you.”</p>
     </div>
-   <div class="col-sm-1"></div>
+   <div class="col-sm-2"></div>
+ </div>
 
    <!--**********************************************menu grid thing*******************************-->
 
@@ -293,7 +398,7 @@
        <a href="/overview.html">
        <div class="col-md-2 col-sm-4 col-xs-4 person" id="person1">
          <div class="caption">
-           <div class="caption-center">The Crossing</div>
+           <div class="caption-center subNav">THE CROSSING</div>
          </div>
        </div>
        </a>
@@ -301,7 +406,7 @@
        <a href="/men-of-san-giovanni.html">
        <div class="col-md-2 col-sm-4 col-xs-4 person" id="person2">
          <div class="caption">
-           <div class="caption-center">The Men of San Giovanni</div>
+           <div class="caption-center subNav">THE MEN OF SAN GIOVANNI</div>
          </div>
        </div>
        </a>
@@ -309,7 +414,7 @@
        <a href="/humanitarian.html">
          <div class="col-md-2 col-sm-4 col-xs-4 person" id="person3">
            <div class="caption">
-             <div class="caption-center">Trafficker Turned Humanitarian</div>
+             <div class="caption-center subNav">NEW BEGINNINGS</div>
            </div>
          </div>
        </a>
@@ -317,25 +422,41 @@
        <a href="/lifelong-mission.html">
        <div class="col-md-2 col-sm-4 col-xs-4 person" id="person4">
          <div class="caption">
-           <div class="caption-center">A Lifelong Mission</div>
+           <div class="caption-center subNav">THE PRAYER</div>
          </div>
        </div>
        </a>
 
+       <a href="/exchange.html">
        <div class="col-md-2 col-sm-4 col-xs-4 person" id="person5">
          <div class="caption">
-           <div class="caption-center">Exchange of Cultures
+           <div class="caption-center subNav">EXCHANGE OF CULTURES
          </div>
-       </div>
-     </div>
+        </div>
+      </div>
+      </a>
+
+       <a href="/bonds.html">
        <div class="col-md-2 col-sm-4 col-xs-4 person" id="person6">
          <div class="caption">
-           <div class="caption-center">Bonds Across Borders</div>
+           <div class="caption-center subNav">BONDS BEYOND BORDERS</div>
          </div>
        </div>
+       </a>
+
+
      </div>
    </div>
    <script>
+   $('.overview-grid').hover(
+     function(){
+       $(this).find('.caption').fadeIn(250);
+     },
+     function(){
+       $(this).find('.caption').fadeOut(250);
+     }
+   );
+
    $('.person').hover(
      function(){
        $(this).find('.caption').fadeIn(250);
@@ -344,6 +465,26 @@
        $(this).find('.caption').fadeOut(250);
      }
    );
+
+   $(function(){
+     $(".rslides").responsiveSlides({
+       auto: false,
+       pager: false,
+       nav: true,
+       speed: 500,
+       namespace: "callbacks",
+     });
+   });
+
+   $(".play").click(function(){
+     $(".play").hide();
+     $(".pause").show();
+   });
+
+   $(".pause").click(function(){
+     $(".pause").hide();
+     $(".play").show();
+   });
    </script>
 
 </body>

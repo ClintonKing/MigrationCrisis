@@ -47,6 +47,7 @@ function syriaPath(){
 
       //Beginning and End Points
       var originANDdestination = [featuresdata[0], featuresdata[7], featuresdata[10]]
+      
 
       var begend = g.selectAll(".drinks")
         .data(originANDdestination)

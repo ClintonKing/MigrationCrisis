@@ -1,0 +1,494 @@
+@font-face{
+  font-family: centuryGothic;
+  src: url(../fonts/centuryGothic.ttf)
+}
+
+body {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+#title{
+  font-size: 6em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 100px;
+}
+
+.logo-title {
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo-title:hover,
+.logo-title:active{
+  text-decoration: none;
+  color: #000;
+}
+
+.menuShelf{
+  height: 80px;
+}
+
+@media (max-width: 767px){
+  .logo-title{
+    display: none;
+  }
+
+  .menu{
+    text-align:center;
+  }
+
+}
+
+@media (max-width: 450px){
+  .logo{
+    display: none;
+  }
+  .menu{
+    height: 60px;
+  }
+  .menu-links{
+    margin-top: 10px;
+  }
+  #superNav{
+    height: 60px;
+  }
+
+  .menuShelf{
+    height: 60px;
+  }
+}
+
+h1 {
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.description{
+  font-family: Times;
+  font-size: 1.9em;
+}
+
+/*TODO - make this more responsive / more of image displayed*/
+.row {
+  margin: 0;
+}
+
+.headImg{
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fullImg {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.moreMargin{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.face {
+  border: 10px solid #fff;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid #fff;
+  min-height: 650px;
+}
+
+#face-right {
+  background: url("../img/men/face-right.jpg");
+  background-size: cover;
+  border-left: 10px solid #fff;
+}
+
+#face-center {
+  background: url("../img/men/face-center.jpg");
+  background-size: cover;
+}
+
+#face-left  {
+  background: url("../img/men/face-left.jpg");
+  background-size: cover;
+  border-right: 10px solid #fff;
+}
+
+#title {
+  font-size: 6em;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+.subheader{
+  font-family: Times;
+  font-size: 3em;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.story {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  display: inline-block;
+  color: #000;
+  font-size: 1.9em;
+  font-family: Times;
+  height: auto;
+  overflow: auto;
+}
+
+#story1, #story1-2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#audio-section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.picture-slideshow {
+  margin-top: 1em;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  /*background: url("img/men/apartment1.jpg");*/
+  background-size: cover;
+}
+
+.apt-item {
+  min-height: 300px;
+  border: 10px solid #fff;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid #fff;
+}
+
+#books {
+  background: url("../img/men/books.jpg");
+  background-size: cover;
+  border-left: 0px;
+}
+
+#shoes {
+  background: url("../img/men/yellow-shoes.jpg");
+  background-size: cover;
+}
+
+#hat  {
+  background: url("../img/men/hat.jpg");
+  background-size: cover;
+  border-right: 0px;
+}
+
+.quote {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: Times;
+  font-size: 3em;
+  font-style: italic;
+}
+
+.watching-tv {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("../img/men/watching-tv.jpg");
+  background-size: cover;
+}
+
+.section-headliner {
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+}
+
+.map2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: url("../img/map-watercolor-purpley.png");
+  background-size: 500px 286px;
+  height: 286px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stairs {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("../img/men/stairs.jpg");
+  background-size: cover;
+}
+
+.prayerPortrait{
+  margin-top: 26px;
+  width: auto;
+  float: right;
+}
+
+@media (max-width: 767px){
+  .prayerPortrait{
+    margin: 0 auto;
+  }
+}
+
+.men-standing {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url("../img/men/men-standing.jpg");
+  background-size: cover;
+}
+
+#section-10 {
+  padding-top: 1em;
+}
+
+.blue {
+  background: #7C8B97;
+  min-height: 70vh;
+}
+
+#passport {
+  background: url("../img/men/passport.png");
+  background-size: 300px 314px;
+  height: 314px;
+  width: 300px;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+#header2 {
+  margin-top: .5em;
+  font-family: Times;
+  font-size: 4em;
+  color: #fff;
+}
+
+.caption {
+  background: black;
+  opacity: .8;
+  color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  font-size: 1.2em;
+}
+
+
+.caption-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+/*PICTURE GRID*/
+
+.img-section {
+  background-size: 100% 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.overview-grid {
+  height: 60vh;
+  border: 10px solid #fff;
+  position: relative;
+}
+
+.caption {
+  background: black;
+  opacity: .8;
+  color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  font-size: 1.2em;
+}
+
+
+.caption-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Times,serif;
+}
+
+.subNav{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+#exchange-img1 {
+  background: url("../img/exchange/Riace-12.jpg");
+  background-size: cover;
+  border-left: 20px solid #fff;
+}
+
+#exchange-img2 {
+  background: url("../img/exchange/Riace-10.jpg");
+  background-size: cover;
+  border-right: 20px solid #fff;
+}
+
+#exchange-img3 {
+  background: url("../img/exchange/Riace-13.jpg");
+  background-size: cover;
+  border-left: 20px solid #fff;
+}
+
+#exchange-img4 {
+  background: url("../img/exchange/Riace-9.jpg");
+  background-size: cover;
+  border-right: 20px solid #fff;
+}
+
+@media (max-width: 767px){
+  #exchange-img1 {
+    background: url("../img/exchange/Riace-12.jpg");
+    background-size: cover;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  #exchange-img2 {
+    background: url("../img/exchange/Riace-10.jpg");
+    background-size: cover;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  #exchange-img3 {
+    background: url("../img/exchange/Riace-13.jpg");
+    background-size: cover;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  #exchange-img4 {
+    background: url("../img/exchange/Riace-9.jpg");
+    background-size: cover;
+    border: none;
+    margin-bottom: 10px;
+  }
+}
+
+#manPort{
+  border-left: 20px solid #fff;
+  border-right: 10px solid #fff;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#womanPort{
+  border-right: 20px solid #fff;
+  border-left: 10px solid #fff;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#fruit{
+  background: url("../img/exchange/Riace-4.jpg");
+  background-size: cover;
+  padding: 0;
+  border-left: 20px solid #fff;
+  border-right: 10px solid #fff;
+  border-top: none;
+}
+
+#weave{
+  background: url("../img/exchange/Riace-6.jpg");
+  background-size: cover;
+  border-right: 20px solid #fff;
+  border-left: 10px solid #fff;
+  padding: 0;
+  border-top: none;
+}
+/********************************menu grid thing*********************/
+.peopleGrid {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.person {
+  min-height: 250px;
+  border: 10px solid #fff;
+}
+
+#person2, #person3, #person4, #person5, #person6 {
+  border-left: 0;
+}
+
+
+.outerDiv{
+  /*margin-top: 100px;*/
+
+}
+
+.video-player{
+  width: 100vw;
+  height: 1px;
+  padding: 0;
+  z-index: 2000;
+}
+
+.headlineVid{
+  width: 100vw;
+  height: 1px;
+}
+
+.photoCaption{
+  margin: 0;
+  width: 100%;
+  background: #eee;
+  text-align: center;
+  padding: 5px 20px;
+  opacity: 1;
+
+}
+
+.photoCaption > p{
+  font-size: 1em;
+  font-family: Times;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}

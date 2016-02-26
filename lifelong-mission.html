@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>A Lifelong Mission</title>
+  <title>The Prayer</title>
   <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300' rel='stylesheet' type='text/css'>
   <!--link href="styles.css" rel="stylesheet" /-->
   <link href="stylesheets/grid.css" rel="stylesheet" />
-  <link href="stylesheets/style2.css" rel="stylesheet" />
+  <!--link href="stylesheets/style2.css" rel="stylesheet" /-->
+  <link href="stylesheets/menu-css.css" rel="stylesheet">
   <link href="stylesheets/video-styles.css" rel="stylesheet" />
+  <link href="stylesheets/breakpoints2.css" rel="stylesheet" />
+  <link href="stylesheets/lifelong.css" rel="stylesheet" />
   <link href="stylesheets/breakpoints2.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -19,6 +23,7 @@
   <!--script src="scripts/test-menu.js"></script-->
   <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="scripts/vimeo-js.js"></script>
+  <script src="scripts/altMenu.js"></script>
 
   <!--favicon generator by http://www.favicon-generator.org/-->
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -39,37 +44,151 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <script>
+    function portResize(){
+      if ($(window).width() < 767){
+        console.log('Not Resizing');
+        $("#portrait").css({'height': 'auto'});
+      } else if ($(window).width() > 766){
+        $("#portrait").css({'height':($("#firstTwo").height() + 'px')});
+      }
+    };
+
+    $(document).ready(function(){
+      $(".video-player").css({'height':($(window).height() - 100 + 'px' )});
+      $(".headlineVid").css({'height':($(window).height() - 100 + 'px')});
+      portResize();
+    });
+
+    $(window).resize(function(){
+      $(".video-player").css({'height':($(window).height() - 100 + 'px' )});
+      $(".headlineVid").css({'height':($(window).height() - 100 + 'px')});
+      portResize();
+    });
+  </script>
 </head>
 <body>
   <!--******************************************logo and menu***************************************-->
-<nav>
+<nav id="superNav">
   <div class="col-md-12 navbar-fixed-top menu">
-    <div class="logo"></div>
-    <div class="logo-title">Divided by the Sea</div>
+    <a href="index.html" class="logo"></a>
+    <a href="index.html" class="logo-title">DIVIDED BY THE SEA</a>
     <div class="menu-links">
-    <a href="#home">home</a> - <a href="/overview.html">about</a> -
-    <a href="#people">people</a> - <a href="#experience">experience</a>
+      <a href="about.html">ABOUT</a><a href="index.html#stories">STORIES</a><a href="index.html#mapOne">MAP</a>
     </div>
   </div>
 </nav>
 
 <!--****************************Background and title****************************************-->
-
 <div class="row">
-  <div class="col-md-12 text-center vid-title">A Lifelong Mission</div>
+  <div class="col-md-12 menuShelf">
+
+  </div>
+</div>
+<div class="row outerDiv">
 
     <div class="col-md-12 text-center video-player">
-        <iframe id="player1" src="http://player.vimeo.com/video/145096708?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe id="player1" class="headlineVid" src="http://player.vimeo.com/video/145096708?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-    <div class="col-md-12 text-center">
-            <div class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  </div>
+  <div class="row">
+    <h1 class="col-md-12 text-center" id="title">THE PRAYER</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+      <div class="col-md-8 text-center subheader">Sister Lina Guzzo finds her calling serving refugees</div>
+    <div class="col-md-2"></div>
+  </div>
+  <br />
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <img id="portrait" class="prayerPortrait img-responsive" src="img/prayer/portrait.jpg" />
+    </div>
+    <div class="col-md-6" id="firstTwo">
+      <p class="story">
+        At the age of 12, Lina Guzzo left her home in the small town of Piazzola sul Brenta in the green plains of northern Italy to begin her cammino di discernimento, her discernment journey to become a Catholic nun.
+      </p>
+
+      <p class="story">
+        She remembered lying in bed years ago, staring at the ceiling and feeling a growing calling to join religious life.
+      </p>
+      <p class="story">
+        “When I was young, I felt called to serve the children,” Guzzo said, “But as my calling grew, I felt very connected to the migrant community.”
+      </p>
+      <p class="story">She started her journey and took her vows at 17 years old at the Missionary Sisters of St. Charles Borromeo in Piacenza, a sisterhood part of the Missionaries of St Charles Borromeo, a Catholic order dedicated to caring for refugees in Italy and abroad. </p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p class="story">She started her journey and took her vows at 17 years old at the Missionary Sisters of St. Charles Borromeo in Piacenza, a sisterhood part of the Missionaries of St Charles Borromeo, a Catholic order dedicated to caring for refugees in Italy and abroad. </p>
+    </div>
+    <div class="col-md-2"></div>
+  </div> -->
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 quote text-center">
+      “We need to people to treat the migrants coming from overseas as human beings, not as animals. If you spent time with them, you would not fear them.”
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p class="story">
+        Bishop John Baptist Scalabrini founded the Missionaries of St Charles Borromeo in 1887 to assist the millions of Italians who were migrating to the Americas during what was referred to as the “Italian Diaspora.” </p>
+<p class="story">Similar to what refugees crossing the Mediterranean experience today, Italian emigrants faced considerable discrimination, poverty and exploitation in the Americas. Scalabrini responded by creating parishes, schools, hospitals, shelters and cultural centers for Italian emigrants abroad.  The Scalabrini Order now has operations in 32 countries across five continents.</p>
+<p class="story">Since joining the Scalabrini, Sister Lina has worked in various regions in Italy, as well as in Switzerland, Germany, Albania, Colombia and Brazil. She now calls Reggio Calabria home, living in a modest home in the city center and working at the Giovanni Battista Scalabrini Center for Migrants.</p>
+<p class="story">In 2015, the Center served over 1,000 refugees, providing counseling, teaching Italian and assisting with the documentation process. They also connect individuals and families with local Catholic centers and structures that provide shelter, food and clothing.</p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row">
+      <div class="col-md-12 img-section text-center">
+        <div class="col-md-6 overview-grid" id="prayer-img1">
+          <div class="caption">
+            <div class="caption-center">
+              <p>Sister Lina poses for a portrait with her kindergarten students at Mons. Pio Cassinari school in Piacenza, Italy.</p></div>
           </div>
+        </div>
+        <div class="col-md-6 overview-grid" id="prayer-img2">
+          <div class="caption">
+            <div class="caption-center"><p>On September 19, 1965, Sister Lina makes takes her vows to become a nun in the Scalabrini order. Here, Sister Elisa Spinelli places a cross on her neck as part of the ceremony. </p></div>
+          </div>
+        </div>
+        <div class="col-md-6 overview-grid" id="prayer-img3">
+          <div class="caption">
+            <div class="caption-center"><p>Sister Lina takes her vows to become a nun at the Cathedral of Piacenza. Bishop Umberto Malchiodi conducts the ceremony, where five other women are taking their vows into the Scalabrini order.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 overview-grid" id="prayer-img4">
+          <div class="caption">
+            <div class="caption-center"><p>Sister Lina listens to migrants in Albania as she prepares a protest with them. Together they will march to the mayor’s office to demand changes in corrupt housing policies. </p></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p class="story">John Baptist Scalabrini once said, “The Catholic Church was called by its divine apostolate and by its age-old tradition to make its imprint on the great social movement of migration.”</p>
+      <p class="story">As part of this mission, Scalabrini would accompany emigrants on the dangerous boat rides to the Americas, hauntingly similar to those we now see in the Mediterranean.</p>
+      <p class="story">There, he would pray, celebrate the sacraments and hold funerals for the people who did not survive the journey to the New World. On one trip, he watched a young mother die on the ship, leaving behind a young daughter and a desperate husband. This compelled Scalabrini to start an orphanage in Brazil.</p>
+      <p class="story">He asked a young, pious Italian woman named Maria Assunta Marchetti to run the orphanage. Marchetti took her vows on October 25, 1985, and left for Brazil two days later, never to return to Italy. She worked tirelessly to serve Italian and African orphans in Brazil and became the cofounder of the sisterhood of Scalabrini called the Missionary Sisters of St. Charles Borromeo, the same place where Sister Lina pursued her calling.</p>
+      <p class="story">A colorful print of Marchetti clutching a cross and a boat full of refugees hangs in the prayer room of Sister Lina’s home. Other Catholic iconography lines the wall  — a gold-plated cross depicting the crucifixion, a small wooden prayer altar with a worn Bible sitting on top.</p>
+      <p class="story">Each morning, Sister Lina sits in a creaky wooden chair, reciting a prayer dedicated to the work of Blessed Assunta Marchetti. For the Scalabrinians, Marchetti was an example of a woman with lively faith, committed to serving migrants in need and devoting herself wholly to God.</p>
+      <p class="story">Sister Lina says the prayer to Marchetti gives her strength and focus, especially on the difficult days when she watches thousands of tired refugees land at the port in Reggio Calabria. She said that when the refugees ask for help, she will pray this same prayer, asking Marchetti to provide them a miracle.</p>
+      <p class="story">One day after a landing at the port, Sister Lina invited us to her home. When we arrived, she greeted us with homemade vegetable soup, bread, Italian cheeses and spreads.</p>
+      <p class="story">We asked her questions about religious life and her work in Reggio Calabria. During pauses, she would fill our plates with more food, telling us, “Eat, eat!” like a mother would to her children.</p>
+      <p class="story">And she is a mother — albeit for a short while — to the refugees arriving each day to Reggio Calabria.</p>
+      <p class="story">She believes the challenges facing refugees from Africa and the Middle East are no different than those faced by Italians a century ago.</p>
+      <p class="story">“We need people to treat the migrants coming from overseas as human beings, not as animals,” Sister Lina said. “If you spent time with them, you would not fear them.” </p>
     </div>
-
-
-</div>
+    <div class="col-md-2"></div>
+  </div>
 
 
 
@@ -82,7 +201,7 @@
     <a href="/overview.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person1">
       <div class="caption">
-        <div class="caption-center">The Crossing</div>
+        <div class="caption-center subNav">THE CROSSING</div>
       </div>
     </div>
     </a>
@@ -90,7 +209,7 @@
     <a href="/men-of-san-giovanni.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person2">
       <div class="caption">
-        <div class="caption-center">The Men of San Giovanni</div>
+        <div class="caption-center subNav">THE MEN OF SAN GIOVANNI</div>
       </div>
     </div>
     </a>
@@ -98,7 +217,7 @@
     <a href="/humanitarian.html">
       <div class="col-md-2 col-sm-4 col-xs-4 person" id="person3">
         <div class="caption">
-          <div class="caption-center">Trafficker Turned Humanitarian</div>
+          <div class="caption-center subNav" >NEW BEGINNINGS</div>
         </div>
       </div>
     </a>
@@ -106,22 +225,29 @@
     <a href="/lifelong-mission.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person4">
       <div class="caption">
-        <div class="caption-center">A Lifelong Mission</div>
+        <div class="caption-center subNav">THE PRAYER</div>
       </div>
     </div>
     </a>
 
+    <a href="/exchange.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person5">
       <div class="caption">
-        <div class="caption-center">Exchange of Cultures
+        <div class="caption-center subNav">EXCHANGE OF CULTURES
       </div>
-    </div>
-  </div>
+     </div>
+   </div>
+   </a>
+
+    <a href="/bonds.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person6">
       <div class="caption">
-        <div class="caption-center">Bonds Across Borders</div>
+        <div class="caption-center subNav">BONDS BEYOND BORDERS</div>
       </div>
     </div>
+    </a>
+
+
   </div>
 </div>
 
@@ -134,6 +260,14 @@
 </style>
 
 <script>
+$('.overview-grid').hover(
+  function(){
+    $(this).find('.caption').fadeIn(250);
+  },
+  function(){
+    $(this).find('.caption').fadeOut(250);
+  }
+);
 
 $('.person').hover(
   function(){

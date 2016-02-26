@@ -56,13 +56,13 @@ $(window).scroll(function() {
     }
 
     if (height < windowHeight) {
-      $("nav").css({"top": "100%", "position": "absolute"});
+      $("nav").css({"top": ($("#splashVid").height() + 'px'), "position": "absolute"});
     }
 });
 
 var previousScroll = 0, // previous scroll position
     menuOffset = 54, // height of menu (once scroll passed it, menu is hidden)
-    detachPoint = 650, // point of detach (after scroll passed it, menu is fixed)
+    detachPoint = ($('#splashVid').height()) + 70, // point of detach (after scroll passed it, menu is fixed)
     hideShowOffset = 6; // scrolling value after which triggers hide/show menu
 
     var height = $(window).scrollTop();

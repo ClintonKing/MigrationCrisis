@@ -1,19 +1,17 @@
 
 .vid-title {
-  margin-top: 110px;
-  font-size: 70px;
+  margin-top: 20px;
+  font-size: 4.5em;
   margin-bottom: 0px;
   color: #000;
 }
 
 .description {
-  font-size: 1.3em;
+  font-family: Times;
+  font-size: 1.9em;
   color: #000;
-  text-align: justify;
   width: 800px;
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 10px;
   margin-bottom: 50px;
 }

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Divided by the Sea</title>
   <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Divided by the Sea</title>
+
+
   <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
   <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300' rel='stylesheet' type='text/css'>
-  <link href="stylesheets/menu-scroll.css" rel="stylesheet" />
-  <link href="stylesheets/splash.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
   <!--favicon generator by http://www.favicon-generator.org/-->
@@ -31,19 +32,192 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="stylesheets/styles.css" rel="stylesheet" />
+  <link href="stylesheets/grid.css" rel="stylesheet" />
+  <link href="stylesheets/breakpoints.css" rel="stylesheet" />
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="scripts/test-menu.js"></script>
+
+  <script>
+
+  function bgReplace(){
+    if ($(window).width() < 767){
+        $("#title1").hide();
+        $("#title2").hide();
+        $("#splashVid").replaceWith('<img id="splashGIF" src="video/WATER.gif" />');
+    } else if ($(window).width() > 766){
+        $("#splashGIF").replaceWith('<video muted autoplay loop  id="splashVid"><source src="video/italyDream.MOV" type="video/mp4"></video>');
+        setTimeout(function(){
+          $("#title1").fadeIn(3000);
+          $(".arrow-bounce").fadeIn(1000);
+        }, 2000);
+        setTimeout(function(){
+          $("#title2").fadeIn(2500);
+        }, 4000);
+    }
+  };
+
+  function mapReplace(){
+    if ($(window).width() < 767){
+        $("#navGraph").replaceWith('<div id="mobileMap" class="col-md-12"><a href="leaflet/Map1mob.html"><img src="img/Map1.png" class="mapLink" /></a></div>');
+    } else if ($(window).width() > 766){
+        $("#mobileMap").replaceWith('<div class="col-md-12" id="navGraph"><iframe src="leaflet/Map1.html" id="mapOne" scrolling="no"></iframe></div>');
+    }
+  };
+
+  $(document).ready(function(){
+    setTimeout(function(){
+    $("#superNav").css({'top':($("#splashVid").height() + 'px')});
+    $(".video-background").css({'height':($("#splashVid").height() + 'px')});
+    $(".mainTitle").css({'height':($("#splashVid").height() + 'px')});
+    $("#mapOne").css({'height':($(window).height() - $("#superNav").height() - 54 + 'px')});
+  }, 2000);
+  bgReplace();
+  mapReplace();
+  });
+
+  $(window).resize(function(){
+    $("#superNav").css({'top':($("#splashVid").height() + 'px')});
+    $(".video-background").css({'height':($("#splashVid").height() + 'px')});
+    $(".mainTitle").css({'height':($("#splashVid").height() + 'px')});
+    $("#mapOne").css({'height':($(window).height() - $("#superNav").height() - 54 + 'px')});
+    bgReplace();
+    mapReplace();
+  });
+
+  </script>
+
 </head>
 <body>
+    <!--******************************************logo and menu***************************************-->
+  <nav id="superNav">
+    <div class="col-md-12 navbar-fixed-top menu">
+      <a href="index.html" class="logo"></a>
+      <a href="index.html" class="logo-title">DIVIDED BY THE SEA</a>
+      <div class="menu-links">
+      <!-- <a href="#home">Home</a> -  -->
+      <a href="about.html">ABOUT</a>
+      <a href="#stories">STORIES</a><a href="#mapOne">MAP</a>
+      </div>
+    </div>
+  </nav>
+  <!--***************************************video bg and bouncing arrow******************************************-->
+    <div class="row video-background text-center" >
+      <video muted autoplay loop  id="splashVid">
+        <source src="video/italyDream.mp4" type="video/mp4">
+      </video>
+      <img id="title1" class="mainTitle" src="img/divided.png" />
+      <img id="title2" class="mainTitle" src="img/byTheSea.png" />
+        <a href="#welcome">
+          <!--maybe hide this in mobile?-->
+          <div class="col-md-12 hidden-xs arrow-bounce">
+            <i class="arrow-hover fa fa-chevron-down fa-4x"></i>
+          </div>
+        </a>
+    </div>
 
-<!--***************************************video bg and bouncing arrow******************************************-->
-  <div class="row video-background text-center">
-    <video muted autoplay loop width="100%" height="100%" id="explainer">
-      <source src="video/WATER.mp4" type="video/mp4">
-    </video>
-        <div class="col-md-12 text-center coming-soon">
-          <i>coming soon</i>
+    <div class="row text-center" id="welcome">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h1>LOCAL VOICES</h1>
+      <p class="majorText">The small city of Reggio Calabria in southern Italy has seen the arrival of thousands of refugees who make the dangerous journey across the Mediterranean Sea in hopes of finding better living conditions. Who are they? Who is receiving them? Behind the overwhelming numbers are a multitude of human stories. Here are a few.</p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+    <!--**********************************grid of people stories*************************************************-->
+    <div class="row grid" id="stories">
+      <!--h2 class="text-center">the stories</h2>-->
+
+        <a href="/overview.html">
+        <div class="col-md-4 col-sm-4 col-xs-4 person" id="person1">
+          <div class="caption">
+           THE CROSSING
+          </div>
         </div>
-  </div>
+        </a>
+        <a href="/men-of-san-giovanni.html">
+        <div class="col-md-4 col-sm-4 col-xs-4 person" id="person2">
+          <div class="caption">
+            THE MEN OF SAN GIOVANNI
+          </div>
+        </div>
+        </a>
+        <a href="/humanitarian.html">
+          <div class="col-md-4 col-sm-4 col-xs-4 person" id="person3">
+            <div class="caption">
+              NEW BEGINNINGS
+            </div>
+          </div>
+        </a>
 
+        <a href="/lifelong-mission.html">
+        <div class="col-md-4 col-sm-4 col-xs-4 person" id="person4">
+          <div class="caption">
+            THE PRAYER
+          </div>
+        </div>
+      </a>
+
+        <a href="/exchange.html">
+        <div class="col-md-4 col-sm-4 col-xs-4 person" id="person5">
+          <div class="caption">
+            EXCHANGE OF CULTURES
+          </div>
+        </div>
+        </a>
+
+        <a href="/bonds.html" >
+        <div class="col-md-4 col-sm-4 col-xs-4 person" id="person6">
+          <div class="caption">
+            BONDS BEYOND BORDERS
+          </div>
+        </div>
+        </a>
+
+
+    <!--*****************************map stuff**********************-->
+    <!--* this will disappear in mobile because it's ugly *-->
+    <hr class="blackHR">
+    <div class="row text-center">
+      <h1 id="migRoutes">MIGRATION ROUTES</h1>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+      <p class="majorText routes">In 2015, more than one million refugees crossed the Mediterranean Sea and reached European soil. Of those, about 157,000 refugees took the Central Mediterranean route, which connects Libya to Italy and Malta. In the same year, 2,892 refugees died on this route alone. Click on the highlighted countries to learn more about why people are leaving and to see the most common routes they take to reach Italy.</p>
+    </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" id="navGraph">
+        <iframe src="leaflet/Map1.html" id="mapOne" scrolling="no"></iframe>
+      </div>
+    </div>
+
+    <footer id="footer" class="text-center">
+
+    </footer>
+
+    <script>
+    $('.person').hover(
+      function(){
+        $(this).find('.caption').fadeIn(250);
+      },
+      function(){
+        $(this).find('.caption').fadeOut(250);
+      }
+    );
+
+
+    </script>
+
+    <!--
+
+    <div id="content">
+      <h1>remember to credit demo from <a href="http://alexcican.com/post/teehan-lax-navigation/" target="_blank">this blog post</a>.</h1> -->
 </body>
 </html>

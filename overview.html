@@ -1,108 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Overview</title>
+  <title>The Crossing</title>
   <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300' rel='stylesheet' type='text/css'>
   <link href="stylesheets/test-menu.css" rel="stylesheet" />
   <link href="stylesheets/grid.css" rel="stylesheet" />
   <link href="stylesheets/style2.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <link href="stylesheets/breakpoints2.css" rel="stylesheet" />
 
+    <!--favicon generator by http://www.favicon-generator.org/-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="scripts/second-menu.js"></script>
+    <script src="scripts/altMenu.js"></script>
 </head>
 <body>
   <!--******************************************logo and menu***************************************-->
-<nav>
+<nav id="superNav">
   <div class="col-md-12 navbar-fixed-top menu">
-    <div class="logo"></div>
-    <div class="logo-title">Divided by the Sea</div>
+    <a href="index.html" class="logo"></a>
+    <a href="index.html" class="logo-title">DIVIDED BY THE SEA</a>
     <div class="menu-links">
-    <a href="#home">home</a> - <a href="/overview.html">about</a> -
-    <a href="#people">people</a> - <a href="#experience">experience</a>
+      <a href="about.html">ABOUT</a><a href="index.html#stories">STORIES</a><a href="index.html#mapOne">MAP</a>
     </div>
   </div>
 </nav>
 
 <!--****************************Background and title****************************************-->
 <div class="row">
-  <div class="col-md-12 col-sm-12 col-xs-12 image" id="story1">
-    <div class="title">
-        <h1 class="text-center">OVERVIEW</h2>
-        <div class="sub-header">This is a subheader</div>
-    </div>
+  <div class="col-md-12 menuShelf"></div>
+</div>
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12 faces">
+    <img class="img-responsive circleBoat" src="img/overview/Italy3-2.jpg" />
   </div>
+  <!-- <div class="col-md-12 photoCaption">
+    <p>Over 220 refugees wait to step on Italian soil. On June 22nd, a Singaporean ship managed by the Danish shipping company TORM A/S, rescued two boats off the Libyan coast with 221 refugees mostly from West Africa and took them to the port of Reggio Calabria. The southern Italian town of Reggio Calabria saw over 25,000 refugees land in its port between June of 2014 and June of 2015.</p>
+  </div> -->
 </div>
 
 <!--********************************section1******************************************************-->
 <div class="row">
-  <div class="col-md-12 story-section text-center">
-
-      <div class="col-md-1"></div>
-      <div class="col-md-10 story" id="story-section1">
-      <p>The sun sets behind the Sicilian mountains, which rise across the Strait of Messina. The water is calm, reflecting the light of the sun and only
-      interrupted by small sailing boats and a colossal metallic ship anchored between the sunset and the port. Hundreds of refugees are waiting onboard,
-      their silhouettes clearly marked by the sun behind them.
-      </p>
-      <br>
-      <p>We are in Reggio di Calabria, a small city in mainland southern Italy, at the other end of the strait.
-      For the past couple of years this ancient city - once home to the Greek, Roman and Byzantine civilizations among others - has seen a different kind of cultural influx.
-      Thousands of refugees looking for better lives have arrived after
-      crossing the Mediterranean in perilous conditions in an enormous exodus that has become part of the biggest wave of global migration since the Second World War.
-      </p>
-      </div>
-    <div class="col-md-1"></div>
+  <div class="col-md-12 text-center">
+    <h1 id="title">THE CROSSING</h1>
   </div>
 </div>
-
 <div class="row">
-  <div class="col-md-12 story-section divided-col text-center">
+  <div class="col-md-2"></div>
+  <div class="subheader col-md-8">One port in the Mediterranean connects refugees with their new lives</div>
+  <div class="col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-md-12 story-section text-center">
 
-      <div class="col-md-1"></div>
-
-          <!--********************************content and italy**********************************-->
-          <div class="row">
-            <div class="col-md-5 story left-col">
-              <p>At the port, two worlds often divided by the sea
-              are about to encounter one another. On one side
-              refugees are staring curiously from the ship at
-              those of us on the ground. Some afraid, some
-              exhausted, some shily smiling back and some
-              evidently excited to finally be so close to stepping
-              on European soil, unaware of all the complications
-              that they will likely face as they try to build a life
-              in Europe.
-            </p>
-            <br>
-              <p>
-                On the other, dozens of staff including Italian
-                police forces, the Protezione Civile (the equivalent
-                of the American National Guard), doctors,
-                immigration officers and volunteers preparing for
-                the arrival of yet another group of refugees. They
-                have witnessed hundreds of <i>sbarchi</i>, as the
-                landings are known in Italian. The procedure has
-                become the norm for them, particularly in the
-                summer months when the weather is ideal for
-                traveling and as many as three landings can take
-                place in one week in Reggio Calabria.
-              </p>
-            </div>
-            <div class="col-md-5">
-              <div id="italy"></div>
-              <br>watercolor map + boat that animates
-            </div>
-          </div>
-
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+      <p class="story">The sun sets behind the Sicilian mountains looming beyond the Strait of Messina. The water is calm, interrupted only by small sailing boats and a colossal metallic ship anchored between the port and the sunset. Hundreds of refugees are waiting on board, their silhouettes clearly marked by the sun behind them.
+      </p>
+      <p class="story">We are in Reggio Calabria, a small port city of about 200,000 residents in mainland southern Italy, at the other end of the strait.
+      </p>
+      <p class="story">For the past couple of years, this ancient city — once home to Greek, Roman and Byzantine civilizations — has seen a different kind of cultural influx. Thousands of refugees searching for better lives have arrived after crossing the Mediterranean in perilous conditions. This exodus has become part of the <a href="http://www.unhcr.org/53a155bc6.html" target="_blank">biggest wave of global migration</a> since World War II.
+      </p>
       </div>
-    <div class="col-md-1"></div>
+    <div class="col-md-2"></div>
   </div>
 </div>
 
@@ -110,67 +94,91 @@
 
 <!--*************************************************************section2 - image*****************************************************-->
 <div class="row">
-  <div class="col-md-12 text-center story-section">
-    <div id="section2"></div>
+  <div class="col-md-12 faces">
+    <img class="img-responsive circleBoat" src="img/overview/captain.jpg" />
+  </div>
+  <div class="col-md-12 photoCaption">
+    <p>
+      Over 220 refugees wait to step on Italian soil. Earlier that day, they were rescued by a Singaporean ship managed by the Danish shipping company TORM A/S.
+    </p>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="col-md-12 story-section divided-col text-center">
+
+
+
+          <!--********************************content and italy**********************************-->
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <p class="story" style="float: left;">At the port, two worlds — once divided by the sea — meet.
+              </p>
+              <p class="story">
+                On one side, refugees stare curiously from the ship at those on land. Some are afraid. Some seem exhausted. Others are smiling shyly, excited to finally be so close to stepping on Italian soil, unaware of all the complications they will likely face as they try to build new lives in Europe.
+              </p>
+              <p class="story">
+                On the other side, dozens of men and women are preparing for the arrival of yet another group of refugees. There are doctors, immigration officers, volunteers, Italian police forces and the Protezione Civile (the equivalent of the American National Guard).
+              </p>
+              <p class="story">
+                They have witnessed hundreds of <i>sbarchi</i>, as the landings are known in Italian and the procedure has become ritual, particularly in the summer months when the weather is ideal for traveling. During this season, as many as three landings with thousands of refugees take place per week in Reggio Calabria.
+              </p>
+            </div>
+      </div>
+    <div class="col-md-2"></div>
   </div>
 </div>
 
 <!--********************************************************section3 - quote *********************************************-->
 <div class="row">
   <div class="col-md-12 story-section text-center">
-      <div class="col-md-3"></div>
-      <div class="col-md-6 quote">
-        "They had something in common: all were fleeing
-        war-torn nations, poverty or political oppression-
-        factors that have driven almost 60 million people
-        away from their homes all over the world."
+      <div class="col-md-2"></div>
+      <div class="col-md-8 quote">
+        “The refugees had something in common. All were fleeing war-torn nations, poverty or political oppression — which has driven nearly 60 million people from their homes all over the world.”
       </div>
-      <div class="col-md-3"></div>
+      <div class="col-md-2"></div>
   </div>
 </div>
 
 <!--********************************section4 - motion graphic people in italy*******************************************************-->
 <div class="row">
-  <div class="col-md-12 text-center story-section">
-    <div id="people-arrived">
-    </div>
+  <div class="col-md-12 story-section faces">
+    <img class="img-responsive circleBoat" src="http://i.imgur.com/vqsZ0id.gif" />
   </div>
 </div>
+<br />
 
 
 <!--**************************************section5 - content and map********************************-->
 <div class="row">
   <div class="col-md-12 story-section text-center">
 
-      <div class="col-md-1"></div>
-      <div class="col-md-10 story" id="story-section1">
-      <p>The day before, the German Navy had rescued 627 refugees - 115 women, 41 children and 430 men-near the
-      Libyan Coast, and brought them to the Italian port. Most of them came from Eritrea, but Syrians, Nigerians and
-      Gambians were also among the rescued. They had something in common: all were fleeing war-torn nations,
-      poverty or political oppression- factors that have driven almost 60 million people away from their homes all over
-      the world. For refugees from a wide variety of countries ranging from West Africa to South Asia, the
-      Mediterranean has become the preferred route to reach Europe. So far, in 2015 alone, over 430,000 refugees have
-      crossed the Mediterranean, according to the International Organization for Migration. That is twice the number of
-      refugees that crossed the sea in all of 2014 and more than seven times the number that crossed in 2013. Almost
-      3,000 people have died this year alone in the attempt making the Mediterranean the most dangerous migration
-      route in the world.
+      <div class="col-md-2"></div>
+      <div class="col-md-8" id="story-section1">
+      <p class="story">The day before, <a href="http://www.eaglenews.ph/german-navy-rescues-more-than-600-migrants-in-mediterranean/" target="_blank">the German navy rescued 627 refugees</a> — including 115 women and 41 children — near the Libyan Coast and brought them to the Italian port. Most came from Eritrea in East Africa, but Syrians, Nigerians and Gambians were also among the rescued.
       </p>
-      <div class="text-center" id="map2">
-        <img src="img/map-watercolor-purpley.png" height="70%" width="70%">
-      </div>
-      <p>
-      In 2011, Italy saw an abrupt influx of refugees from North Africa, when Colonel Gaddafi's regime was overthrown
-      by opposition forces. Shortly after the revolution, a brutal civil war threw Libya into political chaos that continues
-      today, allowing human traffickers to entice refugees to travel to Europe from the North African country. Since
-      then, the numbers have spiked, with refugees from West Africa fleeing poverty and conflict, Eritreans an oppressive
-      regime and Syrians a brutal civil war. Even refugees from faraway countries in South Asia, like Pakistan and
-      Bangladesh, have made the trip to Libya to make their way to Europe. There are three main routes in the Mediterranean
-      Sea alone. Until last year, the most popular one was the central Mediterranean, that connects Libya to Italy
-      and Malta. This year however, the number of crossings via the eastern route, connecting Turkey to Greece, has increased
-      fivefold, predominantly by Syrians who are desperate to flee civil war.
+      <p class="story">
+        The refugees had something in common. All were fleeing war-torn nations, poverty or political oppression — which has driven nearly 60 million people from their homes all over the world. For refugees from West Africa to South Asia, the Mediterranean has become the preferred route to reach Europe.
+      </p>
+      <p class="story">
+        In 2015 alone, over one million people crossed the Mediterranean Sea, <a href="http://data.unhcr.org/mediterranean/regional.php" target="_blank">according to the the United Nations Refugee Agency</a>. That is more than four times the number of refugees that crossed the sea in 2014 and more than seventeen times the number that crossed in 2013.
+      </p>
+      <p class="story">
+        The Mediterranean is the deadliest migration route in the world — more than 3,700 people died attempting the crossing in 2015 and 410 more deaths or missing persons have already been reported as of mid-February 2016.
+      </p>
+      <p class="story">
+        Italy saw an abrupt influx of refugees from North Africa when Colonel Muammar Gaddafi's regime was overthrown in 2011 by opposition forces. Shortly after the revolution, a brutal civil war threw Libya into political chaos, allowing networks of human trafficking to thrive that enticed refugees to travel to Europe from the North African country.
+      </p>
+      <p class="story">
+        Since then, the number of refugees who seek safety in Europe has spiked. Different countries produce different kind of refugees. West Africans flee poverty and conflict, Eritreans an oppressive regime and Syrians a brutal civil war. Even refugees from nations in South Asia, like Pakistan and Bangladesh, have made the trip to Europe.
+      </p>
+      <p class="story">
+        There are three main migration routes in the Mediterranean Sea. Until 2014, the most popular one was the Central Mediterranean route, which connects Libya to Italy and Malta. In 2015, however, the number of crossings through the Eastern Mediterranean route — connecting Turkey to Greece — has increased more than seventeen times, largely due to Syria’s civil war.
       </p>
       </div>
-    <div class="col-md-1"></div>
+    <div class="col-md-2"></div>
   </div>
 </div>
 
@@ -180,28 +188,35 @@
   <div class="col-md-12 img-section text-center">
     <div class="col-md-6 overview-grid" id="overview-img1">
       <div class="caption">
-        <div class="caption-center">Image 1
-          <br>Description</div>
+        <div class="caption-center">
+          <p>A group of refugees mostly from West Africa wait in line for a medical examination after disembarking from a rescue ship at the port of Reggio Calabria.</p></div>
       </div>
     </div>
     <div class="col-md-6 overview-grid" id="overview-img2">
       <div class="caption">
-        <div class="caption-center">Image 2
-        <br>Description</div>
+        <div class="caption-center">
+          <p>
+            Refugees typically go through a medical check-up as soon as they arrive to the port. Doctors often look for signs of scabies and other infectious diseases that are common in overcrowded conditions, like the small boats in which people travel.
+          </p>
+        </div>
       </div>
     </div>
     <div class="col-md-6 overview-grid" id="overview-img3">
       <div class="caption">
-        <div class="caption-center">Image 3
-        <br>Description
-        <br>stuff stuff stuff
-        <br>stuff</div>
+        <div class="caption-center">
+          <p>
+            A lot of refugees travel barefoot, which often results in injuries in their feet. Those who don’t have shoes are provided with a pair once they land.
+          </p>
+        </div>
       </div>
     </div>
     <div class="col-md-6 overview-grid" id="overview-img4">
       <div class="caption">
-        <div class="caption-center">Image 4
-        <br>Description</div>
+        <div class="caption-center">
+          <p>
+            Local authorities, doctors and volunteers from religious and service organizations stand at the port waiting for refugees and migrants to arrive. They proved medical services, as well as food and clothing for those who need it.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -212,73 +227,151 @@
 <!--**********************************section7 - apart from those content**************************-->
 <div class="row">
   <div class="col-md-12 text-center story-section">
-    <div class="col-md-1"></div>
-    <div class="col-md-10 story">
-      Apart from those who are sick or unaccompanied minors, everyone else is sent on a bus to the north of the country
-      where there is a better infrastructure to receive such a massive influx. Typically, this means that most refugees end
-      up in larger cities like Rome, Florence or Milan. Many, unwilling to stay in Italy because they know
-      unemployment is high and protection programs are better in Northern Europe. Reggio Calabria is a major
-      reception point for refugees in Italy, but not the only one. Cities like Palermo, Messina and Catania in Sicily have
-      seen a similar influx. The southern Italian island of Lampedusa, which is closer to the Libyan Coast than to
-      mainland Italy, has also been a major entry point to Europe for thousands of refugees.
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p class="story">
+        In 2013, in response to numerous shipwrecks, the Italian government launched a rescue operation known as Mare Nostrum, “Our Sea” in Latin, which the <a href="http://www.unhcr.org/5440ffa16.html" target="_blank">U.N. reported</a> saved hundreds of thousands of lives. Though the program was largely funded by the EU, the Italian government managed it and it proved to be unsustainable.
+      </p>
+      <p class="story">
+        In 2014, Mare Nostrum ended and was replaced by <a href="http://frontex.europa.eu/news/frontex-launches-joint-operation-triton-JSYpL7" target="_blank">Operation Triton</a>, funded by the European Union. Operation Triton is the most recent rescue plan put in place by Frontex, the EU’s border control agency.
+      </p>
+      <p class="story">
+        The EU agreed to fund rescue operations and use ships like the one operated by the German navy that afternoon in Reggio Calabria. Refugees rescued crossing the central Mediterranean route are brought to Italian ports for processing by local authorities, regardless of the nationality of the rescue ship.
+      </p>
+      <p class="story">
+        As soon as the ship arrives to the port, Italian authorities look for the captain or captains of the boat, who are taken to the police to be interrogated. Slowly, the rest of the refugees start lining up and make their way out of the ship.
+      </p>
+      <p class="story">
+        Once on land, doctors and volunteers wearing full body protective suits are waiting for them to complete medical checkups and direct those who are sick to medical tents for further inspection. Precaution is necessary, as it is not uncommon to see migrants with scabies and other diseases common when being in closed quarters.
+      </p>
+      <p class="story">
+        Unaccompanied minors, also known as UAMs, are also separated from the rest. This particular group of refugees has grown dramatically in the last couple of years. Italy has received UAMs from Eritrea, Somalia and Gambia.
+      </p>
     </div>
-    <div class="col-md-1"></div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+      <div class="row">
+        <div class="col-md-12 faces">
+          <img class="img-responsive circleBoat" src="img/overview/Pellaro_FINAL-1.jpg" />
+        </div>
+        <div class="col-md-12 photoCaption">
+          <p>
+            After receiving a medical examination, refugees with scabies and other contagious diseases are separated from the group. They wait until they are taken to temporary refugee centers.
+          </p>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-md-12 text-center story-section">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+      <p class="story">
+        Those who are not sick or UAMs are sent on buses to northern Italy where there is better infrastructure to receive such a massive influx. Typically, this means that most refugees end up in larger cities like Rome, Florence or Milan.
+      </p>
+      <p class="story">
+        Many are unwilling to stay in Italy because unemployment is high and protection programs are better in northern Europe.
+      </p>
+      <p class="story">
+        Reggio Calabria is one of the major reception points for refugees in Italy. Cities like Palermo, Messina and Catania in Sicily have seen a similar influx. The southern Italian island of Lampedusa, which is closer to the Libyan Coast than to mainland Italy, has also been a major entry point to Europe for thousands of refugees.
+      </p>
+      <p class="story">
+        As foreign journalists, we stood at the port, unsure of how to make sense of what felt like a surreal and dystopian scene, strangely antiquated and colonial.
+      </p>
+      <p class="story">
+        The Mediterranean refugee crisis has been taking place for years, but only now, with a dramatic spike in numbers and thousands of people drowning in the Mediterranean, has the situation stirred public outrage. Enough pressure has mounted to move politicians to work on more urgent and responsible policies, after years of inaction.
+      </p>
+    </div>
+    <div class="col-md-2"></div>
   </div>
 </div>
 
 
-<!--*************************************************************section8 - bus video*****************************************************-->
-  <div class="row text-center video-section">
-      <video muted autoplay loop id="bus-video" width="100%" height="100%">
-        <source src="video/BusSequence.mp4" type="video/mp4">
-      </video>
+      <div class="row text-center video-section">
+        <div id="soundOn">
+          <i class="fa fa-volume-off"></i>
+        </div>
+        <div id="soundOff">
+          <i class="fa fa-volume-up"></i>
+        </div>
+          <video muted autoplay loop id="bus-video" width="100%" height="100%">
+            <source src="video/BusSequence.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div class="row">
+        <div class="col-md-12 vidCaption">
+          <p>Refugees who have been diagnosed with scabies or other infectious diseases are taken in buses to refugee centers in the city, where they receive medical treatment until they recover. </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center story-section">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+      <p class="story">
+        Those on the ground feel the results of political stagnation when local authorities and citizens face the tangible consequences and the chaos that comes with refugee landings. The system currently in place is meant to process as many people as possible in the least amount of time, inevitably resulting in what feels like an inhumane scene.
+      </p>
+      <p class="story">
+        Moreover, this translates into understaffed teams, cultural insensitivity and lack of basic infrastructure that is necessary to deal with a crisis of this scale. For example, even though Eritreans are one of the biggest group of refugees arriving in Italy every year, there are no translators of Tigrigna, the primary Eritrean language.
+      </p>
+      <p class="story">
+        After long hours of medical examination, refugees continue their journey. Those who stay behind are sent to temporary refugee centers in Reggio Calabria, where they wait until they recover. Minors stay under the protection of the government, until they turn 18.
+      </p>
+      <p class="story">
+        Whether they stay in the city or continue their journey north, all refugees try to answer what finding a better life really means.
+      </p>
+    </div>
+    <div class="col-md-2"></div>
   </div>
+</div>
 
 
-
-<!--******************************************section9 - as foreign journalists content*******************************************-->
 <div class="row">
-  <div class="col-md-12 text-center story-section">
-    <div class="col-md-1"></div>
-    <div class="col-md-10 story" id="section9">
-      As foreign journalists, we stood at the port, unsure of how to make sense of what felt like a surreal and dystopian
-      scene, strangely antiquated and colonial. The number of refugees arriving in Europe over
-      the past years has overwhelmed European governments, which have been unresponsive for way too long. The
-      Mediterranean refugee crisis has been taking place for years, but only until now, when the numbers spiked
-      dramatically and thousands of people have drowned in the Mediterranean, the situation has stirred public outrage
-      and enough pressure has mounted to shake politicians to work on more urgent and responsible policies. Political
-      stagnation is felt on the ground when local authorities and citizens face the tangible consequences and the chaos
-      that come with refugee landings. This translates into understaffed teams, cultural insensitivity and lack of basic
-      necessary infrastructure to deal with a crisis of this scale. A good example of this unpreparedness lies in the fact
-      that Eritreans are one of the biggest group of refugees arriving in Italy every year. Yet there are no translators of
-      Tigrigna, the primary Eritrean language. Unsurprisingly, no refugees speak Italian. It also means that the system
-      that is currently in place is meant to process as many people as possible, in the least possible amount of time,
-      which inevitably feels results in what feels like an inhumane scene from the colonial era.
+  <div class="col-md-12 img-section text-center">
+    <div class="col-md-6 overview-grid" id="overview-img5">
+      <div class="caption">
+        <div class="caption-center">
+          <p>After medical examination, the Italian government takes healthy refugees to bigger Italian cities like Milan and Rome, where there are better infrastructures to receive them.</p></div>
+      </div>
     </div>
-    <div class="col-md-1"></div>
+    <div class="col-md-6 overview-grid" id="overview-img6">
+      <div class="caption">
+        <div class="caption-center">
+          <p>
+            A temporary refugee center is located at an unused school gym. Centers like this one are overcrowded and lack adequate living conditions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 overview-grid" id="overview-img7">
+      <div class="caption">
+        <div class="caption-center">
+          <p>
+            An Eritrean unaccompanied girl waits at the center until her family makes arrangements to reunite with them in Northern Europe. There are concerns among local authorities that young girls may be forced into prostitution networks.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 overview-grid" id="overview-img8">
+      <div class="caption">
+        <div class="caption-center">
+          <p>
+            Eritrean refugees write down phone numbers of relatives and friends already living in Europe to make travel arrangements and join them. Most refugees have networks in Europe.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<br />
+
+
+
+
 
 <!--***********************************************section10**********************************************-->
-
-<div class="row">
-  <div class="col-md-12 text-center img-section blue">
-    <div class="col-md-3"></div>
-    <div class="col-md-6 quote">
-      "They had something in common: all were fleeing
-      war-torn nations, poverty or political oppression-
-      factors that have driven almost 60 million people
-      away from their homes all over the world."
-    </div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-      <div id="refugees"></div>
-      (except animated and not a creepy grandmother)
-    </div>
-    <div class="col-md-3"></div>
-  </div>
-</div>
 
 <!--**********************************************menu grid thing*******************************-->
 
@@ -287,7 +380,7 @@
     <a href="/overview.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person1">
       <div class="caption">
-        <div class="caption-center">The Crossing</div>
+        <div class="caption-center subNav">THE CROSSING</div>
       </div>
     </div>
     </a>
@@ -295,7 +388,7 @@
     <a href="/men-of-san-giovanni.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person2">
       <div class="caption">
-        <div class="caption-center">The Men of San Giovanni</div>
+        <div class="caption-center subNav">THE MEN OF SAN GIOVANNI</div>
       </div>
     </div>
     </a>
@@ -303,7 +396,7 @@
     <a href="/humanitarian.html">
       <div class="col-md-2 col-sm-4 col-xs-4 person" id="person3">
         <div class="caption">
-          <div class="caption-center">Trafficker Turned Humanitarian</div>
+          <div class="caption-center subNav">NEW BEGINNINGS</div>
         </div>
       </div>
     </a>
@@ -311,22 +404,28 @@
     <a href="/lifelong-mission.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person4">
       <div class="caption">
-        <div class="caption-center">A Lifelong Mission</div>
+        <div class="caption-center subNav">THE PRAYER</div>
       </div>
     </div>
     </a>
 
+    <a href="/exchange.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person5">
       <div class="caption">
-        <div class="caption-center">Exchange of Cultures
+        <div class="caption-center subNav">EXCHANGE OF CULTURES
       </div>
-    </div>
-  </div>
+     </div>
+   </div>
+   </a>
+
+    <a href="/bonds.html">
     <div class="col-md-2 col-sm-4 col-xs-4 person" id="person6">
       <div class="caption">
-        <div class="caption-center">Bonds Across Borders</div>
+        <div class="caption-center subNav">BONDS BEYOND BORDERS</div>
       </div>
     </div>
+    </a>
+
   </div>
 </div>
 
@@ -371,6 +470,19 @@ $('.person').hover(
     myVideo.play();
   }
 
+</script>
+<script>
+  $("#soundOn").click(function(){
+    $("#soundOn").hide();
+    $("#soundOff").show();
+    $("#bus-video").prop('muted', false);
+  });
+
+  $("#soundOff").click(function(){
+    $("#soundOff").hide();
+    $("#soundOn").show();
+    $("#bus-video").prop('muted', true);
+  });
 </script>
 
 </body>
